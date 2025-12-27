@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:macro name="wheel_macro" params="name parent radius width y_offset">
+
+  <joint name="${name}_joint" type="continuous">
+    <parent link="${parent}"/>
+    <child link="${name}"/>
+    <origin xyz="0 ${y_offset} 0"/>
+    <axis xyz="0 1 0"/>
+  </joint>
+
+  <link name="${name}">
+    <visual>
+      <geometry><cylinder radius="${radius}" length="${width}"/></geometry>
+      <material name="black"/>
+    </visual>
+    <collision>
+      <geometry><cylinder radius="${radius}" length="${width}"/></geometry>
+    </collision>
+    <inertial>
+      <mass value="0.5"/>
+      <inertia ixx="0.01" iyy="0.01" izz="0.001"/>
+    </inertial>
+  </link>
+
+</xacro:macro>
+
+</robot>
+

@@ -1,0 +1,10 @@
+navsat_transform_node:
+  ros__parameters:
+   magnetic_declination_radians: 1.034398470
+   yaw_offset: 0.0
+   use_odometry_yaw: true
+   wait_for_datum: true
+   world_frame: map
+   base_link_frame: base_link
+   gps_topic: /fix
+   odom_frame: odom

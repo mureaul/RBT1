@@ -1,0 +1,7 @@
+motor:
+  gpio_pin: 18
+  emergency_pin: 17
+  pwm_frequency: 20000
+  ramp_up_duration: 2.0
+  ramp_down_duration: 1.5
+  watchdog_timeout: 1.0

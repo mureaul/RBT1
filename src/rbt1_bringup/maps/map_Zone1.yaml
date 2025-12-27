@@ -1,0 +1,8 @@
+image: /home/ludovic/RBT1 project/V2/src/RBT1_bringup/maps/map_obstacles.pgm        # ou map.png selon ton format
+resolution: 0.05      # 5 cm par pixel (adapter si nécessaire)
+origin: [-65.0, 45.0, 0.0]   # position du pixel (0,0) dans le monde
+negate: 0
+occupied_thresh: 0.65
+free_thresh: 0.196
+mode: trinary
+

@@ -1,0 +1,37 @@
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <xacro:macro name="rbt1_ros2_control" params="wheel_radius wheel_separation">
+
+    <ros2_control name="rbt1_control" type="system">
+      <hardware>
+        <plugin>rbt1_control/RBT1HWInterface</plugin>
+
+        <param name="left_step_gpio">17</param>
+        <param name="left_dir_gpio">27</param>
+        <param name="right_step_gpio">22</param>
+        <param name="right_dir_gpio">23</param>
+
+        <param name="steps_per_rev">200</param>
+        <param name="wheel_radius">${wheel_radius}</param>
+        <param name="wheel_separation">${wheel_separation}</param>
+
+        <param name="max_accel">4.0</param>
+      </hardware>
+
+      <joint name="left_wheel_joint">
+        <command_interface name="velocity"/>
+        <state_interface name="position"/>
+        <state_interface name="velocity"/>
+      </joint>
+
+      <joint name="right_wheel_joint">
+        <command_interface name="velocity"/>
+        <state_interface name="position"/>
+        <state_interface name="velocity"/>
+      </joint>
+    </ros2_control>
+
+  </xacro:macro>
+
+</robot>
+
