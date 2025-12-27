@@ -1,0 +1,51 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 50
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+    rbt1_drive_controller:
+      type: diff_drive_controller/DiffDriveController
+      
+rbt1_drive_controller:     
+  ros__parameters:      
+    left_wheel_names: ["left_wheel_joint"]
+    right_wheel_names: ["right_wheel_joint"]
+    wheel_separation: 0.38
+    wheel_radius: 0.11
+    torque_limit: 2.0
+    cmd_vel_timeout: 0.5
+    
+    publish_rate: 50.0
+    use_stamped_vel: false
+
+    # velocity PID on wheel velocity (example)
+    left_wheel:
+      pid:
+        p: 2.0
+        i: 0.5
+        d: 0.05
+    right_wheel:
+      pid:
+        p: 2.0
+        i: 0.5
+        d: 0.05
+
+    odom_frame_id: "odom"
+    base_frame_id: "base_link"
+
+    enable_odom_tf: true
+
+    linear.x:
+      has_velocity_limits: true
+      max_velocity: 0.4
+      has_acceleration_limits: true
+      max_acceleration: 0.4
+
+    angular.z:
+      has_velocity_limits: true
+      max_velocity: 1.0
+      has_acceleration_limits: true
+      max_acceleration: 1.0
+
