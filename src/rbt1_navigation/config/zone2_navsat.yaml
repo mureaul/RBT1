@@ -1,0 +1,16 @@
+navsat_transform_node:
+  ros__parameters:
+    use_sim_time: false
+    broadcast_utm_transform: true
+    wait_for_initial_pose: false
+    use_odometry_yaw: false
+    magnetic_declination_radians: 0.0
+    yaw_offset: 0.0
+    # L'origine GPS correspond au coin bas gauche de la carte
+    latitude: 48.8570
+    longitude: 2.3522
+    altitude: 0.0
+    world_frame: "map"
+    imu_topic: "/imu/data"
+    gps_topic: "/ublox_gps_node/fix"
+    odom_topic: "/odometry/filtered"

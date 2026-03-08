@@ -1,0 +1,28 @@
+[12.346s] Invoking command in '/home/mureaul/RBT1/build/rbt1_coverage': PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/mureaul/RBT1/build/rbt1_coverage/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mureaul/RBT1/install/rbt1_coverage/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/mureaul/RBT1/build/rbt1_coverage/build --no-deps symlink_data
+[12.808s] running develop
+[13.065s] running egg_info
+[13.066s] creating rbt1_coverage.egg-info
+[13.089s] writing rbt1_coverage.egg-info/PKG-INFO
+[13.090s] writing dependency_links to rbt1_coverage.egg-info/dependency_links.txt
+[13.090s] writing entry points to rbt1_coverage.egg-info/entry_points.txt
+[13.090s] writing requirements to rbt1_coverage.egg-info/requires.txt
+[13.090s] writing top-level names to rbt1_coverage.egg-info/top_level.txt
+[13.090s] writing manifest file 'rbt1_coverage.egg-info/SOURCES.txt'
+[13.157s] reading manifest file 'rbt1_coverage.egg-info/SOURCES.txt'
+[13.157s] writing manifest file 'rbt1_coverage.egg-info/SOURCES.txt'
+[13.190s] running build_ext
+[13.191s] Creating /home/mureaul/RBT1/install/rbt1_coverage/lib/python3.12/site-packages/rbt1-coverage.egg-link (link to .)
+[13.191s] Installing coverage_planner script to /home/mureaul/RBT1/install/rbt1_coverage/bin
+[13.192s] 
+[13.192s] Installed /home/mureaul/RBT1/build/rbt1_coverage
+[13.192s] running symlink_data
+[13.192s] creating /home/mureaul/RBT1/install/rbt1_coverage/share
+[13.192s] creating /home/mureaul/RBT1/install/rbt1_coverage/share/ament_index
+[13.194s] creating /home/mureaul/RBT1/install/rbt1_coverage/share/ament_index/resource_index
+[13.196s] creating /home/mureaul/RBT1/install/rbt1_coverage/share/ament_index/resource_index/packages
+[13.196s] symbolically linking /home/mureaul/RBT1/build/rbt1_coverage/resource/rbt1_coverage -> /home/mureaul/RBT1/install/rbt1_coverage/share/ament_index/resource_index/packages
+[13.197s] creating /home/mureaul/RBT1/install/rbt1_coverage/share/rbt1_coverage
+[13.197s] symbolically linking /home/mureaul/RBT1/build/rbt1_coverage/package.xml -> /home/mureaul/RBT1/install/rbt1_coverage/share/rbt1_coverage
+[13.198s] creating /home/mureaul/RBT1/install/rbt1_coverage/share/rbt1_coverage/launch
+[13.198s] symbolically linking /home/mureaul/RBT1/build/rbt1_coverage/launch/coverage_planner.launch.py -> /home/mureaul/RBT1/install/rbt1_coverage/share/rbt1_coverage/launch
+[13.325s] Invoked command in '/home/mureaul/RBT1/build/rbt1_coverage' returned '0': PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/mureaul/RBT1/build/rbt1_coverage/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mureaul/RBT1/install/rbt1_coverage/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/mureaul/RBT1/build/rbt1_coverage/build --no-deps symlink_data

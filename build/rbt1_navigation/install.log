@@ -1,0 +1,46 @@
+/home/mureaul/RBT1/install/rbt1_navigation/lib/python3.12/site-packages/rbt1_navigation/mission_manager.py
+/home/mureaul/RBT1/install/rbt1_navigation/lib/python3.12/site-packages/rbt1_navigation/kml_to_map_generator.py
+/home/mureaul/RBT1/install/rbt1_navigation/lib/python3.12/site-packages/rbt1_navigation/mission_orchestrator.py
+/home/mureaul/RBT1/install/rbt1_navigation/lib/python3.12/site-packages/rbt1_navigation/__init__.py
+/home/mureaul/RBT1/install/rbt1_navigation/lib/python3.12/site-packages/rbt1_navigation/__pycache__/mission_manager.cpython-312.pyc
+/home/mureaul/RBT1/install/rbt1_navigation/lib/python3.12/site-packages/rbt1_navigation/__pycache__/kml_to_map_generator.cpython-312.pyc
+/home/mureaul/RBT1/install/rbt1_navigation/lib/python3.12/site-packages/rbt1_navigation/__pycache__/mission_orchestrator.cpython-312.pyc
+/home/mureaul/RBT1/install/rbt1_navigation/lib/python3.12/site-packages/rbt1_navigation/__pycache__/__init__.cpython-312.pyc
+/home/mureaul/RBT1/install/rbt1_navigation/share/ament_index/resource_index/packages/rbt1_navigation
+/home/mureaul/RBT1/install/rbt1_navigation/share/rbt1_navigation/package.xml
+/home/mureaul/RBT1/install/rbt1_navigation/share/rbt1_navigation/launch/dual_ekf_navsat.launch.py
+/home/mureaul/RBT1/install/rbt1_navigation/share/rbt1_navigation/launch/coverage_planner.launch.py
+/home/mureaul/RBT1/install/rbt1_navigation/share/rbt1_navigation/launch/nav2_gps.launch.py
+/home/mureaul/RBT1/install/rbt1_navigation/share/rbt1_navigation/config/nav2_params.yaml
+/home/mureaul/RBT1/install/rbt1_navigation/share/rbt1_navigation/config/zone1_navsat.yaml
+/home/mureaul/RBT1/install/rbt1_navigation/share/rbt1_navigation/config/zone4_waypoints.yaml
+/home/mureaul/RBT1/install/rbt1_navigation/share/rbt1_navigation/config/zone2_waypoints.yaml
+/home/mureaul/RBT1/install/rbt1_navigation/share/rbt1_navigation/config/ekf.yaml
+/home/mureaul/RBT1/install/rbt1_navigation/share/rbt1_navigation/config/RBT1 - Map_navsat.yaml
+/home/mureaul/RBT1/install/rbt1_navigation/share/rbt1_navigation/config/nav2_gps_params.yaml
+/home/mureaul/RBT1/install/rbt1_navigation/share/rbt1_navigation/config/zone2_navsat.yaml
+/home/mureaul/RBT1/install/rbt1_navigation/share/rbt1_navigation/config/zone1_waypoints.yaml
+/home/mureaul/RBT1/install/rbt1_navigation/share/rbt1_navigation/config/zone3_navsat.yaml
+/home/mureaul/RBT1/install/rbt1_navigation/share/rbt1_navigation/config/zone4_navsat.yaml
+/home/mureaul/RBT1/install/rbt1_navigation/share/rbt1_navigation/config/collision_monitor.yaml
+/home/mureaul/RBT1/install/rbt1_navigation/share/rbt1_navigation/config/dual_ekf_navsat_params.yaml
+/home/mureaul/RBT1/install/rbt1_navigation/share/rbt1_navigation/config/rbt1_params.yaml
+/home/mureaul/RBT1/install/rbt1_navigation/share/rbt1_navigation/config/dock_gps.yaml
+/home/mureaul/RBT1/install/rbt1_navigation/share/rbt1_navigation/config/rbt1_gps_bridge.yaml
+/home/mureaul/RBT1/install/rbt1_navigation/share/rbt1_navigation/config/zone3_waypoints.yaml
+/home/mureaul/RBT1/install/rbt1_navigation/share/rbt1_navigation/maps/workcell3 - jardin sud 2_coverage.yaml
+/home/mureaul/RBT1/install/rbt1_navigation/share/rbt1_navigation/maps/workcell1 - jardin nord_coverage.yaml
+/home/mureaul/RBT1/install/rbt1_navigation/share/rbt1_navigation/maps/workcell2 - jardin sud 1_coverage.yaml
+/home/mureaul/RBT1/install/rbt1_navigation/share/rbt1_navigation/maps/zone1.yaml
+/home/mureaul/RBT1/install/rbt1_navigation/share/rbt1_navigation/maps/RBT1 - Map.yaml
+/home/mureaul/RBT1/install/rbt1_navigation/share/rbt1_navigation/maps/workcell4 - jardin sud3_coverage.yaml
+/home/mureaul/RBT1/install/rbt1_navigation/lib/python3.12/site-packages/rbt1_navigation-0.0.1-py3.12.egg-info/dependency_links.txt
+/home/mureaul/RBT1/install/rbt1_navigation/lib/python3.12/site-packages/rbt1_navigation-0.0.1-py3.12.egg-info/PKG-INFO
+/home/mureaul/RBT1/install/rbt1_navigation/lib/python3.12/site-packages/rbt1_navigation-0.0.1-py3.12.egg-info/entry_points.txt
+/home/mureaul/RBT1/install/rbt1_navigation/lib/python3.12/site-packages/rbt1_navigation-0.0.1-py3.12.egg-info/top_level.txt
+/home/mureaul/RBT1/install/rbt1_navigation/lib/python3.12/site-packages/rbt1_navigation-0.0.1-py3.12.egg-info/requires.txt
+/home/mureaul/RBT1/install/rbt1_navigation/lib/python3.12/site-packages/rbt1_navigation-0.0.1-py3.12.egg-info/zip-safe
+/home/mureaul/RBT1/install/rbt1_navigation/lib/python3.12/site-packages/rbt1_navigation-0.0.1-py3.12.egg-info/SOURCES.txt
+/home/mureaul/RBT1/install/rbt1_navigation/lib/rbt1_navigation/map_generator
+/home/mureaul/RBT1/install/rbt1_navigation/lib/rbt1_navigation/mission_manager
+/home/mureaul/RBT1/install/rbt1_navigation/lib/rbt1_navigation/mission_orchestrator

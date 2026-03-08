@@ -1,0 +1,24 @@
+[35.138s] Invoking command in '/home/mureaul/RBT1/src/rbt1_utils': PYTHONPATH=/home/mureaul/RBT1/build/rbt1_utils/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mureaul/RBT1/install/rbt1_utils/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rbt1_utils build --build-base /home/mureaul/RBT1/build/rbt1_utils/build install --record /home/mureaul/RBT1/build/rbt1_utils/install.log --single-version-externally-managed install_data
+[35.571s] running egg_info
+[35.597s] writing ../../build/rbt1_utils/rbt1_utils.egg-info/PKG-INFO
+[35.597s] writing dependency_links to ../../build/rbt1_utils/rbt1_utils.egg-info/dependency_links.txt
+[35.597s] writing entry points to ../../build/rbt1_utils/rbt1_utils.egg-info/entry_points.txt
+[35.598s] writing requirements to ../../build/rbt1_utils/rbt1_utils.egg-info/requires.txt
+[35.598s] writing top-level names to ../../build/rbt1_utils/rbt1_utils.egg-info/top_level.txt
+[35.649s] reading manifest file '../../build/rbt1_utils/rbt1_utils.egg-info/SOURCES.txt'
+[35.653s] writing manifest file '../../build/rbt1_utils/rbt1_utils.egg-info/SOURCES.txt'
+[35.653s] running build
+[35.654s] running build_py
+[35.654s] running install
+[35.664s] running install_lib
+[35.691s] running install_data
+[35.691s] running install_egg_info
+[35.719s] removing '/home/mureaul/RBT1/install/rbt1_utils/lib/python3.12/site-packages/rbt1_utils-0.0.0-py3.12.egg-info' (and everything under it)
+[35.873s] Copying ../../build/rbt1_utils/rbt1_utils.egg-info to /home/mureaul/RBT1/install/rbt1_utils/lib/python3.12/site-packages/rbt1_utils-0.0.0-py3.12.egg-info
+[35.913s] running install_scripts
+[36.096s] Installing battery_monitor_node script to /home/mureaul/RBT1/install/rbt1_utils/lib/rbt1_utils
+[36.097s] Installing bringup_orchestrator script to /home/mureaul/RBT1/install/rbt1_utils/lib/rbt1_utils
+[36.098s] Installing heartbeat_node script to /home/mureaul/RBT1/install/rbt1_utils/lib/rbt1_utils
+[36.098s] Installing weather_monitor_node script to /home/mureaul/RBT1/install/rbt1_utils/lib/rbt1_utils
+[36.098s] writing list of installed files to '/home/mureaul/RBT1/build/rbt1_utils/install.log'
+[36.175s] Invoked command in '/home/mureaul/RBT1/src/rbt1_utils' returned '0': PYTHONPATH=/home/mureaul/RBT1/build/rbt1_utils/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mureaul/RBT1/install/rbt1_utils/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rbt1_utils build --build-base /home/mureaul/RBT1/build/rbt1_utils/build install --record /home/mureaul/RBT1/build/rbt1_utils/install.log --single-version-externally-managed install_data

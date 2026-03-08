@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "rbt1_interfaces/srv/LoadZone_Request",
+      "fields": [
+        {
+          "name": "zone",
+          "type": {
+            "type_id": 17,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "rbt1_interfaces/srv/LoadZone_Request",
+      "hash_string": "RIHS01_befc8d6887cb11c8bf1793f1cf9ef3cc41cc7bb85fe4b7cda503fd17babd9fb7"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "rbt1_interfaces/srv/GenerateCoverage_Request",
+      "fields": [
+        {
+          "name": "zone_name",
+          "type": {
+            "type_id": 17,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "rbt1_interfaces/srv/GenerateCoverage_Request",
+      "hash_string": "RIHS01_7ab108b4b5155304bc7d54177dd2b51d4b1ffb99dc06e967375c1abf84cbcedd"
+    }
+  ]
+}

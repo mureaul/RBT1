@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/mureaul/RBT1/build/ublox_msgs/rosidl_generator_py/ublox_msgs/ublox_msgs_s__rosidl_typesupport_introspection_c.so" "TARGETS" "ublox_msgs_s__rosidl_typesupport_introspection_c" "DESTINATION" "lib/python3.12/site-packages/ublox_msgs")

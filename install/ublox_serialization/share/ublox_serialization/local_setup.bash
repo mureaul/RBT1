@@ -1,0 +1,1 @@
+/home/mureaul/RBT1/build/ublox_serialization/ament_cmake_environment_hooks/local_setup.bash

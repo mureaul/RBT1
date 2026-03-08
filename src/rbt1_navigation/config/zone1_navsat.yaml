@@ -1,0 +1,20 @@
+navsat_transform:
+  ros__parameters:
+    frequency: 10.0
+    delay: 3.0
+    magnetic_declination_radians: 0.0
+    yaw_offset: 0.0
+    zero_altitude: true
+    publish_tf: true
+    world_frame: map
+    odom_frame: odom_frame
+    base_link_frame: base_link_frame
+    imu_topic: imu/data
+    gps_topic: gps/fix
+    broadcast_cartesian_transform: true
+    publish_filtered_gps: true
+    use_odometry_yaw: true
+    wait_for_datum: false
+    datum_latitude: 43.59536452681756
+    datum_longitude: 2.2016358830671923
+    #43°35'43.312"N 2°12'05.889"E

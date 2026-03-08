@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from rbt1_interfaces/srv/GenerateCoverage.srv
+// generated code does not contain a copyright notice
+
+
+module rbt1_interfaces {
+  module srv {
+    struct GenerateCoverage_Request {
+      string zone_name;
+    };
+    struct GenerateCoverage_Response {
+      boolean success;
+
+      string message;
+    };
+  };
+};

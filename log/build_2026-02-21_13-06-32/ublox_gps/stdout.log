@@ -1,0 +1,101 @@
+-- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found diagnostic_msgs: 5.3.6 (/opt/ros/jazzy/share/diagnostic_msgs/cmake)
+-- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found diagnostic_updater: 4.2.6 (/opt/ros/jazzy/share/diagnostic_updater/cmake)
+-- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found geometry_msgs: 5.3.6 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+-- Found nmea_msgs: 2.1.0 (/opt/ros/jazzy/share/nmea_msgs/cmake)
+-- Found rclcpp_components: 28.1.13 (/opt/ros/jazzy/share/rclcpp_components/cmake)
+-- Found rtcm_msgs: 1.1.6 (/opt/ros/jazzy/share/rtcm_msgs/cmake)
+-- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+-- Found tf2: 0.36.16 (/opt/ros/jazzy/share/tf2/cmake)
+-- Found ublox_msgs: 3.0.0 (/home/mureaul/RBT1/install/ublox_msgs/share/ublox_msgs/cmake)
+-- Configuring done (4.7s)
+-- Generating done (1.0s)
+-- Build files have been written to: /home/mureaul/RBT1/build/ublox_gps
+[  4%] [32mBuilding CXX object CMakeFiles/ublox_gps.dir/src/node.cpp.o[0m
+[ 18%] [32mBuilding CXX object CMakeFiles/ublox_gps.dir/src/ublox_firmware.cpp.o[0m
+[ 18%] [32mBuilding CXX object CMakeFiles/ublox_gps.dir/src/ublox_firmware6.cpp.o[0m
+[ 18%] [32mBuilding CXX object CMakeFiles/ublox_gps.dir/src/tim_product.cpp.o[0m
+[ 31%] [32mBuilding CXX object CMakeFiles/ublox_gps.dir/src/ublox_firmware8.cpp.o[0m
+[ 31%] [32mBuilding CXX object CMakeFiles/ublox_gps.dir/src/ublox_firmware7.cpp.o[0m
+[ 31%] [32mBuilding CXX object CMakeFiles/ublox_gps.dir/src/ublox_firmware9.cpp.o[0m
+[ 36%] [32m[1mLinking CXX shared library libublox_gps.so[0m
+[ 77%] Built target ublox_gps
+[ 90%] [32mBuilding CXX object CMakeFiles/ublox_logger.dir/src/logger_node_pa.cpp.o[0m
+[ 90%] [32mBuilding CXX object CMakeFiles/ublox_gps_node.dir/src/node_main.cpp.o[0m
+[ 90%] [32mBuilding CXX object CMakeFiles/ublox_logger.dir/src/raw_data_pa.cpp.o[0m
+[ 95%] [32m[1mLinking CXX executable ublox_logger[0m
+[ 95%] Built target ublox_logger
+[100%] [32m[1mLinking CXX executable ublox_gps_node[0m
+[100%] Built target ublox_gps_node
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/mureaul/RBT1/install/ublox_gps/lib/ublox_gps/ublox_gps_node
+-- Symlinking: /home/mureaul/RBT1/install/ublox_gps/lib/ublox_gps/ublox_logger
+-- Symlinking: /home/mureaul/RBT1/install/ublox_gps/include/ublox_gps/ublox_gps/adr_udr_product.hpp
+-- Symlinking: /home/mureaul/RBT1/install/ublox_gps/include/ublox_gps/ublox_gps/async_worker.hpp
+-- Symlinking: /home/mureaul/RBT1/install/ublox_gps/include/ublox_gps/ublox_gps/callback.hpp
+-- Symlinking: /home/mureaul/RBT1/install/ublox_gps/include/ublox_gps/ublox_gps/component_interface.hpp
+-- Symlinking: /home/mureaul/RBT1/install/ublox_gps/include/ublox_gps/ublox_gps/fix_diagnostic.hpp
+-- Symlinking: /home/mureaul/RBT1/install/ublox_gps/include/ublox_gps/ublox_gps/fts_product.hpp
+-- Symlinking: /home/mureaul/RBT1/install/ublox_gps/include/ublox_gps/ublox_gps/gnss.hpp
+-- Symlinking: /home/mureaul/RBT1/install/ublox_gps/include/ublox_gps/ublox_gps/gps.hpp
+-- Symlinking: /home/mureaul/RBT1/install/ublox_gps/include/ublox_gps/ublox_gps/hp_pos_rec_product.hpp
+-- Symlinking: /home/mureaul/RBT1/install/ublox_gps/include/ublox_gps/ublox_gps/hpg_ref_product.hpp
+-- Symlinking: /home/mureaul/RBT1/install/ublox_gps/include/ublox_gps/ublox_gps/hpg_rov_product.hpp
+-- Symlinking: /home/mureaul/RBT1/install/ublox_gps/include/ublox_gps/ublox_gps/mkgmtime.h
+-- Symlinking: /home/mureaul/RBT1/install/ublox_gps/include/ublox_gps/ublox_gps/node.hpp
+-- Symlinking: /home/mureaul/RBT1/install/ublox_gps/include/ublox_gps/ublox_gps/raw_data_pa.hpp
+-- Symlinking: /home/mureaul/RBT1/install/ublox_gps/include/ublox_gps/ublox_gps/raw_data_product.hpp
+-- Symlinking: /home/mureaul/RBT1/install/ublox_gps/include/ublox_gps/ublox_gps/rtcm.hpp
+-- Symlinking: /home/mureaul/RBT1/install/ublox_gps/include/ublox_gps/ublox_gps/tim_product.hpp
+-- Symlinking: /home/mureaul/RBT1/install/ublox_gps/include/ublox_gps/ublox_gps/ublox_firmware.hpp
+-- Symlinking: /home/mureaul/RBT1/install/ublox_gps/include/ublox_gps/ublox_gps/ublox_firmware6.hpp
+-- Symlinking: /home/mureaul/RBT1/install/ublox_gps/include/ublox_gps/ublox_gps/ublox_firmware7.hpp
+-- Symlinking: /home/mureaul/RBT1/install/ublox_gps/include/ublox_gps/ublox_gps/ublox_firmware7plus.hpp
+-- Symlinking: /home/mureaul/RBT1/install/ublox_gps/include/ublox_gps/ublox_gps/ublox_firmware8.hpp
+-- Symlinking: /home/mureaul/RBT1/install/ublox_gps/include/ublox_gps/ublox_gps/ublox_firmware9.hpp
+-- Symlinking: /home/mureaul/RBT1/install/ublox_gps/include/ublox_gps/ublox_gps/ublox_topic_diagnostic.hpp
+-- Symlinking: /home/mureaul/RBT1/install/ublox_gps/include/ublox_gps/ublox_gps/utils.hpp
+-- Symlinking: /home/mureaul/RBT1/install/ublox_gps/include/ublox_gps/ublox_gps/worker.hpp
+-- Symlinking: /home/mureaul/RBT1/install/ublox_gps/share/ublox_gps/launch/build/.built_by
+-- Symlinking: /home/mureaul/RBT1/install/ublox_gps/share/ublox_gps/launch/build/COLCON_IGNORE
+-- Symlinking: /home/mureaul/RBT1/install/ublox_gps/share/ublox_gps/launch/install/.colcon_install_layout
+-- Symlinking: /home/mureaul/RBT1/install/ublox_gps/share/ublox_gps/launch/install/COLCON_IGNORE
+-- Symlinking: /home/mureaul/RBT1/install/ublox_gps/share/ublox_gps/launch/log/COLCON_IGNORE
+-- Symlinking: /home/mureaul/RBT1/install/ublox_gps/share/ublox_gps/launch/log/build_2026-01-03_15-26-28/logger_all.log
+-- Symlinking: /home/mureaul/RBT1/install/ublox_gps/share/ublox_gps/launch/log/latest/logger_all.log
+-- Symlinking: /home/mureaul/RBT1/install/ublox_gps/share/ublox_gps/launch/log/latest_build/logger_all.log
+-- Symlinking: /home/mureaul/RBT1/install/ublox_gps/share/ublox_gps/launch/ublox_gps_node-composed-launch.py
+-- Symlinking: /home/mureaul/RBT1/install/ublox_gps/share/ublox_gps/launch/ublox_gps_node-launch.py
+-- Symlinking: /home/mureaul/RBT1/install/ublox_gps/share/ublox_gps/config/nmea.yaml
+-- Symlinking: /home/mureaul/RBT1/install/ublox_gps/share/ublox_gps/config/zed_f9p.yaml
+-- Symlinking: /home/mureaul/RBT1/install/ublox_gps/share/ament_index/resource_index/package_run_dependencies/ublox_gps
+-- Symlinking: /home/mureaul/RBT1/install/ublox_gps/share/ament_index/resource_index/parent_prefix_path/ublox_gps
+-- Symlinking: /home/mureaul/RBT1/install/ublox_gps/share/ublox_gps/environment/ament_prefix_path.sh
+-- Symlinking: /home/mureaul/RBT1/install/ublox_gps/share/ublox_gps/environment/ament_prefix_path.dsv
+-- Symlinking: /home/mureaul/RBT1/install/ublox_gps/share/ublox_gps/environment/path.sh
+-- Symlinking: /home/mureaul/RBT1/install/ublox_gps/share/ublox_gps/environment/path.dsv
+-- Symlinking: /home/mureaul/RBT1/install/ublox_gps/share/ublox_gps/local_setup.bash
+-- Symlinking: /home/mureaul/RBT1/install/ublox_gps/share/ublox_gps/local_setup.sh
+-- Symlinking: /home/mureaul/RBT1/install/ublox_gps/share/ublox_gps/local_setup.zsh
+-- Symlinking: /home/mureaul/RBT1/install/ublox_gps/share/ublox_gps/local_setup.dsv
+-- Symlinking: /home/mureaul/RBT1/install/ublox_gps/share/ublox_gps/package.dsv
+-- Symlinking: /home/mureaul/RBT1/install/ublox_gps/share/ament_index/resource_index/packages/ublox_gps
+-- Symlinking: /home/mureaul/RBT1/install/ublox_gps/share/ament_index/resource_index/rclcpp_components/ublox_gps
+-- Symlinking: /home/mureaul/RBT1/install/ublox_gps/share/ublox_gps/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Symlinking: /home/mureaul/RBT1/install/ublox_gps/share/ublox_gps/cmake/ament_cmake_export_targets-extras.cmake
+-- Symlinking: /home/mureaul/RBT1/install/ublox_gps/share/ublox_gps/cmake/ublox_gpsConfig.cmake
+-- Symlinking: /home/mureaul/RBT1/install/ublox_gps/share/ublox_gps/cmake/ublox_gpsConfig-version.cmake
+-- Symlinking: /home/mureaul/RBT1/install/ublox_gps/share/ublox_gps/package.xml
+-- Installing: /home/mureaul/RBT1/install/ublox_gps/lib/libublox_gps.so
+-- Set non-toolchain portion of runtime path of "/home/mureaul/RBT1/install/ublox_gps/lib/libublox_gps.so" to ""
+-- Installing: /home/mureaul/RBT1/install/ublox_gps/share/ublox_gps/cmake/export_ublox_gpsExport.cmake
+-- Installing: /home/mureaul/RBT1/install/ublox_gps/share/ublox_gps/cmake/export_ublox_gpsExport-noconfig.cmake

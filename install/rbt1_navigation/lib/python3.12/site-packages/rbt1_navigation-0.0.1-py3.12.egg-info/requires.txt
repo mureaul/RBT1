@@ -1,0 +1,5 @@
+fastkml
+pyyaml
+setuptools
+shapely
+simplekml

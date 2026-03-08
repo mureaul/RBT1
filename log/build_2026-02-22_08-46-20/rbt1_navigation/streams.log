@@ -1,0 +1,74 @@
+[4.185s] Invoking command in '/home/mureaul/RBT1/src/rbt1_navigation': CMAKE_PREFIX_PATH=/home/mureaul/RBT1/install/rbt1_interfaces:/home/mureaul/RBT1/install/ublox_gps:/home/mureaul/RBT1/install/ublox_msgs:/home/mureaul/RBT1/install/ublox_serialization:/home/mureaul/RBT1/install/rplidar_ros:/home/mureaul/RBT1/install/rbt1_docking:/home/mureaul/RBT1/install/rbt1_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor LD_LIBRARY_PATH=/home/mureaul/RBT1/install/rbt1_interfaces/lib:/home/mureaul/RBT1/install/ublox_gps/lib:/home/mureaul/RBT1/install/ublox_msgs/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/ortools_vendor/lib:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib PYTHONPATH=/home/mureaul/RBT1/build/rbt1_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mureaul/RBT1/install/rbt1_navigation/lib/python3.12/site-packages:/home/mureaul/RBT1/install/rbt1_interfaces/lib/python3.12/site-packages:/home/mureaul/RBT1/install/ublox_msgs/lib/python3.12/site-packages:/home/mureaul/RBT1/install/rbt1_utils/lib/python3.12/site-packages:/home/mureaul/RBT1/build/rbt1_navigation:/home/mureaul/RBT1/install/rbt1_navigation/lib/python3.12/site-packages:/home/mureaul/RBT1/build/rbt1_coverage:/home/mureaul/RBT1/install/rbt1_coverage/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rbt1_navigation build --build-base /home/mureaul/RBT1/build/rbt1_navigation/build install --record /home/mureaul/RBT1/build/rbt1_navigation/install.log --single-version-externally-managed install_data
+[4.598s] running egg_info
+[4.598s] creating ../../build/rbt1_navigation/rbt1_navigation.egg-info
+[4.627s] writing ../../build/rbt1_navigation/rbt1_navigation.egg-info/PKG-INFO
+[4.627s] writing dependency_links to ../../build/rbt1_navigation/rbt1_navigation.egg-info/dependency_links.txt
+[4.628s] writing entry points to ../../build/rbt1_navigation/rbt1_navigation.egg-info/entry_points.txt
+[4.628s] writing requirements to ../../build/rbt1_navigation/rbt1_navigation.egg-info/requires.txt
+[4.628s] writing top-level names to ../../build/rbt1_navigation/rbt1_navigation.egg-info/top_level.txt
+[4.628s] writing manifest file '../../build/rbt1_navigation/rbt1_navigation.egg-info/SOURCES.txt'
+[4.688s] reading manifest file '../../build/rbt1_navigation/rbt1_navigation.egg-info/SOURCES.txt'
+[4.689s] writing manifest file '../../build/rbt1_navigation/rbt1_navigation.egg-info/SOURCES.txt'
+[4.689s] running build
+[4.689s] running build_py
+[4.689s] creating /home/mureaul/RBT1/build/rbt1_navigation/build
+[4.689s] creating /home/mureaul/RBT1/build/rbt1_navigation/build/lib
+[4.690s] creating /home/mureaul/RBT1/build/rbt1_navigation/build/lib/rbt1_navigation
+[4.691s] copying rbt1_navigation/navigation_orchestrator.py -> /home/mureaul/RBT1/build/rbt1_navigation/build/lib/rbt1_navigation
+[4.691s] copying rbt1_navigation/mission_manager.py -> /home/mureaul/RBT1/build/rbt1_navigation/build/lib/rbt1_navigation
+[4.691s] copying rbt1_navigation/mission_orchestrator.py -> /home/mureaul/RBT1/build/rbt1_navigation/build/lib/rbt1_navigation
+[4.691s] copying rbt1_navigation/__init__.py -> /home/mureaul/RBT1/build/rbt1_navigation/build/lib/rbt1_navigation
+[4.691s] copying rbt1_navigation/path_follower.py -> /home/mureaul/RBT1/build/rbt1_navigation/build/lib/rbt1_navigation
+[4.691s] running install
+[4.701s] running install_lib
+[4.731s] creating /home/mureaul/RBT1/install/rbt1_navigation/lib/python3.12/site-packages/rbt1_navigation
+[4.731s] copying /home/mureaul/RBT1/build/rbt1_navigation/build/lib/rbt1_navigation/navigation_orchestrator.py -> /home/mureaul/RBT1/install/rbt1_navigation/lib/python3.12/site-packages/rbt1_navigation
+[4.731s] copying /home/mureaul/RBT1/build/rbt1_navigation/build/lib/rbt1_navigation/mission_manager.py -> /home/mureaul/RBT1/install/rbt1_navigation/lib/python3.12/site-packages/rbt1_navigation
+[4.732s] copying /home/mureaul/RBT1/build/rbt1_navigation/build/lib/rbt1_navigation/mission_orchestrator.py -> /home/mureaul/RBT1/install/rbt1_navigation/lib/python3.12/site-packages/rbt1_navigation
+[4.732s] copying /home/mureaul/RBT1/build/rbt1_navigation/build/lib/rbt1_navigation/__init__.py -> /home/mureaul/RBT1/install/rbt1_navigation/lib/python3.12/site-packages/rbt1_navigation
+[4.732s] copying /home/mureaul/RBT1/build/rbt1_navigation/build/lib/rbt1_navigation/path_follower.py -> /home/mureaul/RBT1/install/rbt1_navigation/lib/python3.12/site-packages/rbt1_navigation
+[4.733s] byte-compiling /home/mureaul/RBT1/install/rbt1_navigation/lib/python3.12/site-packages/rbt1_navigation/navigation_orchestrator.py to navigation_orchestrator.cpython-312.pyc
+[4.737s] byte-compiling /home/mureaul/RBT1/install/rbt1_navigation/lib/python3.12/site-packages/rbt1_navigation/mission_manager.py to mission_manager.cpython-312.pyc
+[4.745s] byte-compiling /home/mureaul/RBT1/install/rbt1_navigation/lib/python3.12/site-packages/rbt1_navigation/mission_orchestrator.py to mission_orchestrator.cpython-312.pyc
+[4.748s] byte-compiling /home/mureaul/RBT1/install/rbt1_navigation/lib/python3.12/site-packages/rbt1_navigation/__init__.py to __init__.cpython-312.pyc
+[4.749s] byte-compiling /home/mureaul/RBT1/install/rbt1_navigation/lib/python3.12/site-packages/rbt1_navigation/path_follower.py to path_follower.cpython-312.pyc
+[4.750s] running install_data
+[4.751s] creating /home/mureaul/RBT1/install/rbt1_navigation/share/ament_index
+[4.751s] creating /home/mureaul/RBT1/install/rbt1_navigation/share/ament_index/resource_index
+[4.751s] creating /home/mureaul/RBT1/install/rbt1_navigation/share/ament_index/resource_index/packages
+[4.753s] copying resource/rbt1_navigation -> /home/mureaul/RBT1/install/rbt1_navigation/share/ament_index/resource_index/packages
+[4.753s] copying package.xml -> /home/mureaul/RBT1/install/rbt1_navigation/share/rbt1_navigation
+[4.753s] creating /home/mureaul/RBT1/install/rbt1_navigation/share/rbt1_navigation/launch
+[4.753s] copying launch/dual_ekf_navsat.launch.py -> /home/mureaul/RBT1/install/rbt1_navigation/share/rbt1_navigation/launch
+[4.753s] copying launch/nav2_gps.launch.py -> /home/mureaul/RBT1/install/rbt1_navigation/share/rbt1_navigation/launch
+[4.753s] creating /home/mureaul/RBT1/install/rbt1_navigation/share/rbt1_navigation/config
+[4.754s] copying config/nav2_params.yaml -> /home/mureaul/RBT1/install/rbt1_navigation/share/rbt1_navigation/config
+[4.754s] copying config/robot_params.yaml -> /home/mureaul/RBT1/install/rbt1_navigation/share/rbt1_navigation/config
+[4.754s] copying config/zone1_navsat.yaml -> /home/mureaul/RBT1/install/rbt1_navigation/share/rbt1_navigation/config
+[4.754s] copying config/zone4_waypoints.yaml -> /home/mureaul/RBT1/install/rbt1_navigation/share/rbt1_navigation/config
+[4.754s] copying config/zone2_waypoints.yaml -> /home/mureaul/RBT1/install/rbt1_navigation/share/rbt1_navigation/config
+[4.754s] copying config/ekf.yaml -> /home/mureaul/RBT1/install/rbt1_navigation/share/rbt1_navigation/config
+[4.754s] copying config/nav2_gps_params.yaml -> /home/mureaul/RBT1/install/rbt1_navigation/share/rbt1_navigation/config
+[4.754s] copying config/zone2_navsat.yaml -> /home/mureaul/RBT1/install/rbt1_navigation/share/rbt1_navigation/config
+[4.754s] copying config/zone1_waypoints.yaml -> /home/mureaul/RBT1/install/rbt1_navigation/share/rbt1_navigation/config
+[4.755s] copying config/zone3_navsat.yaml -> /home/mureaul/RBT1/install/rbt1_navigation/share/rbt1_navigation/config
+[4.755s] copying config/zone4_navsat.yaml -> /home/mureaul/RBT1/install/rbt1_navigation/share/rbt1_navigation/config
+[4.755s] copying config/collision_monitor.yaml -> /home/mureaul/RBT1/install/rbt1_navigation/share/rbt1_navigation/config
+[4.755s] copying config/dual_ekf_navsat_params.yaml -> /home/mureaul/RBT1/install/rbt1_navigation/share/rbt1_navigation/config
+[4.755s] copying config/dock_gps.yaml -> /home/mureaul/RBT1/install/rbt1_navigation/share/rbt1_navigation/config
+[4.755s] copying config/rbt1_gps_bridge.yaml -> /home/mureaul/RBT1/install/rbt1_navigation/share/rbt1_navigation/config
+[4.755s] copying config/zone3_waypoints.yaml -> /home/mureaul/RBT1/install/rbt1_navigation/share/rbt1_navigation/config
+[4.755s] creating /home/mureaul/RBT1/install/rbt1_navigation/share/rbt1_navigation/maps
+[4.755s] copying maps/zone4.yaml -> /home/mureaul/RBT1/install/rbt1_navigation/share/rbt1_navigation/maps
+[4.756s] copying maps/zone1.yaml -> /home/mureaul/RBT1/install/rbt1_navigation/share/rbt1_navigation/maps
+[4.756s] copying maps/zone3.yaml -> /home/mureaul/RBT1/install/rbt1_navigation/share/rbt1_navigation/maps
+[4.756s] copying maps/zone2.yaml -> /home/mureaul/RBT1/install/rbt1_navigation/share/rbt1_navigation/maps
+[4.756s] running install_egg_info
+[4.787s] Copying ../../build/rbt1_navigation/rbt1_navigation.egg-info to /home/mureaul/RBT1/install/rbt1_navigation/lib/python3.12/site-packages/rbt1_navigation-0.0.1-py3.12.egg-info
+[4.788s] running install_scripts
+[4.991s] Installing mission_manager script to /home/mureaul/RBT1/install/rbt1_navigation/lib/rbt1_navigation
+[4.992s] Installing mission_orchestrator script to /home/mureaul/RBT1/install/rbt1_navigation/lib/rbt1_navigation
+[4.992s] Installing navigation_orchestrator script to /home/mureaul/RBT1/install/rbt1_navigation/lib/rbt1_navigation
+[4.992s] Installing path_follower script to /home/mureaul/RBT1/install/rbt1_navigation/lib/rbt1_navigation
+[4.992s] writing list of installed files to '/home/mureaul/RBT1/build/rbt1_navigation/install.log'
+[5.086s] Invoked command in '/home/mureaul/RBT1/src/rbt1_navigation' returned '0': CMAKE_PREFIX_PATH=/home/mureaul/RBT1/install/rbt1_interfaces:/home/mureaul/RBT1/install/ublox_gps:/home/mureaul/RBT1/install/ublox_msgs:/home/mureaul/RBT1/install/ublox_serialization:/home/mureaul/RBT1/install/rplidar_ros:/home/mureaul/RBT1/install/rbt1_docking:/home/mureaul/RBT1/install/rbt1_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor LD_LIBRARY_PATH=/home/mureaul/RBT1/install/rbt1_interfaces/lib:/home/mureaul/RBT1/install/ublox_gps/lib:/home/mureaul/RBT1/install/ublox_msgs/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/ortools_vendor/lib:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib PYTHONPATH=/home/mureaul/RBT1/build/rbt1_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mureaul/RBT1/install/rbt1_navigation/lib/python3.12/site-packages:/home/mureaul/RBT1/install/rbt1_interfaces/lib/python3.12/site-packages:/home/mureaul/RBT1/install/ublox_msgs/lib/python3.12/site-packages:/home/mureaul/RBT1/install/rbt1_utils/lib/python3.12/site-packages:/home/mureaul/RBT1/build/rbt1_navigation:/home/mureaul/RBT1/install/rbt1_navigation/lib/python3.12/site-packages:/home/mureaul/RBT1/build/rbt1_coverage:/home/mureaul/RBT1/install/rbt1_coverage/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rbt1_navigation build --build-base /home/mureaul/RBT1/build/rbt1_navigation/build install --record /home/mureaul/RBT1/build/rbt1_navigation/install.log --single-version-externally-managed install_data

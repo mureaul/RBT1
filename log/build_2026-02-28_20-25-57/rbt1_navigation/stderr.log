@@ -1,0 +1,5 @@
+  File "/home/mureaul/RBT1/install/rbt1_navigation/lib/python3.12/site-packages/rbt1_navigation/mission_orchestrator.py", line 193
+    if self.prep_request = False:
+       ^^^^^^^^^^^^^^^^^
+SyntaxError: cannot assign to attribute here. Maybe you meant '==' instead of '='?
+

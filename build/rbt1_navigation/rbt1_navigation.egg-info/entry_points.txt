@@ -1,0 +1,4 @@
+[console_scripts]
+map_generator = rbt1_navigation.kml_to_map_generator:main
+mission_manager = rbt1_navigation.mission_manager:main
+mission_orchestrator = rbt1_navigation.mission_orchestrator:main

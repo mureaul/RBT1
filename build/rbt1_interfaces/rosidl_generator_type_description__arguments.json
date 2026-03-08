@@ -1,0 +1,16 @@
+{
+  "package_name": "rbt1_interfaces",
+  "output_dir": "/home/mureaul/RBT1/build/rbt1_interfaces/rosidl_generator_type_description/rbt1_interfaces",
+  "idl_tuples": [
+    "/home/mureaul/RBT1/build/rbt1_interfaces/rosidl_adapter/rbt1_interfaces:msg/MissionCommand.idl",
+    "/home/mureaul/RBT1/build/rbt1_interfaces/rosidl_adapter/rbt1_interfaces:msg/MissionState.idl",
+    "/home/mureaul/RBT1/build/rbt1_interfaces/rosidl_adapter/rbt1_interfaces:srv/LoadZone.idl",
+    "/home/mureaul/RBT1/build/rbt1_interfaces/rosidl_adapter/rbt1_interfaces:srv/NavigationStatus.idl",
+    "/home/mureaul/RBT1/build/rbt1_interfaces/rosidl_adapter/rbt1_interfaces:srv/GenerateCoverage.idl"
+  ],
+  "include_paths": [
+    "std_msgs:/opt/ros/jazzy/share/std_msgs",
+    "builtin_interfaces:/opt/ros/jazzy/share/builtin_interfaces",
+    "service_msgs:/opt/ros/jazzy/share/service_msgs"
+  ]
+}

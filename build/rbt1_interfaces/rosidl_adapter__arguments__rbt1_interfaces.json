@@ -1,0 +1,10 @@
+{
+  "package_name": "rbt1_interfaces",
+  "non_idl_tuples": [
+    "/home/mureaul/RBT1/src/rbt1_interfaces:msg/MissionCommand.msg",
+    "/home/mureaul/RBT1/src/rbt1_interfaces:msg/MissionState.msg",
+    "/home/mureaul/RBT1/src/rbt1_interfaces:srv/LoadZone.srv",
+    "/home/mureaul/RBT1/src/rbt1_interfaces:srv/NavigationStatus.srv",
+    "/home/mureaul/RBT1/src/rbt1_interfaces:srv/GenerateCoverage.srv"
+  ]
+}

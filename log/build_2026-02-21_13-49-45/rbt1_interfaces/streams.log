@@ -1,0 +1,250 @@
+[0.081s] Invoking command in '/home/mureaul/RBT1/build/rbt1_interfaces': PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake /home/mureaul/RBT1/src/rbt1_interfaces -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/mureaul/RBT1/install/rbt1_interfaces
+[0.158s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.199s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.410s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[0.453s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.020s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.271s] -- Found rosidl_adapter: 4.6.6 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[1.307s] -- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)
+[2.410s] -- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+[2.832s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.357s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.397s] -- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+[5.592s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+[6.158s] -- Configuring done (6.1s)
+[6.874s] -- Generating done (0.7s)
+[6.949s] -- Build files have been written to: /home/mureaul/RBT1/build/rbt1_interfaces
+[6.964s] Invoked command in '/home/mureaul/RBT1/build/rbt1_interfaces' returned '0': PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake /home/mureaul/RBT1/src/rbt1_interfaces -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/mureaul/RBT1/install/rbt1_interfaces
+[6.967s] Invoking command in '/home/mureaul/RBT1/build/rbt1_interfaces': PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --build /home/mureaul/RBT1/build/rbt1_interfaces -- -j4 -l4
+[7.081s] [  1%] Built target rbt1_interfaces__rosidl_generator_type_description
+[7.160s] [  3%] Built target rbt1_interfaces__cpp
+[7.267s] [ 25%] Built target rbt1_interfaces__rosidl_generator_c
+[7.399s] [ 25%] Built target ament_cmake_python_copy_rbt1_interfaces
+[7.485s] [ 34%] Built target rbt1_interfaces__rosidl_typesupport_introspection_cpp
+[7.569s] [ 43%] Built target rbt1_interfaces__rosidl_typesupport_cpp
+[7.642s] [ 53%] Built target rbt1_interfaces__rosidl_typesupport_introspection_c
+[7.775s] [ 62%] Built target rbt1_interfaces__rosidl_typesupport_c
+[7.787s] [ 71%] Built target rbt1_interfaces__rosidl_typesupport_fastrtps_cpp
+[7.794s] [ 81%] Built target rbt1_interfaces__rosidl_typesupport_fastrtps_c
+[7.847s] [ 81%] Built target rbt1_interfaces
+[7.888s] [ 82%] Built target rbt1_interfaces__py
+[7.995s] [ 90%] Built target rbt1_interfaces__rosidl_generator_py
+[8.068s] [ 93%] Built target rbt1_interfaces_s__rosidl_typesupport_c
+[8.071s] [ 96%] Built target rbt1_interfaces_s__rosidl_typesupport_introspection_c
+[8.108s] [100%] Built target rbt1_interfaces_s__rosidl_typesupport_fastrtps_c
+[8.148s] running egg_info
+[8.174s] writing rbt1_interfaces.egg-info/PKG-INFO
+[8.175s] writing dependency_links to rbt1_interfaces.egg-info/dependency_links.txt
+[8.194s] writing top-level names to rbt1_interfaces.egg-info/top_level.txt
+[8.304s] reading manifest file 'rbt1_interfaces.egg-info/SOURCES.txt'
+[8.324s] writing manifest file 'rbt1_interfaces.egg-info/SOURCES.txt'
+[8.395s] [100%] Built target ament_cmake_python_build_rbt1_interfaces_egg
+[8.420s] Invoked command in '/home/mureaul/RBT1/build/rbt1_interfaces' returned '0': PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --build /home/mureaul/RBT1/build/rbt1_interfaces -- -j4 -l4
+[8.440s] Invoking command in '/home/mureaul/RBT1/build/rbt1_interfaces': PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --install /home/mureaul/RBT1/build/rbt1_interfaces
+[8.459s] -- Install configuration: ""
+[8.459s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/ament_index/resource_index/rosidl_interfaces/rbt1_interfaces
+[8.460s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/msg/MissionCommand.json
+[8.460s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/msg/MissionState.json
+[8.460s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/srv/LoadZone.json
+[8.460s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/srv/NavigationStatus.json
+[8.460s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces
+[8.461s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv
+[8.461s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv/navigation_status.h
+[8.461s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv/detail
+[8.461s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv/detail/navigation_status__description.c
+[8.461s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv/detail/navigation_status__functions.c
+[8.461s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv/detail/navigation_status__struct.h
+[8.461s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv/detail/load_zone__struct.h
+[8.461s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv/detail/navigation_status__type_support.h
+[8.461s] -- Installing: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv/detail/navigation_status__type_support.c
+[8.470s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv/detail/load_zone__functions.h
+[8.470s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv/detail/navigation_status__functions.h
+[8.470s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv/detail/load_zone__description.c
+[8.470s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv/detail/load_zone__functions.c
+[8.470s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv/detail/load_zone__type_support.h
+[8.470s] -- Installing: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv/detail/load_zone__type_support.c
+[8.471s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv/load_zone.h
+[8.471s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg
+[8.471s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/detail
+[8.471s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/detail/mission_command__type_support.h
+[8.472s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/detail/mission_state__functions.h
+[8.472s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/detail/mission_state__description.c
+[8.472s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/detail/mission_state__type_support.h
+[8.472s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/detail/mission_state__functions.c
+[8.472s] -- Installing: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/detail/mission_command__type_support.c
+[8.473s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/detail/mission_command__description.c
+[8.473s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/detail/mission_state__struct.h
+[8.473s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/detail/mission_command__functions.c
+[8.473s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/detail/mission_command__functions.h
+[8.473s] -- Installing: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/detail/mission_state__type_support.c
+[8.474s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/detail/mission_command__struct.h
+[8.474s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/mission_command.h
+[8.474s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/rosidl_generator_c__visibility_control.h
+[8.474s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/mission_state.h
+[8.474s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/environment/library_path.sh
+[8.474s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/environment/library_path.dsv
+[8.496s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/lib/librbt1_interfaces__rosidl_generator_c.so
+[8.496s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces
+[8.496s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv
+[8.497s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv/detail
+[8.497s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv/detail/load_zone__rosidl_typesupport_fastrtps_c.h
+[8.497s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv/detail/navigation_status__rosidl_typesupport_fastrtps_c.h
+[8.497s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg
+[8.497s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[8.497s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/detail
+[8.497s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/detail/mission_command__rosidl_typesupport_fastrtps_c.h
+[8.497s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/detail/mission_state__rosidl_typesupport_fastrtps_c.h
+[8.502s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/lib/librbt1_interfaces__rosidl_typesupport_fastrtps_c.so
+[8.502s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces
+[8.503s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv
+[8.503s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv/detail
+[8.503s] -- Installing: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv/detail/navigation_status__type_support.c
+[8.524s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv/detail/navigation_status__rosidl_typesupport_introspection_c.h
+[8.524s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv/detail/load_zone__rosidl_typesupport_introspection_c.h
+[8.524s] -- Installing: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv/detail/load_zone__type_support.c
+[8.527s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg
+[8.528s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/detail
+[8.528s] -- Installing: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/detail/mission_command__type_support.c
+[8.529s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/detail/mission_command__rosidl_typesupport_introspection_c.h
+[8.530s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/detail/mission_state__rosidl_typesupport_introspection_c.h
+[8.530s] -- Installing: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/detail/mission_state__type_support.c
+[8.531s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[8.553s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/lib/librbt1_interfaces__rosidl_typesupport_introspection_c.so
+[8.558s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/lib/librbt1_interfaces__rosidl_typesupport_c.so
+[8.559s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces
+[8.559s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv
+[8.559s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv/load_zone.hpp
+[8.559s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv/detail
+[8.559s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv/detail/navigation_status__builder.hpp
+[8.559s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv/detail/load_zone__builder.hpp
+[8.560s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv/detail/load_zone__traits.hpp
+[8.560s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv/detail/load_zone__struct.hpp
+[8.561s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv/detail/navigation_status__traits.hpp
+[8.561s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv/detail/load_zone__type_support.hpp
+[8.561s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv/detail/navigation_status__struct.hpp
+[8.561s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv/detail/navigation_status__type_support.hpp
+[8.561s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv/navigation_status.hpp
+[8.562s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg
+[8.562s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/mission_command.hpp
+[8.562s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/detail
+[8.562s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/detail/mission_command__traits.hpp
+[8.562s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/detail/mission_state__traits.hpp
+[8.562s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/detail/mission_state__struct.hpp
+[8.562s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/detail/mission_command__struct.hpp
+[8.562s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/detail/mission_command__type_support.hpp
+[8.563s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/detail/mission_command__builder.hpp
+[8.563s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/detail/mission_state__type_support.hpp
+[8.563s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/detail/mission_state__builder.hpp
+[8.563s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/mission_state.hpp
+[8.563s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+[8.563s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces
+[8.563s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv
+[8.563s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv/detail
+[8.563s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv/detail/load_zone__rosidl_typesupport_fastrtps_cpp.hpp
+[8.564s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv/detail/dds_fastrtps
+[8.564s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv/detail/navigation_status__rosidl_typesupport_fastrtps_cpp.hpp
+[8.564s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg
+[8.564s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/detail
+[8.564s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/detail/mission_state__rosidl_typesupport_fastrtps_cpp.hpp
+[8.564s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/detail/mission_command__rosidl_typesupport_fastrtps_cpp.hpp
+[8.564s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/detail/dds_fastrtps
+[8.564s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[8.565s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/lib/librbt1_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[8.566s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces
+[8.566s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv
+[8.566s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv/detail
+[8.566s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv/detail/navigation_status__rosidl_typesupport_introspection_cpp.hpp
+[8.567s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv/detail/load_zone__rosidl_typesupport_introspection_cpp.hpp
+[8.567s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv/detail/navigation_status__type_support.cpp
+[8.567s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv/detail/load_zone__type_support.cpp
+[8.567s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg
+[8.567s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/detail
+[8.567s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/detail/mission_state__rosidl_typesupport_introspection_cpp.hpp
+[8.567s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/detail/mission_state__type_support.cpp
+[8.567s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/detail/mission_command__type_support.cpp
+[8.568s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/detail/mission_command__rosidl_typesupport_introspection_cpp.hpp
+[8.571s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/lib/librbt1_interfaces__rosidl_typesupport_introspection_cpp.so
+[8.575s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/lib/librbt1_interfaces__rosidl_typesupport_cpp.so
+[8.576s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/environment/pythonpath.sh
+[8.576s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/environment/pythonpath.dsv
+[8.576s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/lib/python3.12/site-packages/rbt1_interfaces-0.0.1-py3.12.egg-info
+[8.576s] -- Installing: /home/mureaul/RBT1/install/rbt1_interfaces/lib/python3.12/site-packages/rbt1_interfaces-0.0.1-py3.12.egg-info/dependency_links.txt
+[8.576s] -- Installing: /home/mureaul/RBT1/install/rbt1_interfaces/lib/python3.12/site-packages/rbt1_interfaces-0.0.1-py3.12.egg-info/PKG-INFO
+[8.576s] -- Installing: /home/mureaul/RBT1/install/rbt1_interfaces/lib/python3.12/site-packages/rbt1_interfaces-0.0.1-py3.12.egg-info/top_level.txt
+[8.576s] -- Installing: /home/mureaul/RBT1/install/rbt1_interfaces/lib/python3.12/site-packages/rbt1_interfaces-0.0.1-py3.12.egg-info/SOURCES.txt
+[8.577s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/lib/python3.12/site-packages/rbt1_interfaces
+[8.577s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/lib/python3.12/site-packages/rbt1_interfaces/rbt1_interfaces_s__rosidl_typesupport_fastrtps_c.so
+[8.577s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/lib/python3.12/site-packages/rbt1_interfaces/srv
+[8.577s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/lib/python3.12/site-packages/rbt1_interfaces/srv/_navigation_status_s.c
+[8.577s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/lib/python3.12/site-packages/rbt1_interfaces/srv/_navigation_status.py
+[8.578s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/lib/python3.12/site-packages/rbt1_interfaces/srv/_load_zone_s.c
+[8.578s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/lib/python3.12/site-packages/rbt1_interfaces/srv/_load_zone.py
+[8.578s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/lib/python3.12/site-packages/rbt1_interfaces/srv/__init__.py
+[8.578s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/lib/python3.12/site-packages/rbt1_interfaces/_rbt1_interfaces_s.ep.rosidl_typesupport_c.c
+[8.578s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/lib/python3.12/site-packages/rbt1_interfaces/_rbt1_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[8.578s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/lib/python3.12/site-packages/rbt1_interfaces/rbt1_interfaces_s__rosidl_typesupport_introspection_c.so
+[8.578s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/lib/python3.12/site-packages/rbt1_interfaces/msg
+[8.579s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/lib/python3.12/site-packages/rbt1_interfaces/msg/_mission_command_s.c
+[8.579s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/lib/python3.12/site-packages/rbt1_interfaces/msg/_mission_state.py
+[8.579s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/lib/python3.12/site-packages/rbt1_interfaces/msg/_mission_command.py
+[8.579s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/lib/python3.12/site-packages/rbt1_interfaces/msg/__init__.py
+[8.579s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/lib/python3.12/site-packages/rbt1_interfaces/msg/_mission_state_s.c
+[8.579s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/lib/python3.12/site-packages/rbt1_interfaces/rbt1_interfaces_s__rosidl_typesupport_c.so
+[8.579s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/lib/python3.12/site-packages/rbt1_interfaces/_rbt1_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[8.579s] -- Installing: /home/mureaul/RBT1/install/rbt1_interfaces/lib/python3.12/site-packages/rbt1_interfaces/__init__.py
+[8.694s] Listing '/home/mureaul/RBT1/install/rbt1_interfaces/lib/python3.12/site-packages/rbt1_interfaces'...
+[8.694s] Compiling '/home/mureaul/RBT1/install/rbt1_interfaces/lib/python3.12/site-packages/rbt1_interfaces/__init__.py'...
+[8.694s] Listing '/home/mureaul/RBT1/install/rbt1_interfaces/lib/python3.12/site-packages/rbt1_interfaces/msg'...
+[8.694s] Listing '/home/mureaul/RBT1/install/rbt1_interfaces/lib/python3.12/site-packages/rbt1_interfaces/srv'...
+[8.729s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/lib/python3.12/site-packages/rbt1_interfaces/rbt1_interfaces_s__rosidl_typesupport_fastrtps_c.so
+[8.734s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/lib/python3.12/site-packages/rbt1_interfaces/rbt1_interfaces_s__rosidl_typesupport_introspection_c.so
+[8.738s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/lib/python3.12/site-packages/rbt1_interfaces/rbt1_interfaces_s__rosidl_typesupport_c.so
+[8.742s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/lib/librbt1_interfaces__rosidl_generator_py.so
+[8.743s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/msg/MissionCommand.idl
+[8.743s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/msg/MissionState.idl
+[8.743s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/srv/LoadZone.idl
+[8.743s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/srv/NavigationStatus.idl
+[8.743s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/msg/MissionCommand.msg
+[8.744s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/msg/MissionState.msg
+[8.744s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/srv/LoadZone.srv
+[8.744s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/srv/NavigationStatus.srv
+[8.744s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/ament_index/resource_index/package_run_dependencies/rbt1_interfaces
+[8.745s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/ament_index/resource_index/parent_prefix_path/rbt1_interfaces
+[8.745s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/environment/ament_prefix_path.sh
+[8.745s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/environment/ament_prefix_path.dsv
+[8.745s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/environment/path.sh
+[8.745s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/environment/path.dsv
+[8.745s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/local_setup.bash
+[8.745s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/local_setup.sh
+[8.745s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/local_setup.zsh
+[8.745s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/local_setup.dsv
+[8.746s] -- Installing: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/package.dsv
+[8.763s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/ament_index/resource_index/packages/rbt1_interfaces
+[8.781s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/cmake/export_rbt1_interfaces__rosidl_generator_cExport.cmake
+[8.781s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/cmake/export_rbt1_interfaces__rosidl_generator_cExport-noconfig.cmake
+[8.782s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/cmake/export_rbt1_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[8.783s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/cmake/export_rbt1_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[8.784s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/cmake/rbt1_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[8.784s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/cmake/rbt1_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[8.785s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/cmake/rbt1_interfaces__rosidl_typesupport_cExport.cmake
+[8.786s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/cmake/rbt1_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[8.787s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/cmake/export_rbt1_interfaces__rosidl_generator_cppExport.cmake
+[8.788s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/cmake/export_rbt1_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[8.788s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/cmake/export_rbt1_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[8.790s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/cmake/rbt1_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[8.790s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/cmake/rbt1_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[8.791s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/cmake/rbt1_interfaces__rosidl_typesupport_cppExport.cmake
+[8.791s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/cmake/rbt1_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[8.795s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/cmake/export_rbt1_interfaces__rosidl_generator_pyExport.cmake
+[8.795s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/cmake/export_rbt1_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[8.796s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/cmake/rosidl_cmake-extras.cmake
+[8.796s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[8.796s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[8.796s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[8.796s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[8.796s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[8.796s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[8.796s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/cmake/rbt1_interfacesConfig.cmake
+[8.797s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/cmake/rbt1_interfacesConfig-version.cmake
+[8.797s] -- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/package.xml
+[8.801s] Invoked command in '/home/mureaul/RBT1/build/rbt1_interfaces' returned '0': PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --install /home/mureaul/RBT1/build/rbt1_interfaces

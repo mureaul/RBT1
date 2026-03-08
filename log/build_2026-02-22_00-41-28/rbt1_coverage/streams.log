@@ -1,0 +1,17 @@
+[1.202s] Invoking command in '/home/mureaul/RBT1/build/rbt1_coverage': PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/mureaul/RBT1/build/rbt1_coverage/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mureaul/RBT1/install/rbt1_coverage/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/mureaul/RBT1/build/rbt1_coverage/build --no-deps symlink_data
+[1.636s] running develop
+[1.901s] running egg_info
+[1.924s] writing rbt1_coverage.egg-info/PKG-INFO
+[1.925s] writing dependency_links to rbt1_coverage.egg-info/dependency_links.txt
+[1.928s] writing entry points to rbt1_coverage.egg-info/entry_points.txt
+[1.930s] writing requirements to rbt1_coverage.egg-info/requires.txt
+[1.932s] writing top-level names to rbt1_coverage.egg-info/top_level.txt
+[1.987s] reading manifest file 'rbt1_coverage.egg-info/SOURCES.txt'
+[1.988s] writing manifest file 'rbt1_coverage.egg-info/SOURCES.txt'
+[2.014s] running build_ext
+[2.014s] Creating /home/mureaul/RBT1/install/rbt1_coverage/lib/python3.12/site-packages/rbt1-coverage.egg-link (link to .)
+[2.015s] Installing coverage_planner script to /home/mureaul/RBT1/install/rbt1_coverage/bin
+[2.015s] 
+[2.015s] Installed /home/mureaul/RBT1/build/rbt1_coverage
+[2.016s] running symlink_data
+[2.100s] Invoked command in '/home/mureaul/RBT1/build/rbt1_coverage' returned '0': PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/mureaul/RBT1/build/rbt1_coverage/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mureaul/RBT1/install/rbt1_coverage/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/mureaul/RBT1/build/rbt1_coverage/build --no-deps symlink_data

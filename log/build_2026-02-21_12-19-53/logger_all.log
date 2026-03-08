@@ -1,0 +1,488 @@
+[0.143s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install', '--parallel-workers', '1']
+[0.143s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=1, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0xffffa4836630>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffffa49eea80>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffffa49eea80>>, mixin_verb=('build',))
+[0.200s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.200s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.200s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.200s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.200s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.201s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.201s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/mureaul/RBT1'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_description) by extensions ['ignore', 'ignore_ament_install']
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_description) by extension 'ignore'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_description) by extension 'ignore_ament_install'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_description) by extensions ['colcon_pkg']
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_description) by extension 'colcon_pkg'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_description) by extensions ['colcon_meta']
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_description) by extension 'colcon_meta'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_description) by extensions ['ros']
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_description) by extension 'ros'
+[0.245s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rbt1_description' with type 'ros.ament_cmake' and name 'rbt1_description'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_docking) by extensions ['ignore', 'ignore_ament_install']
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_docking) by extension 'ignore'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_docking) by extension 'ignore_ament_install'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_docking) by extensions ['colcon_pkg']
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_docking) by extension 'colcon_pkg'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_docking) by extensions ['colcon_meta']
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_docking) by extension 'colcon_meta'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_docking) by extensions ['ros']
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_docking) by extension 'ros'
+[0.246s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rbt1_docking' with type 'ros.ament_cmake' and name 'rbt1_docking'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_interfaces) by extension 'ignore'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_interfaces) by extension 'ignore_ament_install'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_interfaces) by extensions ['colcon_pkg']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_interfaces) by extension 'colcon_pkg'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_interfaces) by extensions ['colcon_meta']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_interfaces) by extension 'colcon_meta'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_interfaces) by extensions ['ros']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_interfaces) by extension 'ros'
+[0.247s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rbt1_interfaces' with type 'ros.catkin' and name 'rbt1_interfaces'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_navigation) by extensions ['ignore', 'ignore_ament_install']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_navigation) by extension 'ignore'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_navigation) by extension 'ignore_ament_install'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_navigation) by extensions ['colcon_pkg']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_navigation) by extension 'colcon_pkg'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_navigation) by extensions ['colcon_meta']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_navigation) by extension 'colcon_meta'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_navigation) by extensions ['ros']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_navigation) by extension 'ros'
+[0.248s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rbt1_navigation' with type 'ros.ament_python' and name 'rbt1_navigation'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_utils) by extensions ['ignore', 'ignore_ament_install']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_utils) by extension 'ignore'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_utils) by extension 'ignore_ament_install'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_utils) by extensions ['colcon_pkg']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_utils) by extension 'colcon_pkg'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_utils) by extensions ['colcon_meta']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_utils) by extension 'colcon_meta'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_utils) by extensions ['ros']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_utils) by extension 'ros'
+[0.249s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rbt1_utils' with type 'ros.ament_python' and name 'rbt1_utils'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extensions ['ignore', 'ignore_ament_install']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extension 'ignore'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extension 'ignore_ament_install'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extensions ['colcon_pkg']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extension 'colcon_pkg'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extensions ['colcon_meta']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extension 'colcon_meta'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extensions ['ros']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extension 'ros'
+[0.251s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rplidar_ros' with type 'ros.ament_cmake' and name 'rplidar_ros'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2) by extensions ['ignore', 'ignore_ament_install']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2) by extension 'ignore'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2) by extension 'ignore_ament_install'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2) by extensions ['colcon_pkg']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2) by extension 'colcon_pkg'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2) by extensions ['colcon_meta']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2) by extension 'colcon_meta'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2) by extensions ['ros']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2) by extension 'ros'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2) by extensions ['cmake', 'python']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2) by extension 'cmake'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2) by extension 'python'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2) by extensions ['python_setup_py']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2) by extension 'python_setup_py'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2/ublox) by extensions ['ignore', 'ignore_ament_install']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2/ublox) by extension 'ignore'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2/ublox) by extension 'ignore_ament_install'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2/ublox) by extensions ['colcon_pkg']
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2/ublox) by extension 'colcon_pkg'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2/ublox) by extensions ['colcon_meta']
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2/ublox) by extension 'colcon_meta'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2/ublox) by extensions ['ros']
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2/ublox) by extension 'ros'
+[0.252s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ublox_ros2/ublox' with type 'ros.ament_cmake' and name 'ublox'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2/ublox_gps) by extensions ['ignore', 'ignore_ament_install']
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2/ublox_gps) by extension 'ignore'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2/ublox_gps) by extension 'ignore_ament_install'
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2/ublox_gps) by extensions ['colcon_pkg']
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2/ublox_gps) by extension 'colcon_pkg'
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2/ublox_gps) by extensions ['colcon_meta']
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2/ublox_gps) by extension 'colcon_meta'
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2/ublox_gps) by extensions ['ros']
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2/ublox_gps) by extension 'ros'
+[0.254s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ublox_ros2/ublox_gps' with type 'ros.ament_cmake' and name 'ublox_gps'
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2/ublox_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2/ublox_msgs) by extension 'ignore'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2/ublox_msgs) by extension 'ignore_ament_install'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2/ublox_msgs) by extensions ['colcon_pkg']
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2/ublox_msgs) by extension 'colcon_pkg'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2/ublox_msgs) by extensions ['colcon_meta']
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2/ublox_msgs) by extension 'colcon_meta'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2/ublox_msgs) by extensions ['ros']
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2/ublox_msgs) by extension 'ros'
+[0.256s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ublox_ros2/ublox_msgs' with type 'ros.ament_cmake' and name 'ublox_msgs'
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2/ublox_serialization) by extensions ['ignore', 'ignore_ament_install']
+[0.256s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2/ublox_serialization) by extension 'ignore'
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2/ublox_serialization) by extension 'ignore_ament_install'
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2/ublox_serialization) by extensions ['colcon_pkg']
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2/ublox_serialization) by extension 'colcon_pkg'
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2/ublox_serialization) by extensions ['colcon_meta']
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2/ublox_serialization) by extension 'colcon_meta'
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2/ublox_serialization) by extensions ['ros']
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2/ublox_serialization) by extension 'ros'
+[0.258s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ublox_ros2/ublox_serialization' with type 'ros.ament_cmake' and name 'ublox_serialization'
+[0.258s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.258s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.258s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.258s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.258s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.299s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.300s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.303s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/mureaul/RBT1/install/ublox_gps' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.303s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/mureaul/RBT1/install/ublox_msgs' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.303s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/mureaul/RBT1/install/ublox_serialization' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.303s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/mureaul/RBT1/install/rplidar_ros' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.303s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/mureaul/RBT1/install/rbt1_utils' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.303s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/mureaul/RBT1/install/rbt1_navigation' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.303s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/mureaul/RBT1/install/rbt1_docking' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.303s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/mureaul/RBT1/install/rbt1_description' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.304s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/mureaul/RBT1/install/ublox_gps' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.304s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/mureaul/RBT1/install/ublox_msgs' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.304s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/mureaul/RBT1/install/ublox_serialization' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.304s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/mureaul/RBT1/install/rplidar_ros' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.304s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/mureaul/RBT1/install/rbt1_interfaces' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.304s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/mureaul/RBT1/install/rbt1_docking' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.304s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/mureaul/RBT1/install/rbt1_description' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.306s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 0 installed packages in /home/mureaul/RBT1/install
+[0.309s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 314 installed packages in /opt/ros/jazzy
+[0.314s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.396s] Level 5:colcon.colcon_core.verb:set package 'rbt1_description' build argument 'cmake_args' from command line to 'None'
+[0.397s] Level 5:colcon.colcon_core.verb:set package 'rbt1_description' build argument 'cmake_target' from command line to 'None'
+[0.397s] Level 5:colcon.colcon_core.verb:set package 'rbt1_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.397s] Level 5:colcon.colcon_core.verb:set package 'rbt1_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.397s] Level 5:colcon.colcon_core.verb:set package 'rbt1_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.397s] Level 5:colcon.colcon_core.verb:set package 'rbt1_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.397s] Level 5:colcon.colcon_core.verb:set package 'rbt1_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.397s] Level 5:colcon.colcon_core.verb:set package 'rbt1_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.397s] Level 5:colcon.colcon_core.verb:set package 'rbt1_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.397s] DEBUG:colcon.colcon_core.verb:Building package 'rbt1_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mureaul/RBT1/build/rbt1_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mureaul/RBT1/install/rbt1_description', 'merge_install': False, 'path': '/home/mureaul/RBT1/src/rbt1_description', 'symlink_install': True, 'test_result_base': None}
+[0.397s] Level 5:colcon.colcon_core.verb:set package 'rbt1_docking' build argument 'cmake_args' from command line to 'None'
+[0.398s] Level 5:colcon.colcon_core.verb:set package 'rbt1_docking' build argument 'cmake_target' from command line to 'None'
+[0.398s] Level 5:colcon.colcon_core.verb:set package 'rbt1_docking' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.398s] Level 5:colcon.colcon_core.verb:set package 'rbt1_docking' build argument 'cmake_clean_cache' from command line to 'False'
+[0.398s] Level 5:colcon.colcon_core.verb:set package 'rbt1_docking' build argument 'cmake_clean_first' from command line to 'False'
+[0.398s] Level 5:colcon.colcon_core.verb:set package 'rbt1_docking' build argument 'cmake_force_configure' from command line to 'False'
+[0.398s] Level 5:colcon.colcon_core.verb:set package 'rbt1_docking' build argument 'ament_cmake_args' from command line to 'None'
+[0.398s] Level 5:colcon.colcon_core.verb:set package 'rbt1_docking' build argument 'catkin_cmake_args' from command line to 'None'
+[0.398s] Level 5:colcon.colcon_core.verb:set package 'rbt1_docking' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.398s] DEBUG:colcon.colcon_core.verb:Building package 'rbt1_docking' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mureaul/RBT1/build/rbt1_docking', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mureaul/RBT1/install/rbt1_docking', 'merge_install': False, 'path': '/home/mureaul/RBT1/src/rbt1_docking', 'symlink_install': True, 'test_result_base': None}
+[0.398s] Level 5:colcon.colcon_core.verb:set package 'rbt1_interfaces' build argument 'cmake_args' from command line to 'None'
+[0.399s] Level 5:colcon.colcon_core.verb:set package 'rbt1_interfaces' build argument 'cmake_target' from command line to 'None'
+[0.399s] Level 5:colcon.colcon_core.verb:set package 'rbt1_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.399s] Level 5:colcon.colcon_core.verb:set package 'rbt1_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[0.399s] Level 5:colcon.colcon_core.verb:set package 'rbt1_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.399s] Level 5:colcon.colcon_core.verb:set package 'rbt1_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.399s] Level 5:colcon.colcon_core.verb:set package 'rbt1_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.399s] Level 5:colcon.colcon_core.verb:set package 'rbt1_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.399s] Level 5:colcon.colcon_core.verb:set package 'rbt1_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.399s] DEBUG:colcon.colcon_core.verb:Building package 'rbt1_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mureaul/RBT1/build/rbt1_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mureaul/RBT1/install/rbt1_interfaces', 'merge_install': False, 'path': '/home/mureaul/RBT1/src/rbt1_interfaces', 'symlink_install': True, 'test_result_base': None}
+[0.399s] Level 5:colcon.colcon_core.verb:set package 'rbt1_utils' build argument 'cmake_args' from command line to 'None'
+[0.399s] Level 5:colcon.colcon_core.verb:set package 'rbt1_utils' build argument 'cmake_target' from command line to 'None'
+[0.399s] Level 5:colcon.colcon_core.verb:set package 'rbt1_utils' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.399s] Level 5:colcon.colcon_core.verb:set package 'rbt1_utils' build argument 'cmake_clean_cache' from command line to 'False'
+[0.400s] Level 5:colcon.colcon_core.verb:set package 'rbt1_utils' build argument 'cmake_clean_first' from command line to 'False'
+[0.400s] Level 5:colcon.colcon_core.verb:set package 'rbt1_utils' build argument 'cmake_force_configure' from command line to 'False'
+[0.400s] Level 5:colcon.colcon_core.verb:set package 'rbt1_utils' build argument 'ament_cmake_args' from command line to 'None'
+[0.400s] Level 5:colcon.colcon_core.verb:set package 'rbt1_utils' build argument 'catkin_cmake_args' from command line to 'None'
+[0.400s] Level 5:colcon.colcon_core.verb:set package 'rbt1_utils' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.400s] DEBUG:colcon.colcon_core.verb:Building package 'rbt1_utils' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mureaul/RBT1/build/rbt1_utils', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mureaul/RBT1/install/rbt1_utils', 'merge_install': False, 'path': '/home/mureaul/RBT1/src/rbt1_utils', 'symlink_install': True, 'test_result_base': None}
+[0.400s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_args' from command line to 'None'
+[0.400s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_target' from command line to 'None'
+[0.400s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.400s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_clean_cache' from command line to 'False'
+[0.400s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_clean_first' from command line to 'False'
+[0.400s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_force_configure' from command line to 'False'
+[0.400s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'ament_cmake_args' from command line to 'None'
+[0.400s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'catkin_cmake_args' from command line to 'None'
+[0.401s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.401s] DEBUG:colcon.colcon_core.verb:Building package 'rplidar_ros' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mureaul/RBT1/build/rplidar_ros', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mureaul/RBT1/install/rplidar_ros', 'merge_install': False, 'path': '/home/mureaul/RBT1/src/rplidar_ros', 'symlink_install': True, 'test_result_base': None}
+[0.401s] Level 5:colcon.colcon_core.verb:set package 'ublox_serialization' build argument 'cmake_args' from command line to 'None'
+[0.401s] Level 5:colcon.colcon_core.verb:set package 'ublox_serialization' build argument 'cmake_target' from command line to 'None'
+[0.401s] Level 5:colcon.colcon_core.verb:set package 'ublox_serialization' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.401s] Level 5:colcon.colcon_core.verb:set package 'ublox_serialization' build argument 'cmake_clean_cache' from command line to 'False'
+[0.401s] Level 5:colcon.colcon_core.verb:set package 'ublox_serialization' build argument 'cmake_clean_first' from command line to 'False'
+[0.401s] Level 5:colcon.colcon_core.verb:set package 'ublox_serialization' build argument 'cmake_force_configure' from command line to 'False'
+[0.401s] Level 5:colcon.colcon_core.verb:set package 'ublox_serialization' build argument 'ament_cmake_args' from command line to 'None'
+[0.401s] Level 5:colcon.colcon_core.verb:set package 'ublox_serialization' build argument 'catkin_cmake_args' from command line to 'None'
+[0.401s] Level 5:colcon.colcon_core.verb:set package 'ublox_serialization' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.401s] DEBUG:colcon.colcon_core.verb:Building package 'ublox_serialization' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mureaul/RBT1/build/ublox_serialization', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mureaul/RBT1/install/ublox_serialization', 'merge_install': False, 'path': '/home/mureaul/RBT1/src/ublox_ros2/ublox_serialization', 'symlink_install': True, 'test_result_base': None}
+[0.402s] Level 5:colcon.colcon_core.verb:set package 'rbt1_navigation' build argument 'cmake_args' from command line to 'None'
+[0.402s] Level 5:colcon.colcon_core.verb:set package 'rbt1_navigation' build argument 'cmake_target' from command line to 'None'
+[0.402s] Level 5:colcon.colcon_core.verb:set package 'rbt1_navigation' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.402s] Level 5:colcon.colcon_core.verb:set package 'rbt1_navigation' build argument 'cmake_clean_cache' from command line to 'False'
+[0.402s] Level 5:colcon.colcon_core.verb:set package 'rbt1_navigation' build argument 'cmake_clean_first' from command line to 'False'
+[0.402s] Level 5:colcon.colcon_core.verb:set package 'rbt1_navigation' build argument 'cmake_force_configure' from command line to 'False'
+[0.402s] Level 5:colcon.colcon_core.verb:set package 'rbt1_navigation' build argument 'ament_cmake_args' from command line to 'None'
+[0.402s] Level 5:colcon.colcon_core.verb:set package 'rbt1_navigation' build argument 'catkin_cmake_args' from command line to 'None'
+[0.402s] Level 5:colcon.colcon_core.verb:set package 'rbt1_navigation' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.402s] DEBUG:colcon.colcon_core.verb:Building package 'rbt1_navigation' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mureaul/RBT1/build/rbt1_navigation', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mureaul/RBT1/install/rbt1_navigation', 'merge_install': False, 'path': '/home/mureaul/RBT1/src/rbt1_navigation', 'symlink_install': True, 'test_result_base': None}
+[0.402s] Level 5:colcon.colcon_core.verb:set package 'ublox_msgs' build argument 'cmake_args' from command line to 'None'
+[0.402s] Level 5:colcon.colcon_core.verb:set package 'ublox_msgs' build argument 'cmake_target' from command line to 'None'
+[0.402s] Level 5:colcon.colcon_core.verb:set package 'ublox_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.402s] Level 5:colcon.colcon_core.verb:set package 'ublox_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.402s] Level 5:colcon.colcon_core.verb:set package 'ublox_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.402s] Level 5:colcon.colcon_core.verb:set package 'ublox_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.402s] Level 5:colcon.colcon_core.verb:set package 'ublox_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.402s] Level 5:colcon.colcon_core.verb:set package 'ublox_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.402s] Level 5:colcon.colcon_core.verb:set package 'ublox_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.402s] DEBUG:colcon.colcon_core.verb:Building package 'ublox_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mureaul/RBT1/build/ublox_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mureaul/RBT1/install/ublox_msgs', 'merge_install': False, 'path': '/home/mureaul/RBT1/src/ublox_ros2/ublox_msgs', 'symlink_install': True, 'test_result_base': None}
+[0.403s] Level 5:colcon.colcon_core.verb:set package 'ublox_gps' build argument 'cmake_args' from command line to 'None'
+[0.403s] Level 5:colcon.colcon_core.verb:set package 'ublox_gps' build argument 'cmake_target' from command line to 'None'
+[0.403s] Level 5:colcon.colcon_core.verb:set package 'ublox_gps' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.403s] Level 5:colcon.colcon_core.verb:set package 'ublox_gps' build argument 'cmake_clean_cache' from command line to 'False'
+[0.403s] Level 5:colcon.colcon_core.verb:set package 'ublox_gps' build argument 'cmake_clean_first' from command line to 'False'
+[0.403s] Level 5:colcon.colcon_core.verb:set package 'ublox_gps' build argument 'cmake_force_configure' from command line to 'False'
+[0.403s] Level 5:colcon.colcon_core.verb:set package 'ublox_gps' build argument 'ament_cmake_args' from command line to 'None'
+[0.403s] Level 5:colcon.colcon_core.verb:set package 'ublox_gps' build argument 'catkin_cmake_args' from command line to 'None'
+[0.403s] Level 5:colcon.colcon_core.verb:set package 'ublox_gps' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.403s] DEBUG:colcon.colcon_core.verb:Building package 'ublox_gps' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mureaul/RBT1/build/ublox_gps', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mureaul/RBT1/install/ublox_gps', 'merge_install': False, 'path': '/home/mureaul/RBT1/src/ublox_ros2/ublox_gps', 'symlink_install': True, 'test_result_base': None}
+[0.403s] Level 5:colcon.colcon_core.verb:set package 'ublox' build argument 'cmake_args' from command line to 'None'
+[0.403s] Level 5:colcon.colcon_core.verb:set package 'ublox' build argument 'cmake_target' from command line to 'None'
+[0.403s] Level 5:colcon.colcon_core.verb:set package 'ublox' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.403s] Level 5:colcon.colcon_core.verb:set package 'ublox' build argument 'cmake_clean_cache' from command line to 'False'
+[0.403s] Level 5:colcon.colcon_core.verb:set package 'ublox' build argument 'cmake_clean_first' from command line to 'False'
+[0.403s] Level 5:colcon.colcon_core.verb:set package 'ublox' build argument 'cmake_force_configure' from command line to 'False'
+[0.403s] Level 5:colcon.colcon_core.verb:set package 'ublox' build argument 'ament_cmake_args' from command line to 'None'
+[0.403s] Level 5:colcon.colcon_core.verb:set package 'ublox' build argument 'catkin_cmake_args' from command line to 'None'
+[0.403s] Level 5:colcon.colcon_core.verb:set package 'ublox' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.404s] DEBUG:colcon.colcon_core.verb:Building package 'ublox' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mureaul/RBT1/build/ublox', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mureaul/RBT1/install/ublox', 'merge_install': False, 'path': '/home/mureaul/RBT1/src/ublox_ros2/ublox', 'symlink_install': True, 'test_result_base': None}
+[0.404s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.405s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.406s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mureaul/RBT1/src/ublox_ros2/ublox_serialization' with build type 'ament_cmake'
+[0.406s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mureaul/RBT1/src/ublox_ros2/ublox_serialization'
+[0.410s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.410s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.410s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.423s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mureaul/RBT1/build/ublox_serialization': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mureaul/RBT1/install/rbt1_utils:/home/mureaul/RBT1/install/rbt1_navigation:/opt/ros/jazzy PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake /home/mureaul/RBT1/src/ublox_ros2/ublox_serialization -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/mureaul/RBT1/install/ublox_serialization
+[2.623s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mureaul/RBT1/build/ublox_serialization' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mureaul/RBT1/install/rbt1_utils:/home/mureaul/RBT1/install/rbt1_navigation:/opt/ros/jazzy PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake /home/mureaul/RBT1/src/ublox_ros2/ublox_serialization -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/mureaul/RBT1/install/ublox_serialization
+[2.626s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mureaul/RBT1/build/ublox_serialization': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mureaul/RBT1/install/rbt1_utils:/home/mureaul/RBT1/install/rbt1_navigation:/opt/ros/jazzy PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --build /home/mureaul/RBT1/build/ublox_serialization -- -j4 -l4
+[2.703s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mureaul/RBT1/build/ublox_serialization' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mureaul/RBT1/install/rbt1_utils:/home/mureaul/RBT1/install/rbt1_navigation:/opt/ros/jazzy PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --build /home/mureaul/RBT1/build/ublox_serialization -- -j4 -l4
+[2.725s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mureaul/RBT1/build/ublox_serialization': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mureaul/RBT1/install/rbt1_utils:/home/mureaul/RBT1/install/rbt1_navigation:/opt/ros/jazzy PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --install /home/mureaul/RBT1/build/ublox_serialization
+[3.108s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ublox_serialization)
+[3.108s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mureaul/RBT1/build/ublox_serialization' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mureaul/RBT1/install/rbt1_utils:/home/mureaul/RBT1/install/rbt1_navigation:/opt/ros/jazzy PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --install /home/mureaul/RBT1/build/ublox_serialization
+[3.111s] Level 1:colcon.colcon_core.environment:checking '/home/mureaul/RBT1/install/ublox_serialization' for CMake module files
+[3.112s] Level 1:colcon.colcon_core.environment:checking '/home/mureaul/RBT1/install/ublox_serialization' for CMake config files
+[3.112s] Level 1:colcon.colcon_core.shell:create_environment_hook('ublox_serialization', 'cmake_prefix_path')
+[3.112s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mureaul/RBT1/install/ublox_serialization/share/ublox_serialization/hook/cmake_prefix_path.ps1'
+[3.114s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mureaul/RBT1/install/ublox_serialization/share/ublox_serialization/hook/cmake_prefix_path.dsv'
+[3.118s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mureaul/RBT1/install/ublox_serialization/share/ublox_serialization/hook/cmake_prefix_path.sh'
+[3.121s] Level 1:colcon.colcon_core.environment:checking '/home/mureaul/RBT1/install/ublox_serialization/bin'
+[3.121s] Level 1:colcon.colcon_core.environment:checking '/home/mureaul/RBT1/install/ublox_serialization/lib/pkgconfig/ublox_serialization.pc'
+[3.121s] Level 1:colcon.colcon_core.environment:checking '/home/mureaul/RBT1/install/ublox_serialization/lib/python3.12/site-packages'
+[3.122s] Level 1:colcon.colcon_core.environment:checking '/home/mureaul/RBT1/install/ublox_serialization/bin'
+[3.122s] INFO:colcon.colcon_core.shell:Creating package script '/home/mureaul/RBT1/install/ublox_serialization/share/ublox_serialization/package.ps1'
+[3.123s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mureaul/RBT1/install/ublox_serialization/share/ublox_serialization/package.dsv'
+[3.124s] INFO:colcon.colcon_core.shell:Creating package script '/home/mureaul/RBT1/install/ublox_serialization/share/ublox_serialization/package.sh'
+[3.125s] INFO:colcon.colcon_core.shell:Creating package script '/home/mureaul/RBT1/install/ublox_serialization/share/ublox_serialization/package.bash'
+[3.126s] INFO:colcon.colcon_core.shell:Creating package script '/home/mureaul/RBT1/install/ublox_serialization/share/ublox_serialization/package.zsh'
+[3.126s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mureaul/RBT1/install/ublox_serialization/share/colcon-core/packages/ublox_serialization)
+[3.127s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ublox_serialization)
+[3.128s] Level 1:colcon.colcon_core.environment:checking '/home/mureaul/RBT1/install/ublox_serialization' for CMake module files
+[3.128s] Level 1:colcon.colcon_core.environment:checking '/home/mureaul/RBT1/install/ublox_serialization' for CMake config files
+[3.129s] Level 1:colcon.colcon_core.shell:create_environment_hook('ublox_serialization', 'cmake_prefix_path')
+[3.129s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mureaul/RBT1/install/ublox_serialization/share/ublox_serialization/hook/cmake_prefix_path.ps1'
+[3.130s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mureaul/RBT1/install/ublox_serialization/share/ublox_serialization/hook/cmake_prefix_path.dsv'
+[3.149s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mureaul/RBT1/install/ublox_serialization/share/ublox_serialization/hook/cmake_prefix_path.sh'
+[3.152s] Level 1:colcon.colcon_core.environment:checking '/home/mureaul/RBT1/install/ublox_serialization/bin'
+[3.152s] Level 1:colcon.colcon_core.environment:checking '/home/mureaul/RBT1/install/ublox_serialization/lib/pkgconfig/ublox_serialization.pc'
+[3.152s] Level 1:colcon.colcon_core.environment:checking '/home/mureaul/RBT1/install/ublox_serialization/lib/python3.12/site-packages'
+[3.153s] Level 1:colcon.colcon_core.environment:checking '/home/mureaul/RBT1/install/ublox_serialization/bin'
+[3.153s] INFO:colcon.colcon_core.shell:Creating package script '/home/mureaul/RBT1/install/ublox_serialization/share/ublox_serialization/package.ps1'
+[3.154s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mureaul/RBT1/install/ublox_serialization/share/ublox_serialization/package.dsv'
+[3.157s] INFO:colcon.colcon_core.shell:Creating package script '/home/mureaul/RBT1/install/ublox_serialization/share/ublox_serialization/package.sh'
+[3.159s] INFO:colcon.colcon_core.shell:Creating package script '/home/mureaul/RBT1/install/ublox_serialization/share/ublox_serialization/package.bash'
+[3.162s] INFO:colcon.colcon_core.shell:Creating package script '/home/mureaul/RBT1/install/ublox_serialization/share/ublox_serialization/package.zsh'
+[3.164s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mureaul/RBT1/install/ublox_serialization/share/colcon-core/packages/ublox_serialization)
+[3.164s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mureaul/RBT1/src/ublox_ros2/ublox_msgs' with build type 'ament_cmake'
+[3.165s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mureaul/RBT1/src/ublox_ros2/ublox_msgs'
+[3.165s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.165s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.179s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mureaul/RBT1/build/ublox_msgs': CMAKE_PREFIX_PATH=/home/mureaul/RBT1/install/ublox_serialization:/home/mureaul/RBT1/install/ublox_gps:/home/mureaul/RBT1/install/ublox_msgs:/home/mureaul/RBT1/install/rplidar_ros:/home/mureaul/RBT1/install/rbt1_interfaces:/home/mureaul/RBT1/install/rbt1_docking:/home/mureaul/RBT1/install/rbt1_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/mureaul/RBT1/install/rbt1_utils:/home/mureaul/RBT1/install/rbt1_navigation:/opt/ros/jazzy PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake /home/mureaul/RBT1/src/ublox_ros2/ublox_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/mureaul/RBT1/install/ublox_msgs
+[13.275s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mureaul/RBT1/build/ublox_msgs' returned '0': CMAKE_PREFIX_PATH=/home/mureaul/RBT1/install/ublox_serialization:/home/mureaul/RBT1/install/ublox_gps:/home/mureaul/RBT1/install/ublox_msgs:/home/mureaul/RBT1/install/rplidar_ros:/home/mureaul/RBT1/install/rbt1_interfaces:/home/mureaul/RBT1/install/rbt1_docking:/home/mureaul/RBT1/install/rbt1_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/mureaul/RBT1/install/rbt1_utils:/home/mureaul/RBT1/install/rbt1_navigation:/opt/ros/jazzy PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake /home/mureaul/RBT1/src/ublox_ros2/ublox_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/mureaul/RBT1/install/ublox_msgs
+[13.277s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mureaul/RBT1/build/ublox_msgs': CMAKE_PREFIX_PATH=/home/mureaul/RBT1/install/ublox_serialization:/home/mureaul/RBT1/install/ublox_gps:/home/mureaul/RBT1/install/ublox_msgs:/home/mureaul/RBT1/install/rplidar_ros:/home/mureaul/RBT1/install/rbt1_interfaces:/home/mureaul/RBT1/install/rbt1_docking:/home/mureaul/RBT1/install/rbt1_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/mureaul/RBT1/install/rbt1_utils:/home/mureaul/RBT1/install/rbt1_navigation:/opt/ros/jazzy PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --build /home/mureaul/RBT1/build/ublox_msgs -- -j4 -l4
+[264.818s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mureaul/RBT1/build/ublox_msgs' returned '0': CMAKE_PREFIX_PATH=/home/mureaul/RBT1/install/ublox_serialization:/home/mureaul/RBT1/install/ublox_gps:/home/mureaul/RBT1/install/ublox_msgs:/home/mureaul/RBT1/install/rplidar_ros:/home/mureaul/RBT1/install/rbt1_interfaces:/home/mureaul/RBT1/install/rbt1_docking:/home/mureaul/RBT1/install/rbt1_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/mureaul/RBT1/install/rbt1_utils:/home/mureaul/RBT1/install/rbt1_navigation:/opt/ros/jazzy PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --build /home/mureaul/RBT1/build/ublox_msgs -- -j4 -l4
+[264.820s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mureaul/RBT1/build/ublox_msgs': CMAKE_PREFIX_PATH=/home/mureaul/RBT1/install/ublox_serialization:/home/mureaul/RBT1/install/ublox_gps:/home/mureaul/RBT1/install/ublox_msgs:/home/mureaul/RBT1/install/rplidar_ros:/home/mureaul/RBT1/install/rbt1_interfaces:/home/mureaul/RBT1/install/rbt1_docking:/home/mureaul/RBT1/install/rbt1_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/mureaul/RBT1/install/rbt1_utils:/home/mureaul/RBT1/install/rbt1_navigation:/opt/ros/jazzy PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --install /home/mureaul/RBT1/build/ublox_msgs
+[294.184s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ublox_msgs)
+[294.185s] Level 1:colcon.colcon_core.environment:checking '/home/mureaul/RBT1/install/ublox_msgs' for CMake module files
+[294.185s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mureaul/RBT1/build/ublox_msgs' returned '0': CMAKE_PREFIX_PATH=/home/mureaul/RBT1/install/ublox_serialization:/home/mureaul/RBT1/install/ublox_gps:/home/mureaul/RBT1/install/ublox_msgs:/home/mureaul/RBT1/install/rplidar_ros:/home/mureaul/RBT1/install/rbt1_interfaces:/home/mureaul/RBT1/install/rbt1_docking:/home/mureaul/RBT1/install/rbt1_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/mureaul/RBT1/install/rbt1_utils:/home/mureaul/RBT1/install/rbt1_navigation:/opt/ros/jazzy PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --install /home/mureaul/RBT1/build/ublox_msgs
+[294.186s] Level 1:colcon.colcon_core.environment:checking '/home/mureaul/RBT1/install/ublox_msgs' for CMake config files
+[294.188s] Level 1:colcon.colcon_core.shell:create_environment_hook('ublox_msgs', 'cmake_prefix_path')
+[294.189s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mureaul/RBT1/install/ublox_msgs/share/ublox_msgs/hook/cmake_prefix_path.ps1'
+[294.189s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mureaul/RBT1/install/ublox_msgs/share/ublox_msgs/hook/cmake_prefix_path.dsv'
+[294.190s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mureaul/RBT1/install/ublox_msgs/share/ublox_msgs/hook/cmake_prefix_path.sh'
+[294.190s] Level 1:colcon.colcon_core.environment:checking '/home/mureaul/RBT1/install/ublox_msgs/lib'
+[294.191s] Level 1:colcon.colcon_core.shell:create_environment_hook('ublox_msgs', 'ld_library_path_lib')
+[294.191s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mureaul/RBT1/install/ublox_msgs/share/ublox_msgs/hook/ld_library_path_lib.ps1'
+[294.191s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mureaul/RBT1/install/ublox_msgs/share/ublox_msgs/hook/ld_library_path_lib.dsv'
+[294.192s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mureaul/RBT1/install/ublox_msgs/share/ublox_msgs/hook/ld_library_path_lib.sh'
+[294.192s] Level 1:colcon.colcon_core.environment:checking '/home/mureaul/RBT1/install/ublox_msgs/bin'
+[294.192s] Level 1:colcon.colcon_core.environment:checking '/home/mureaul/RBT1/install/ublox_msgs/lib/pkgconfig/ublox_msgs.pc'
+[294.192s] Level 1:colcon.colcon_core.environment:checking '/home/mureaul/RBT1/install/ublox_msgs/lib/python3.12/site-packages'
+[294.193s] Level 1:colcon.colcon_core.shell:create_environment_hook('ublox_msgs', 'pythonpath')
+[294.193s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mureaul/RBT1/install/ublox_msgs/share/ublox_msgs/hook/pythonpath.ps1'
+[294.193s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mureaul/RBT1/install/ublox_msgs/share/ublox_msgs/hook/pythonpath.dsv'
+[294.194s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mureaul/RBT1/install/ublox_msgs/share/ublox_msgs/hook/pythonpath.sh'
+[294.195s] Level 1:colcon.colcon_core.environment:checking '/home/mureaul/RBT1/install/ublox_msgs/bin'
+[294.195s] INFO:colcon.colcon_core.shell:Creating package script '/home/mureaul/RBT1/install/ublox_msgs/share/ublox_msgs/package.ps1'
+[294.196s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mureaul/RBT1/install/ublox_msgs/share/ublox_msgs/package.dsv'
+[294.196s] INFO:colcon.colcon_core.shell:Creating package script '/home/mureaul/RBT1/install/ublox_msgs/share/ublox_msgs/package.sh'
+[294.197s] INFO:colcon.colcon_core.shell:Creating package script '/home/mureaul/RBT1/install/ublox_msgs/share/ublox_msgs/package.bash'
+[294.197s] INFO:colcon.colcon_core.shell:Creating package script '/home/mureaul/RBT1/install/ublox_msgs/share/ublox_msgs/package.zsh'
+[294.198s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mureaul/RBT1/install/ublox_msgs/share/colcon-core/packages/ublox_msgs)
+[294.198s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ublox_msgs)
+[294.199s] Level 1:colcon.colcon_core.environment:checking '/home/mureaul/RBT1/install/ublox_msgs' for CMake module files
+[294.200s] Level 1:colcon.colcon_core.environment:checking '/home/mureaul/RBT1/install/ublox_msgs' for CMake config files
+[294.202s] Level 1:colcon.colcon_core.shell:create_environment_hook('ublox_msgs', 'cmake_prefix_path')
+[294.202s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mureaul/RBT1/install/ublox_msgs/share/ublox_msgs/hook/cmake_prefix_path.ps1'
+[294.203s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mureaul/RBT1/install/ublox_msgs/share/ublox_msgs/hook/cmake_prefix_path.dsv'
+[294.205s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mureaul/RBT1/install/ublox_msgs/share/ublox_msgs/hook/cmake_prefix_path.sh'
+[294.208s] Level 1:colcon.colcon_core.environment:checking '/home/mureaul/RBT1/install/ublox_msgs/lib'
+[294.208s] Level 1:colcon.colcon_core.shell:create_environment_hook('ublox_msgs', 'ld_library_path_lib')
+[294.208s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mureaul/RBT1/install/ublox_msgs/share/ublox_msgs/hook/ld_library_path_lib.ps1'
+[294.210s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mureaul/RBT1/install/ublox_msgs/share/ublox_msgs/hook/ld_library_path_lib.dsv'
+[294.212s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mureaul/RBT1/install/ublox_msgs/share/ublox_msgs/hook/ld_library_path_lib.sh'
+[294.215s] Level 1:colcon.colcon_core.environment:checking '/home/mureaul/RBT1/install/ublox_msgs/bin'
+[294.215s] Level 1:colcon.colcon_core.environment:checking '/home/mureaul/RBT1/install/ublox_msgs/lib/pkgconfig/ublox_msgs.pc'
+[294.215s] Level 1:colcon.colcon_core.environment:checking '/home/mureaul/RBT1/install/ublox_msgs/lib/python3.12/site-packages'
+[294.215s] Level 1:colcon.colcon_core.shell:create_environment_hook('ublox_msgs', 'pythonpath')
+[294.216s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mureaul/RBT1/install/ublox_msgs/share/ublox_msgs/hook/pythonpath.ps1'
+[294.217s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mureaul/RBT1/install/ublox_msgs/share/ublox_msgs/hook/pythonpath.dsv'
+[294.219s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mureaul/RBT1/install/ublox_msgs/share/ublox_msgs/hook/pythonpath.sh'
+[294.222s] Level 1:colcon.colcon_core.environment:checking '/home/mureaul/RBT1/install/ublox_msgs/bin'
+[294.223s] INFO:colcon.colcon_core.shell:Creating package script '/home/mureaul/RBT1/install/ublox_msgs/share/ublox_msgs/package.ps1'
+[294.224s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mureaul/RBT1/install/ublox_msgs/share/ublox_msgs/package.dsv'
+[294.226s] INFO:colcon.colcon_core.shell:Creating package script '/home/mureaul/RBT1/install/ublox_msgs/share/ublox_msgs/package.sh'
+[294.228s] INFO:colcon.colcon_core.shell:Creating package script '/home/mureaul/RBT1/install/ublox_msgs/share/ublox_msgs/package.bash'
+[294.231s] INFO:colcon.colcon_core.shell:Creating package script '/home/mureaul/RBT1/install/ublox_msgs/share/ublox_msgs/package.zsh'
+[294.233s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mureaul/RBT1/install/ublox_msgs/share/colcon-core/packages/ublox_msgs)
+[294.236s] INFO:colcon.colcon_ros.task.catkin.build:Building ROS package in '/home/mureaul/RBT1/src/rbt1_interfaces' with build type 'catkin'
+[294.236s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mureaul/RBT1/src/rbt1_interfaces'
+[294.236s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[294.236s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[294.282s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mureaul/RBT1/build/rbt1_interfaces': PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake /home/mureaul/RBT1/src/rbt1_interfaces -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/mureaul/RBT1/install/rbt1_interfaces
+[299.929s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mureaul/RBT1/build/rbt1_interfaces' returned '0': PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake /home/mureaul/RBT1/src/rbt1_interfaces -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/mureaul/RBT1/install/rbt1_interfaces
+[299.931s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mureaul/RBT1/build/rbt1_interfaces': PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --build /home/mureaul/RBT1/build/rbt1_interfaces -- -j4 -l4
+[310.023s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mureaul/RBT1/build/rbt1_interfaces' returned '0': PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --build /home/mureaul/RBT1/build/rbt1_interfaces -- -j4 -l4
+[310.025s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mureaul/RBT1/build/rbt1_interfaces': PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --install /home/mureaul/RBT1/build/rbt1_interfaces
+[310.164s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mureaul/RBT1/build/rbt1_interfaces' returned '0': PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --install /home/mureaul/RBT1/build/rbt1_interfaces
+[310.164s] Level 1:colcon.colcon_core.shell:create_environment_hook('rbt1_interfaces', 'ros_package_path')
+[310.164s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/hook/ros_package_path.ps1'
+[310.165s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/hook/ros_package_path.dsv'
+[310.165s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/hook/ros_package_path.sh'
+[310.166s] Level 1:colcon.colcon_ros.task.catkin:checking '/home/mureaul/RBT1/install/rbt1_interfaces/lib/python3.12/site-packages'
+[310.166s] Level 1:colcon.colcon_core.shell:create_environment_hook('rbt1_interfaces', 'catkin_pythonpath')
+[310.166s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/hook/catkin_pythonpath.ps1'
+[310.167s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/hook/catkin_pythonpath.dsv'
+[310.167s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/hook/catkin_pythonpath.sh'
+[310.168s] Level 1:colcon.colcon_core.shell:create_environment_hook('rbt1_interfaces', 'pkg_config_path')
+[310.168s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/hook/pkg_config_path.ps1'
+[310.168s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/hook/pkg_config_path.dsv'
+[310.168s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/hook/pkg_config_path.sh'
+[310.171s] Level 1:colcon.colcon_core.shell:create_environment_hook('rbt1_interfaces', 'pkg_config_path_multiarch')
+[310.172s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/hook/pkg_config_path_multiarch.ps1'
+[310.172s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/hook/pkg_config_path_multiarch.dsv'
+[310.173s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/hook/pkg_config_path_multiarch.sh'
+[310.174s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rbt1_interfaces)
+[310.174s] Level 1:colcon.colcon_core.environment:checking '/home/mureaul/RBT1/install/rbt1_interfaces' for CMake module files
+[310.175s] Level 1:colcon.colcon_core.environment:checking '/home/mureaul/RBT1/install/rbt1_interfaces' for CMake config files
+[310.176s] Level 1:colcon.colcon_core.shell:create_environment_hook('rbt1_interfaces', 'cmake_prefix_path')
+[310.176s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/hook/cmake_prefix_path.ps1'
+[310.177s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/hook/cmake_prefix_path.dsv'
+[310.177s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/hook/cmake_prefix_path.sh'
+[310.178s] Level 1:colcon.colcon_core.environment:checking '/home/mureaul/RBT1/install/rbt1_interfaces/lib'
+[310.178s] Level 1:colcon.colcon_core.shell:create_environment_hook('rbt1_interfaces', 'ld_library_path_lib')
+[310.178s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/hook/ld_library_path_lib.ps1'
+[310.179s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/hook/ld_library_path_lib.dsv'
+[310.179s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/hook/ld_library_path_lib.sh'
+[310.179s] Level 1:colcon.colcon_core.environment:checking '/home/mureaul/RBT1/install/rbt1_interfaces/bin'
+[310.179s] Level 1:colcon.colcon_core.environment:checking '/home/mureaul/RBT1/install/rbt1_interfaces/lib/pkgconfig/rbt1_interfaces.pc'
+[310.180s] Level 1:colcon.colcon_core.environment:checking '/home/mureaul/RBT1/install/rbt1_interfaces/lib/python3.12/site-packages'
+[310.180s] Level 1:colcon.colcon_core.shell:create_environment_hook('rbt1_interfaces', 'pythonpath')
+[310.180s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/hook/pythonpath.ps1'
+[310.180s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/hook/pythonpath.dsv'
+[310.181s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/hook/pythonpath.sh'
+[310.182s] Level 1:colcon.colcon_core.environment:checking '/home/mureaul/RBT1/install/rbt1_interfaces/bin'
+[310.182s] INFO:colcon.colcon_core.shell:Creating package script '/home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/package.ps1'
+[310.183s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/package.dsv'
+[310.184s] INFO:colcon.colcon_core.shell:Creating package script '/home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/package.sh'
+[310.184s] INFO:colcon.colcon_core.shell:Creating package script '/home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/package.bash'
+[310.185s] INFO:colcon.colcon_core.shell:Creating package script '/home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/package.zsh'
+[310.185s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mureaul/RBT1/install/rbt1_interfaces/share/colcon-core/packages/rbt1_interfaces)
+[310.186s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mureaul/RBT1/src/ublox_ros2/ublox_gps' with build type 'ament_cmake'
+[310.186s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mureaul/RBT1/src/ublox_ros2/ublox_gps'
+[310.186s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[310.186s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[310.202s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mureaul/RBT1/build/ublox_gps': CMAKE_PREFIX_PATH=/home/mureaul/RBT1/install/ublox_msgs:/home/mureaul/RBT1/install/ublox_serialization:/home/mureaul/RBT1/install/ublox_gps:/home/mureaul/RBT1/install/rplidar_ros:/home/mureaul/RBT1/install/rbt1_utils:/home/mureaul/RBT1/install/rbt1_navigation:/opt/ros/jazzy:/home/mureaul/RBT1/install/rbt1_interfaces:/home/mureaul/RBT1/install/rbt1_docking:/home/mureaul/RBT1/install/rbt1_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor LD_LIBRARY_PATH=/home/mureaul/RBT1/install/ublox_msgs/lib:/home/mureaul/RBT1/install/ublox_gps/lib:/home/mureaul/RBT1/install/rbt1_interfaces/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/ortools_vendor/lib:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake /home/mureaul/RBT1/src/ublox_ros2/ublox_gps -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/mureaul/RBT1/install/ublox_gps
+[314.786s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mureaul/RBT1/build/ublox_gps' returned '0': CMAKE_PREFIX_PATH=/home/mureaul/RBT1/install/ublox_msgs:/home/mureaul/RBT1/install/ublox_serialization:/home/mureaul/RBT1/install/ublox_gps:/home/mureaul/RBT1/install/rplidar_ros:/home/mureaul/RBT1/install/rbt1_utils:/home/mureaul/RBT1/install/rbt1_navigation:/opt/ros/jazzy:/home/mureaul/RBT1/install/rbt1_interfaces:/home/mureaul/RBT1/install/rbt1_docking:/home/mureaul/RBT1/install/rbt1_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor LD_LIBRARY_PATH=/home/mureaul/RBT1/install/ublox_msgs/lib:/home/mureaul/RBT1/install/ublox_gps/lib:/home/mureaul/RBT1/install/rbt1_interfaces/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/ortools_vendor/lib:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake /home/mureaul/RBT1/src/ublox_ros2/ublox_gps -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/mureaul/RBT1/install/ublox_gps
+[314.788s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mureaul/RBT1/build/ublox_gps': CMAKE_PREFIX_PATH=/home/mureaul/RBT1/install/ublox_msgs:/home/mureaul/RBT1/install/ublox_serialization:/home/mureaul/RBT1/install/ublox_gps:/home/mureaul/RBT1/install/rplidar_ros:/home/mureaul/RBT1/install/rbt1_utils:/home/mureaul/RBT1/install/rbt1_navigation:/opt/ros/jazzy:/home/mureaul/RBT1/install/rbt1_interfaces:/home/mureaul/RBT1/install/rbt1_docking:/home/mureaul/RBT1/install/rbt1_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor LD_LIBRARY_PATH=/home/mureaul/RBT1/install/ublox_msgs/lib:/home/mureaul/RBT1/install/ublox_gps/lib:/home/mureaul/RBT1/install/rbt1_interfaces/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/ortools_vendor/lib:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --build /home/mureaul/RBT1/build/ublox_gps -- -j4 -l4
+[2725.718s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mureaul/RBT1/build/ublox_gps' returned '2': CMAKE_PREFIX_PATH=/home/mureaul/RBT1/install/ublox_msgs:/home/mureaul/RBT1/install/ublox_serialization:/home/mureaul/RBT1/install/ublox_gps:/home/mureaul/RBT1/install/rplidar_ros:/home/mureaul/RBT1/install/rbt1_utils:/home/mureaul/RBT1/install/rbt1_navigation:/opt/ros/jazzy:/home/mureaul/RBT1/install/rbt1_interfaces:/home/mureaul/RBT1/install/rbt1_docking:/home/mureaul/RBT1/install/rbt1_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor LD_LIBRARY_PATH=/home/mureaul/RBT1/install/ublox_msgs/lib:/home/mureaul/RBT1/install/ublox_gps/lib:/home/mureaul/RBT1/install/rbt1_interfaces/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/ortools_vendor/lib:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --build /home/mureaul/RBT1/build/ublox_gps -- -j4 -l4
+[2726.393s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ublox_gps)
+[2726.465s] Level 1:colcon.colcon_core.environment:checking '/home/mureaul/RBT1/install/ublox_gps' for CMake module files
+[2726.494s] Level 1:colcon.colcon_core.environment:checking '/home/mureaul/RBT1/install/ublox_gps' for CMake config files
+[2726.634s] Level 1:colcon.colcon_core.environment:checking '/home/mureaul/RBT1/install/ublox_gps/bin'
+[2726.639s] Level 1:colcon.colcon_core.environment:checking '/home/mureaul/RBT1/install/ublox_gps/lib/pkgconfig/ublox_gps.pc'
+[2726.741s] Level 1:colcon.colcon_core.environment:checking '/home/mureaul/RBT1/install/ublox_gps/lib/python3.12/site-packages'
+[2726.743s] Level 1:colcon.colcon_core.environment:checking '/home/mureaul/RBT1/install/ublox_gps/bin'
+[2726.768s] INFO:colcon.colcon_core.shell:Creating package script '/home/mureaul/RBT1/install/ublox_gps/share/ublox_gps/package.ps1'
+[2727.426s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mureaul/RBT1/install/ublox_gps/share/ublox_gps/package.dsv'
+[2727.522s] INFO:colcon.colcon_core.shell:Creating package script '/home/mureaul/RBT1/install/ublox_gps/share/ublox_gps/package.sh'
+[2727.593s] INFO:colcon.colcon_core.shell:Creating package script '/home/mureaul/RBT1/install/ublox_gps/share/ublox_gps/package.bash'
+[2727.670s] INFO:colcon.colcon_core.shell:Creating package script '/home/mureaul/RBT1/install/ublox_gps/share/ublox_gps/package.zsh'
+[2727.722s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mureaul/RBT1/install/ublox_gps/share/colcon-core/packages/ublox_gps)
+[2727.867s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[2727.935s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[2727.960s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '2'
+[2728.002s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[2730.401s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[2730.401s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[2730.402s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[2730.403s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[2730.651s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[2730.678s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[2730.713s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mureaul/RBT1/install/local_setup.ps1'
+[2730.780s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/mureaul/RBT1/install/_local_setup_util_ps1.py'
+[2730.828s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mureaul/RBT1/install/setup.ps1'
+[2730.942s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mureaul/RBT1/install/local_setup.sh'
+[2730.984s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/mureaul/RBT1/install/_local_setup_util_sh.py'
+[2730.997s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mureaul/RBT1/install/setup.sh'
+[2731.039s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mureaul/RBT1/install/local_setup.bash'
+[2731.079s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mureaul/RBT1/install/setup.bash'
+[2731.123s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mureaul/RBT1/install/local_setup.zsh'
+[2731.162s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mureaul/RBT1/install/setup.zsh'

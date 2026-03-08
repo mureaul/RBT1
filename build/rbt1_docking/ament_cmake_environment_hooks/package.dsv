@@ -1,0 +1,4 @@
+source;share/rbt1_docking/local_setup.bash
+source;share/rbt1_docking/local_setup.dsv
+source;share/rbt1_docking/local_setup.sh
+source;share/rbt1_docking/local_setup.zsh

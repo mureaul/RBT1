@@ -1,0 +1,3 @@
+/home/mureaul/RBT1/install/ublox_gps/lib/libublox_gps.so
+/home/mureaul/RBT1/install/ublox_gps/share/ublox_gps/cmake/export_ublox_gpsExport.cmake
+/home/mureaul/RBT1/install/ublox_gps/share/ublox_gps/cmake/export_ublox_gpsExport-noconfig.cmake

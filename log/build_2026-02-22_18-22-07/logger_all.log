@@ -1,0 +1,254 @@
+[1.163s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'rbt1_utils']
+[1.164s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['rbt1_utils'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0xffff8a00e780>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffff8a1bed50>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffff8a1bed50>>, mixin_verb=('build',))
+[1.651s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.651s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.651s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.652s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.652s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.652s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.652s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/mureaul/RBT1'
+[1.652s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.652s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.652s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.652s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.652s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.652s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.653s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.653s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.653s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.884s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.884s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.884s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.884s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.884s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.884s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.884s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.884s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.885s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.885s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.885s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.885s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.885s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.885s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.886s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.886s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[1.886s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[1.886s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[1.886s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[1.886s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[1.886s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[1.886s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[1.886s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[1.886s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[1.886s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[1.886s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[1.887s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[1.887s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[1.887s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_coverage) by extensions ['ignore', 'ignore_ament_install']
+[1.887s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_coverage) by extension 'ignore'
+[1.887s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_coverage) by extension 'ignore_ament_install'
+[1.887s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_coverage) by extensions ['colcon_pkg']
+[1.887s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_coverage) by extension 'colcon_pkg'
+[1.887s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_coverage) by extensions ['colcon_meta']
+[1.887s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_coverage) by extension 'colcon_meta'
+[1.887s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_coverage) by extensions ['ros']
+[1.887s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_coverage) by extension 'ros'
+[1.938s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rbt1_coverage' with type 'ros.ament_python' and name 'rbt1_coverage'
+[1.938s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_description) by extensions ['ignore', 'ignore_ament_install']
+[1.938s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_description) by extension 'ignore'
+[1.938s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_description) by extension 'ignore_ament_install'
+[1.938s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_description) by extensions ['colcon_pkg']
+[1.939s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_description) by extension 'colcon_pkg'
+[1.939s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_description) by extensions ['colcon_meta']
+[1.939s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_description) by extension 'colcon_meta'
+[1.939s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_description) by extensions ['ros']
+[1.939s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_description) by extension 'ros'
+[1.941s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rbt1_description' with type 'ros.ament_cmake' and name 'rbt1_description'
+[1.942s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_docking) by extensions ['ignore', 'ignore_ament_install']
+[1.942s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_docking) by extension 'ignore'
+[1.942s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_docking) by extension 'ignore_ament_install'
+[1.942s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_docking) by extensions ['colcon_pkg']
+[1.942s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_docking) by extension 'colcon_pkg'
+[1.942s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_docking) by extensions ['colcon_meta']
+[1.942s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_docking) by extension 'colcon_meta'
+[1.942s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_docking) by extensions ['ros']
+[1.942s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_docking) by extension 'ros'
+[1.961s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rbt1_docking' with type 'ros.ament_cmake' and name 'rbt1_docking'
+[1.962s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[1.962s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_interfaces) by extension 'ignore'
+[1.962s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_interfaces) by extension 'ignore_ament_install'
+[1.962s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_interfaces) by extensions ['colcon_pkg']
+[1.962s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_interfaces) by extension 'colcon_pkg'
+[1.962s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_interfaces) by extensions ['colcon_meta']
+[1.963s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_interfaces) by extension 'colcon_meta'
+[1.963s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_interfaces) by extensions ['ros']
+[1.963s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_interfaces) by extension 'ros'
+[1.982s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rbt1_interfaces' with type 'ros.catkin' and name 'rbt1_interfaces'
+[1.982s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_navigation) by extensions ['ignore', 'ignore_ament_install']
+[1.982s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_navigation) by extension 'ignore'
+[1.983s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_navigation) by extension 'ignore_ament_install'
+[1.983s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_navigation) by extensions ['colcon_pkg']
+[1.983s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_navigation) by extension 'colcon_pkg'
+[1.983s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_navigation) by extensions ['colcon_meta']
+[1.983s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_navigation) by extension 'colcon_meta'
+[1.983s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_navigation) by extensions ['ros']
+[1.983s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_navigation) by extension 'ros'
+[1.987s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rbt1_navigation' with type 'ros.ament_python' and name 'rbt1_navigation'
+[1.988s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_utils) by extensions ['ignore', 'ignore_ament_install']
+[1.988s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_utils) by extension 'ignore'
+[1.988s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_utils) by extension 'ignore_ament_install'
+[1.988s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_utils) by extensions ['colcon_pkg']
+[1.989s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_utils) by extension 'colcon_pkg'
+[1.989s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_utils) by extensions ['colcon_meta']
+[1.989s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_utils) by extension 'colcon_meta'
+[1.989s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_utils) by extensions ['ros']
+[1.989s] Level 1:colcon.colcon_core.package_identification:_identify(src/rbt1_utils) by extension 'ros'
+[1.992s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rbt1_utils' with type 'ros.ament_python' and name 'rbt1_utils'
+[1.993s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extensions ['ignore', 'ignore_ament_install']
+[1.993s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extension 'ignore'
+[1.994s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extension 'ignore_ament_install'
+[1.994s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extensions ['colcon_pkg']
+[1.994s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extension 'colcon_pkg'
+[1.994s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extensions ['colcon_meta']
+[1.994s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extension 'colcon_meta'
+[1.994s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extensions ['ros']
+[1.994s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extension 'ros'
+[1.996s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rplidar_ros' with type 'ros.ament_cmake' and name 'rplidar_ros'
+[1.997s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2) by extensions ['ignore', 'ignore_ament_install']
+[1.997s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2) by extension 'ignore'
+[1.997s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2) by extension 'ignore_ament_install'
+[1.997s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2) by extensions ['colcon_pkg']
+[1.997s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2) by extension 'colcon_pkg'
+[1.997s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2) by extensions ['colcon_meta']
+[1.998s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2) by extension 'colcon_meta'
+[1.998s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2) by extensions ['ros']
+[1.998s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2) by extension 'ros'
+[1.998s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2) by extensions ['cmake', 'python']
+[1.998s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2) by extension 'cmake'
+[1.998s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2) by extension 'python'
+[1.998s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2) by extensions ['python_setup_py']
+[1.998s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2) by extension 'python_setup_py'
+[1.999s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2/ublox) by extensions ['ignore', 'ignore_ament_install']
+[1.999s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2/ublox) by extension 'ignore'
+[1.999s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2/ublox) by extension 'ignore_ament_install'
+[1.999s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2/ublox) by extensions ['colcon_pkg']
+[1.999s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2/ublox) by extension 'colcon_pkg'
+[1.999s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2/ublox) by extensions ['colcon_meta']
+[1.999s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2/ublox) by extension 'colcon_meta'
+[1.999s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2/ublox) by extensions ['ros']
+[1.999s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2/ublox) by extension 'ros'
+[2.000s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ublox_ros2/ublox' with type 'ros.ament_cmake' and name 'ublox'
+[2.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2/ublox_gps) by extensions ['ignore', 'ignore_ament_install']
+[2.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2/ublox_gps) by extension 'ignore'
+[2.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2/ublox_gps) by extension 'ignore_ament_install'
+[2.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2/ublox_gps) by extensions ['colcon_pkg']
+[2.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2/ublox_gps) by extension 'colcon_pkg'
+[2.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2/ublox_gps) by extensions ['colcon_meta']
+[2.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2/ublox_gps) by extension 'colcon_meta'
+[2.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2/ublox_gps) by extensions ['ros']
+[2.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2/ublox_gps) by extension 'ros'
+[2.002s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ublox_ros2/ublox_gps' with type 'ros.ament_cmake' and name 'ublox_gps'
+[2.002s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2/ublox_msgs) by extensions ['ignore', 'ignore_ament_install']
+[2.003s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2/ublox_msgs) by extension 'ignore'
+[2.003s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2/ublox_msgs) by extension 'ignore_ament_install'
+[2.003s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2/ublox_msgs) by extensions ['colcon_pkg']
+[2.003s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2/ublox_msgs) by extension 'colcon_pkg'
+[2.003s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2/ublox_msgs) by extensions ['colcon_meta']
+[2.003s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2/ublox_msgs) by extension 'colcon_meta'
+[2.003s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2/ublox_msgs) by extensions ['ros']
+[2.003s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2/ublox_msgs) by extension 'ros'
+[2.004s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ublox_ros2/ublox_msgs' with type 'ros.ament_cmake' and name 'ublox_msgs'
+[2.004s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2/ublox_serialization) by extensions ['ignore', 'ignore_ament_install']
+[2.004s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2/ublox_serialization) by extension 'ignore'
+[2.004s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2/ublox_serialization) by extension 'ignore_ament_install'
+[2.004s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2/ublox_serialization) by extensions ['colcon_pkg']
+[2.004s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2/ublox_serialization) by extension 'colcon_pkg'
+[2.004s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2/ublox_serialization) by extensions ['colcon_meta']
+[2.004s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2/ublox_serialization) by extension 'colcon_meta'
+[2.004s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2/ublox_serialization) by extensions ['ros']
+[2.004s] Level 1:colcon.colcon_core.package_identification:_identify(src/ublox_ros2/ublox_serialization) by extension 'ros'
+[2.005s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ublox_ros2/ublox_serialization' with type 'ros.ament_cmake' and name 'ublox_serialization'
+[2.005s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[2.005s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[2.005s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[2.005s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[2.005s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[2.193s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'rbt1_description' in 'src/rbt1_description'
+[2.193s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'rbt1_docking' in 'src/rbt1_docking'
+[2.193s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'rbt1_interfaces' in 'src/rbt1_interfaces'
+[2.193s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'rplidar_ros' in 'src/rplidar_ros'
+[2.193s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'ublox_serialization' in 'src/ublox_ros2/ublox_serialization'
+[2.193s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'rbt1_coverage' in 'src/rbt1_coverage'
+[2.193s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'rbt1_navigation' in 'src/rbt1_navigation'
+[2.193s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'ublox_msgs' in 'src/ublox_ros2/ublox_msgs'
+[2.193s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'ublox_gps' in 'src/ublox_ros2/ublox_gps'
+[2.193s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'ublox' in 'src/ublox_ros2/ublox'
+[2.198s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[2.198s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[2.221s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 9 installed packages in /home/mureaul/RBT1/install
+[2.223s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/mureaul/install
+[2.231s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 314 installed packages in /opt/ros/jazzy
+[2.235s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[5.273s] Level 5:colcon.colcon_core.verb:set package 'rbt1_utils' build argument 'cmake_args' from command line to 'None'
+[5.273s] Level 5:colcon.colcon_core.verb:set package 'rbt1_utils' build argument 'cmake_target' from command line to 'None'
+[5.274s] Level 5:colcon.colcon_core.verb:set package 'rbt1_utils' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[5.274s] Level 5:colcon.colcon_core.verb:set package 'rbt1_utils' build argument 'cmake_clean_cache' from command line to 'False'
+[5.274s] Level 5:colcon.colcon_core.verb:set package 'rbt1_utils' build argument 'cmake_clean_first' from command line to 'False'
+[5.274s] Level 5:colcon.colcon_core.verb:set package 'rbt1_utils' build argument 'cmake_force_configure' from command line to 'False'
+[5.274s] Level 5:colcon.colcon_core.verb:set package 'rbt1_utils' build argument 'ament_cmake_args' from command line to 'None'
+[5.274s] Level 5:colcon.colcon_core.verb:set package 'rbt1_utils' build argument 'catkin_cmake_args' from command line to 'None'
+[5.274s] Level 5:colcon.colcon_core.verb:set package 'rbt1_utils' build argument 'catkin_skip_building_tests' from command line to 'False'
+[5.274s] DEBUG:colcon.colcon_core.verb:Building package 'rbt1_utils' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mureaul/RBT1/build/rbt1_utils', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mureaul/RBT1/install/rbt1_utils', 'merge_install': False, 'path': '/home/mureaul/RBT1/src/rbt1_utils', 'symlink_install': False, 'test_result_base': None}
+[5.274s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[5.275s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[5.276s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/mureaul/RBT1/src/rbt1_utils' with build type 'ament_python'
+[5.276s] Level 1:colcon.colcon_core.shell:create_environment_hook('rbt1_utils', 'ament_prefix_path')
+[5.322s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[5.323s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mureaul/RBT1/install/rbt1_utils/share/rbt1_utils/hook/ament_prefix_path.ps1'
+[5.325s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mureaul/RBT1/install/rbt1_utils/share/rbt1_utils/hook/ament_prefix_path.dsv'
+[5.375s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mureaul/RBT1/install/rbt1_utils/share/rbt1_utils/hook/ament_prefix_path.sh'
+[5.426s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.426s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[12.955s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/mureaul/RBT1/src/rbt1_utils'
+[12.956s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[12.956s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[40.416s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mureaul/RBT1/src/rbt1_utils': PYTHONPATH=/home/mureaul/RBT1/build/rbt1_utils/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mureaul/RBT1/install/rbt1_utils/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rbt1_utils build --build-base /home/mureaul/RBT1/build/rbt1_utils/build install --record /home/mureaul/RBT1/build/rbt1_utils/install.log --single-version-externally-managed install_data
+[41.453s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mureaul/RBT1/src/rbt1_utils' returned '0': PYTHONPATH=/home/mureaul/RBT1/build/rbt1_utils/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mureaul/RBT1/install/rbt1_utils/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rbt1_utils build --build-base /home/mureaul/RBT1/build/rbt1_utils/build install --record /home/mureaul/RBT1/build/rbt1_utils/install.log --single-version-externally-managed install_data
+[42.109s] Level 1:colcon.colcon_core.environment:checking '/home/mureaul/RBT1/install/rbt1_utils' for CMake module files
+[42.110s] Level 1:colcon.colcon_core.environment:checking '/home/mureaul/RBT1/install/rbt1_utils' for CMake config files
+[42.111s] Level 1:colcon.colcon_core.environment:checking '/home/mureaul/RBT1/install/rbt1_utils/lib'
+[42.111s] Level 1:colcon.colcon_core.environment:checking '/home/mureaul/RBT1/install/rbt1_utils/bin'
+[42.112s] Level 1:colcon.colcon_core.environment:checking '/home/mureaul/RBT1/install/rbt1_utils/lib/pkgconfig/rbt1_utils.pc'
+[42.112s] Level 1:colcon.colcon_core.environment:checking '/home/mureaul/RBT1/install/rbt1_utils/lib/python3.12/site-packages'
+[42.112s] Level 1:colcon.colcon_core.shell:create_environment_hook('rbt1_utils', 'pythonpath')
+[42.113s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mureaul/RBT1/install/rbt1_utils/share/rbt1_utils/hook/pythonpath.ps1'
+[42.113s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mureaul/RBT1/install/rbt1_utils/share/rbt1_utils/hook/pythonpath.dsv'
+[42.114s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mureaul/RBT1/install/rbt1_utils/share/rbt1_utils/hook/pythonpath.sh'
+[42.115s] Level 1:colcon.colcon_core.environment:checking '/home/mureaul/RBT1/install/rbt1_utils/bin'
+[42.115s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rbt1_utils)
+[42.116s] INFO:colcon.colcon_core.shell:Creating package script '/home/mureaul/RBT1/install/rbt1_utils/share/rbt1_utils/package.ps1'
+[42.153s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mureaul/RBT1/install/rbt1_utils/share/rbt1_utils/package.dsv'
+[42.202s] INFO:colcon.colcon_core.shell:Creating package script '/home/mureaul/RBT1/install/rbt1_utils/share/rbt1_utils/package.sh'
+[42.351s] INFO:colcon.colcon_core.shell:Creating package script '/home/mureaul/RBT1/install/rbt1_utils/share/rbt1_utils/package.bash'
+[42.409s] INFO:colcon.colcon_core.shell:Creating package script '/home/mureaul/RBT1/install/rbt1_utils/share/rbt1_utils/package.zsh'
+[42.462s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mureaul/RBT1/install/rbt1_utils/share/colcon-core/packages/rbt1_utils)
+[42.463s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[42.464s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[42.464s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[42.464s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[43.183s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[43.183s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[43.183s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[43.183s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[43.184s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[43.185s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[43.185s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mureaul/RBT1/install/local_setup.ps1'
+[43.224s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/mureaul/RBT1/install/_local_setup_util_ps1.py'
+[43.310s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mureaul/RBT1/install/setup.ps1'
+[43.360s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mureaul/RBT1/install/local_setup.sh'
+[43.405s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/mureaul/RBT1/install/_local_setup_util_sh.py'
+[43.406s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mureaul/RBT1/install/setup.sh'
+[43.536s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mureaul/RBT1/install/local_setup.bash'
+[43.586s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mureaul/RBT1/install/setup.bash'
+[43.632s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mureaul/RBT1/install/local_setup.zsh'
+[43.671s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mureaul/RBT1/install/setup.zsh'

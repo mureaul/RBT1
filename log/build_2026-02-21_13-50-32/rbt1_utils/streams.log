@@ -1,0 +1,49 @@
+[1.169s] Invoking command in '/home/mureaul/RBT1/src/rbt1_utils': PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/mureaul/RBT1/build/rbt1_utils/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mureaul/RBT1/install/rbt1_utils/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rbt1_utils build --build-base /home/mureaul/RBT1/build/rbt1_utils/build install --record /home/mureaul/RBT1/build/rbt1_utils/install.log --single-version-externally-managed install_data
+[1.516s] running egg_info
+[1.516s] creating ../../build/rbt1_utils/rbt1_utils.egg-info
+[1.540s] writing ../../build/rbt1_utils/rbt1_utils.egg-info/PKG-INFO
+[1.540s] writing dependency_links to ../../build/rbt1_utils/rbt1_utils.egg-info/dependency_links.txt
+[1.541s] writing entry points to ../../build/rbt1_utils/rbt1_utils.egg-info/entry_points.txt
+[1.541s] writing requirements to ../../build/rbt1_utils/rbt1_utils.egg-info/requires.txt
+[1.541s] writing top-level names to ../../build/rbt1_utils/rbt1_utils.egg-info/top_level.txt
+[1.541s] writing manifest file '../../build/rbt1_utils/rbt1_utils.egg-info/SOURCES.txt'
+[1.590s] reading manifest file '../../build/rbt1_utils/rbt1_utils.egg-info/SOURCES.txt'
+[1.590s] writing manifest file '../../build/rbt1_utils/rbt1_utils.egg-info/SOURCES.txt'
+[1.591s] running build
+[1.591s] running build_py
+[1.591s] creating /home/mureaul/RBT1/build/rbt1_utils/build
+[1.591s] creating /home/mureaul/RBT1/build/rbt1_utils/build/lib
+[1.591s] creating /home/mureaul/RBT1/build/rbt1_utils/build/lib/rbt1_utils
+[1.591s] copying rbt1_utils/battery_monitor.py -> /home/mureaul/RBT1/build/rbt1_utils/build/lib/rbt1_utils
+[1.604s] copying rbt1_utils/heartbeat_node.py -> /home/mureaul/RBT1/build/rbt1_utils/build/lib/rbt1_utils
+[1.622s] copying rbt1_utils/weather_monitor.py -> /home/mureaul/RBT1/build/rbt1_utils/build/lib/rbt1_utils
+[1.623s] copying rbt1_utils/bringup_orchestrator.py -> /home/mureaul/RBT1/build/rbt1_utils/build/lib/rbt1_utils
+[1.642s] copying rbt1_utils/__init__.py -> /home/mureaul/RBT1/build/rbt1_utils/build/lib/rbt1_utils
+[1.643s] running install
+[1.656s] running install_lib
+[1.681s] creating /home/mureaul/RBT1/install/rbt1_utils/lib/python3.12/site-packages/rbt1_utils
+[1.681s] copying /home/mureaul/RBT1/build/rbt1_utils/build/lib/rbt1_utils/battery_monitor.py -> /home/mureaul/RBT1/install/rbt1_utils/lib/python3.12/site-packages/rbt1_utils
+[1.682s] copying /home/mureaul/RBT1/build/rbt1_utils/build/lib/rbt1_utils/heartbeat_node.py -> /home/mureaul/RBT1/install/rbt1_utils/lib/python3.12/site-packages/rbt1_utils
+[1.682s] copying /home/mureaul/RBT1/build/rbt1_utils/build/lib/rbt1_utils/weather_monitor.py -> /home/mureaul/RBT1/install/rbt1_utils/lib/python3.12/site-packages/rbt1_utils
+[1.682s] copying /home/mureaul/RBT1/build/rbt1_utils/build/lib/rbt1_utils/bringup_orchestrator.py -> /home/mureaul/RBT1/install/rbt1_utils/lib/python3.12/site-packages/rbt1_utils
+[1.682s] copying /home/mureaul/RBT1/build/rbt1_utils/build/lib/rbt1_utils/__init__.py -> /home/mureaul/RBT1/install/rbt1_utils/lib/python3.12/site-packages/rbt1_utils
+[1.683s] byte-compiling /home/mureaul/RBT1/install/rbt1_utils/lib/python3.12/site-packages/rbt1_utils/battery_monitor.py to battery_monitor.cpython-312.pyc
+[1.684s] byte-compiling /home/mureaul/RBT1/install/rbt1_utils/lib/python3.12/site-packages/rbt1_utils/heartbeat_node.py to heartbeat_node.cpython-312.pyc
+[1.684s] byte-compiling /home/mureaul/RBT1/install/rbt1_utils/lib/python3.12/site-packages/rbt1_utils/weather_monitor.py to weather_monitor.cpython-312.pyc
+[1.685s] byte-compiling /home/mureaul/RBT1/install/rbt1_utils/lib/python3.12/site-packages/rbt1_utils/bringup_orchestrator.py to bringup_orchestrator.cpython-312.pyc
+[1.688s] byte-compiling /home/mureaul/RBT1/install/rbt1_utils/lib/python3.12/site-packages/rbt1_utils/__init__.py to __init__.cpython-312.pyc
+[1.688s] running install_data
+[1.688s] creating /home/mureaul/RBT1/install/rbt1_utils/share/ament_index
+[1.688s] creating /home/mureaul/RBT1/install/rbt1_utils/share/ament_index/resource_index
+[1.688s] creating /home/mureaul/RBT1/install/rbt1_utils/share/ament_index/resource_index/packages
+[1.689s] copying resource/rbt1_utils -> /home/mureaul/RBT1/install/rbt1_utils/share/ament_index/resource_index/packages
+[1.689s] copying package.xml -> /home/mureaul/RBT1/install/rbt1_utils/share/rbt1_utils
+[1.689s] running install_egg_info
+[1.715s] Copying ../../build/rbt1_utils/rbt1_utils.egg-info to /home/mureaul/RBT1/install/rbt1_utils/lib/python3.12/site-packages/rbt1_utils-0.0.0-py3.12.egg-info
+[1.716s] running install_scripts
+[1.891s] Installing battery_monitor_node script to /home/mureaul/RBT1/install/rbt1_utils/lib/rbt1_utils
+[1.891s] Installing bringup_orchestrator script to /home/mureaul/RBT1/install/rbt1_utils/lib/rbt1_utils
+[1.891s] Installing heartbeat_node script to /home/mureaul/RBT1/install/rbt1_utils/lib/rbt1_utils
+[1.891s] Installing weather_monitor_node script to /home/mureaul/RBT1/install/rbt1_utils/lib/rbt1_utils
+[1.892s] writing list of installed files to '/home/mureaul/RBT1/build/rbt1_utils/install.log'
+[1.967s] Invoked command in '/home/mureaul/RBT1/src/rbt1_utils' returned '0': PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/mureaul/RBT1/build/rbt1_utils/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mureaul/RBT1/install/rbt1_utils/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rbt1_utils build --build-base /home/mureaul/RBT1/build/rbt1_utils/build install --record /home/mureaul/RBT1/build/rbt1_utils/install.log --single-version-externally-managed install_data

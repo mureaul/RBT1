@@ -1,0 +1,9 @@
+free_thresh: 0.196
+image: /home/mureaul/RBT1/src/rbt1_navigation/maps/RBT1 - Map.pgm
+negate: 0
+occupied_thresh: 0.65
+origin:
+- 435521.6224823745
+- 4827220.302264106
+- 0.0
+resolution: 0.05

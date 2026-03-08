@@ -1,0 +1,24 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from rbt1_interfaces/msg/MissionState.msg
+// generated code does not contain a copyright notice
+
+
+module rbt1_interfaces {
+  module msg {
+    struct MissionState {
+      string mission_id;
+
+      @verbatim (language="comment", text=
+        "IDLE | PRECHECK | RUNNING | PAUSED | DONE | ERROR | ABORTED")
+      string state;
+
+      @verbatim (language="comment", text=
+        "TRANSIT | PERIMETER | COVERAGE | RETURNING | DOCKED | NONE")
+      string current_step;
+
+      @verbatim (language="comment", text=
+        "message libre (debug, cause erreur)")
+      string info;
+    };
+  };
+};

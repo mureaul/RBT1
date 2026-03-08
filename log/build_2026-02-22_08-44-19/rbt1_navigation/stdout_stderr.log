@@ -1,0 +1,66 @@
+running develop
+Removing /home/mureaul/RBT1/install/rbt1_navigation/lib/python3.12/site-packages/rbt1-navigation.egg-link (link to .)
+running egg_info
+writing ../../build/rbt1_navigation/rbt1_navigation.egg-info/PKG-INFO
+writing dependency_links to ../../build/rbt1_navigation/rbt1_navigation.egg-info/dependency_links.txt
+writing entry points to ../../build/rbt1_navigation/rbt1_navigation.egg-info/entry_points.txt
+writing requirements to ../../build/rbt1_navigation/rbt1_navigation.egg-info/requires.txt
+writing top-level names to ../../build/rbt1_navigation/rbt1_navigation.egg-info/top_level.txt
+reading manifest file '../../build/rbt1_navigation/rbt1_navigation.egg-info/SOURCES.txt'
+writing manifest file '../../build/rbt1_navigation/rbt1_navigation.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/mureaul/RBT1/build/rbt1_navigation/build
+creating /home/mureaul/RBT1/build/rbt1_navigation/build/lib
+creating /home/mureaul/RBT1/build/rbt1_navigation/build/lib/rbt1_navigation
+copying rbt1_navigation/navigation_orchestrator.py -> /home/mureaul/RBT1/build/rbt1_navigation/build/lib/rbt1_navigation
+copying rbt1_navigation/mission_manager.py -> /home/mureaul/RBT1/build/rbt1_navigation/build/lib/rbt1_navigation
+copying rbt1_navigation/mission_orchestrator.py -> /home/mureaul/RBT1/build/rbt1_navigation/build/lib/rbt1_navigation
+copying rbt1_navigation/__init__.py -> /home/mureaul/RBT1/build/rbt1_navigation/build/lib/rbt1_navigation
+copying rbt1_navigation/path_follower.py -> /home/mureaul/RBT1/build/rbt1_navigation/build/lib/rbt1_navigation
+running install
+running install_lib
+creating /home/mureaul/RBT1/install/rbt1_navigation/lib/python3.12/site-packages/rbt1_navigation
+copying /home/mureaul/RBT1/build/rbt1_navigation/build/lib/rbt1_navigation/navigation_orchestrator.py -> /home/mureaul/RBT1/install/rbt1_navigation/lib/python3.12/site-packages/rbt1_navigation
+copying /home/mureaul/RBT1/build/rbt1_navigation/build/lib/rbt1_navigation/mission_manager.py -> /home/mureaul/RBT1/install/rbt1_navigation/lib/python3.12/site-packages/rbt1_navigation
+copying /home/mureaul/RBT1/build/rbt1_navigation/build/lib/rbt1_navigation/mission_orchestrator.py -> /home/mureaul/RBT1/install/rbt1_navigation/lib/python3.12/site-packages/rbt1_navigation
+copying /home/mureaul/RBT1/build/rbt1_navigation/build/lib/rbt1_navigation/__init__.py -> /home/mureaul/RBT1/install/rbt1_navigation/lib/python3.12/site-packages/rbt1_navigation
+copying /home/mureaul/RBT1/build/rbt1_navigation/build/lib/rbt1_navigation/path_follower.py -> /home/mureaul/RBT1/install/rbt1_navigation/lib/python3.12/site-packages/rbt1_navigation
+byte-compiling /home/mureaul/RBT1/install/rbt1_navigation/lib/python3.12/site-packages/rbt1_navigation/navigation_orchestrator.py to navigation_orchestrator.cpython-312.pyc
+byte-compiling /home/mureaul/RBT1/install/rbt1_navigation/lib/python3.12/site-packages/rbt1_navigation/mission_manager.py to mission_manager.cpython-312.pyc
+byte-compiling /home/mureaul/RBT1/install/rbt1_navigation/lib/python3.12/site-packages/rbt1_navigation/mission_orchestrator.py to mission_orchestrator.cpython-312.pyc
+byte-compiling /home/mureaul/RBT1/install/rbt1_navigation/lib/python3.12/site-packages/rbt1_navigation/__init__.py to __init__.cpython-312.pyc
+byte-compiling /home/mureaul/RBT1/install/rbt1_navigation/lib/python3.12/site-packages/rbt1_navigation/path_follower.py to path_follower.cpython-312.pyc
+running install_data
+copying resource/rbt1_navigation -> /home/mureaul/RBT1/install/rbt1_navigation/share/ament_index/resource_index/packages
+copying package.xml -> /home/mureaul/RBT1/install/rbt1_navigation/share/rbt1_navigation
+copying launch/dual_ekf_navsat.launch.py -> /home/mureaul/RBT1/install/rbt1_navigation/share/rbt1_navigation/launch
+copying launch/nav2_gps.launch.py -> /home/mureaul/RBT1/install/rbt1_navigation/share/rbt1_navigation/launch
+copying config/nav2_params.yaml -> /home/mureaul/RBT1/install/rbt1_navigation/share/rbt1_navigation/config
+copying config/robot_params.yaml -> /home/mureaul/RBT1/install/rbt1_navigation/share/rbt1_navigation/config
+copying config/zone1_navsat.yaml -> /home/mureaul/RBT1/install/rbt1_navigation/share/rbt1_navigation/config
+copying config/zone4_waypoints.yaml -> /home/mureaul/RBT1/install/rbt1_navigation/share/rbt1_navigation/config
+copying config/zone2_waypoints.yaml -> /home/mureaul/RBT1/install/rbt1_navigation/share/rbt1_navigation/config
+copying config/ekf.yaml -> /home/mureaul/RBT1/install/rbt1_navigation/share/rbt1_navigation/config
+copying config/nav2_gps_params.yaml -> /home/mureaul/RBT1/install/rbt1_navigation/share/rbt1_navigation/config
+copying config/zone2_navsat.yaml -> /home/mureaul/RBT1/install/rbt1_navigation/share/rbt1_navigation/config
+copying config/zone1_waypoints.yaml -> /home/mureaul/RBT1/install/rbt1_navigation/share/rbt1_navigation/config
+copying config/zone3_navsat.yaml -> /home/mureaul/RBT1/install/rbt1_navigation/share/rbt1_navigation/config
+copying config/zone4_navsat.yaml -> /home/mureaul/RBT1/install/rbt1_navigation/share/rbt1_navigation/config
+copying config/collision_monitor.yaml -> /home/mureaul/RBT1/install/rbt1_navigation/share/rbt1_navigation/config
+copying config/dual_ekf_navsat_params.yaml -> /home/mureaul/RBT1/install/rbt1_navigation/share/rbt1_navigation/config
+copying config/dock_gps.yaml -> /home/mureaul/RBT1/install/rbt1_navigation/share/rbt1_navigation/config
+copying config/rbt1_gps_bridge.yaml -> /home/mureaul/RBT1/install/rbt1_navigation/share/rbt1_navigation/config
+copying config/zone3_waypoints.yaml -> /home/mureaul/RBT1/install/rbt1_navigation/share/rbt1_navigation/config
+copying maps/zone4.yaml -> /home/mureaul/RBT1/install/rbt1_navigation/share/rbt1_navigation/maps
+copying maps/zone1.yaml -> /home/mureaul/RBT1/install/rbt1_navigation/share/rbt1_navigation/maps
+copying maps/zone3.yaml -> /home/mureaul/RBT1/install/rbt1_navigation/share/rbt1_navigation/maps
+copying maps/zone2.yaml -> /home/mureaul/RBT1/install/rbt1_navigation/share/rbt1_navigation/maps
+running install_egg_info
+Copying ../../build/rbt1_navigation/rbt1_navigation.egg-info to /home/mureaul/RBT1/install/rbt1_navigation/lib/python3.12/site-packages/rbt1_navigation-0.0.1-py3.12.egg-info
+running install_scripts
+Installing mission_manager script to /home/mureaul/RBT1/install/rbt1_navigation/lib/rbt1_navigation
+Installing mission_orchestrator script to /home/mureaul/RBT1/install/rbt1_navigation/lib/rbt1_navigation
+Installing navigation_orchestrator script to /home/mureaul/RBT1/install/rbt1_navigation/lib/rbt1_navigation
+Installing path_follower script to /home/mureaul/RBT1/install/rbt1_navigation/lib/rbt1_navigation
+writing list of installed files to '/home/mureaul/RBT1/build/rbt1_navigation/install.log'

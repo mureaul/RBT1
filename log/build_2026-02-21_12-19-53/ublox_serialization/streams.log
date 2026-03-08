@@ -1,0 +1,46 @@
+[0.015s] Invoking command in '/home/mureaul/RBT1/build/ublox_serialization': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mureaul/RBT1/install/rbt1_utils:/home/mureaul/RBT1/install/rbt1_navigation:/opt/ros/jazzy PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake /home/mureaul/RBT1/src/ublox_ros2/ublox_serialization -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/mureaul/RBT1/install/ublox_serialization
+[0.518s] -- The C compiler identification is GNU 13.3.0
+[0.765s] -- The CXX compiler identification is GNU 13.3.0
+[0.840s] -- Detecting C compiler ABI info
+[1.109s] -- Detecting C compiler ABI info - done
+[1.124s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.155s] -- Detecting C compile features
+[1.162s] -- Detecting C compile features - done
+[1.188s] -- Detecting CXX compiler ABI info
+[1.467s] -- Detecting CXX compiler ABI info - done
+[1.482s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.482s] -- Detecting CXX compile features
+[1.483s] -- Detecting CXX compile features - done
+[1.490s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.732s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.849s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.139s] -- Configuring done (2.1s)
+[2.146s] -- Generating done (0.0s)
+[2.205s] -- Build files have been written to: /home/mureaul/RBT1/build/ublox_serialization
+[2.215s] Invoked command in '/home/mureaul/RBT1/build/ublox_serialization' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mureaul/RBT1/install/rbt1_utils:/home/mureaul/RBT1/install/rbt1_navigation:/opt/ros/jazzy PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake /home/mureaul/RBT1/src/ublox_ros2/ublox_serialization -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/mureaul/RBT1/install/ublox_serialization
+[2.218s] Invoking command in '/home/mureaul/RBT1/build/ublox_serialization': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mureaul/RBT1/install/rbt1_utils:/home/mureaul/RBT1/install/rbt1_navigation:/opt/ros/jazzy PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --build /home/mureaul/RBT1/build/ublox_serialization -- -j4 -l4
+[2.296s] Invoked command in '/home/mureaul/RBT1/build/ublox_serialization' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mureaul/RBT1/install/rbt1_utils:/home/mureaul/RBT1/install/rbt1_navigation:/opt/ros/jazzy PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --build /home/mureaul/RBT1/build/ublox_serialization -- -j4 -l4
+[2.317s] Invoking command in '/home/mureaul/RBT1/build/ublox_serialization': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mureaul/RBT1/install/rbt1_utils:/home/mureaul/RBT1/install/rbt1_navigation:/opt/ros/jazzy PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --install /home/mureaul/RBT1/build/ublox_serialization
+[2.336s] -- Install configuration: ""
+[2.337s] -- Execute custom install script
+[2.337s] -- Symlinking: /home/mureaul/RBT1/install/ublox_serialization/include/ublox_serialization/ublox_serialization/checksum.hpp
+[2.357s] -- Symlinking: /home/mureaul/RBT1/install/ublox_serialization/include/ublox_serialization/ublox_serialization/serialization.hpp
+[2.375s] -- Symlinking: /home/mureaul/RBT1/install/ublox_serialization/share/ament_index/resource_index/package_run_dependencies/ublox_serialization
+[2.393s] -- Symlinking: /home/mureaul/RBT1/install/ublox_serialization/share/ament_index/resource_index/parent_prefix_path/ublox_serialization
+[2.412s] -- Symlinking: /home/mureaul/RBT1/install/ublox_serialization/share/ublox_serialization/environment/ament_prefix_path.sh
+[2.430s] -- Symlinking: /home/mureaul/RBT1/install/ublox_serialization/share/ublox_serialization/environment/ament_prefix_path.dsv
+[2.448s] -- Symlinking: /home/mureaul/RBT1/install/ublox_serialization/share/ublox_serialization/environment/path.sh
+[2.466s] -- Symlinking: /home/mureaul/RBT1/install/ublox_serialization/share/ublox_serialization/environment/path.dsv
+[2.485s] -- Symlinking: /home/mureaul/RBT1/install/ublox_serialization/share/ublox_serialization/local_setup.bash
+[2.504s] -- Symlinking: /home/mureaul/RBT1/install/ublox_serialization/share/ublox_serialization/local_setup.sh
+[2.523s] -- Symlinking: /home/mureaul/RBT1/install/ublox_serialization/share/ublox_serialization/local_setup.zsh
+[2.541s] -- Symlinking: /home/mureaul/RBT1/install/ublox_serialization/share/ublox_serialization/local_setup.dsv
+[2.560s] -- Symlinking: /home/mureaul/RBT1/install/ublox_serialization/share/ublox_serialization/package.dsv
+[2.585s] -- Symlinking: /home/mureaul/RBT1/install/ublox_serialization/share/ament_index/resource_index/packages/ublox_serialization
+[2.603s] -- Symlinking: /home/mureaul/RBT1/install/ublox_serialization/share/ublox_serialization/cmake/ament_cmake_export_include_directories-extras.cmake
+[2.623s] -- Symlinking: /home/mureaul/RBT1/install/ublox_serialization/share/ublox_serialization/cmake/ament_cmake_export_targets-extras.cmake
+[2.641s] -- Symlinking: /home/mureaul/RBT1/install/ublox_serialization/share/ublox_serialization/cmake/ublox_serializationConfig.cmake
+[2.660s] -- Symlinking: /home/mureaul/RBT1/install/ublox_serialization/share/ublox_serialization/cmake/ublox_serializationConfig-version.cmake
+[2.678s] -- Symlinking: /home/mureaul/RBT1/install/ublox_serialization/share/ublox_serialization/package.xml
+[2.697s] -- Installing: /home/mureaul/RBT1/install/ublox_serialization/share/ublox_serialization/cmake/export_ublox_serializationExport.cmake
+[2.701s] Invoked command in '/home/mureaul/RBT1/build/ublox_serialization' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mureaul/RBT1/install/rbt1_utils:/home/mureaul/RBT1/install/rbt1_navigation:/opt/ros/jazzy PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ /usr/bin/cmake --install /home/mureaul/RBT1/build/ublox_serialization

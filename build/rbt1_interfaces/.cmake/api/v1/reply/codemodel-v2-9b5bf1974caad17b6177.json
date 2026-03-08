@@ -1,0 +1,242 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-6f67835606de0847689d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				},
+				{
+					"build" : "rbt1_interfaces__py",
+					"jsonFile" : "directory-rbt1_interfaces__py-561925698a14cfd266bc.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/mureaul/RBT1/build/rbt1_interfaces/rbt1_interfaces__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "rbt1_interfaces",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_rbt1_interfaces_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_rbt1_interfaces_egg-ab4c07178a93a63d58b0.json",
+					"name" : "ament_cmake_python_build_rbt1_interfaces_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_rbt1_interfaces::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_rbt1_interfaces-5e5de9989feefd97c27f.json",
+					"name" : "ament_cmake_python_copy_rbt1_interfaces",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rbt1_interfaces::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rbt1_interfaces-c8fe37bf10cbeb011965.json",
+					"name" : "rbt1_interfaces",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rbt1_interfaces__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rbt1_interfaces__cpp-85d3063938b2b5cb8db9.json",
+					"name" : "rbt1_interfaces__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "rbt1_interfaces__py::@3dd87161fbfb21786dd5",
+					"jsonFile" : "target-rbt1_interfaces__py-e478e52d017ed699061c.json",
+					"name" : "rbt1_interfaces__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rbt1_interfaces__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rbt1_interfaces__rosidl_generator_c-e29ca3d64ce246085d2f.json",
+					"name" : "rbt1_interfaces__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rbt1_interfaces__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rbt1_interfaces__rosidl_generator_py-af67ded716d97c75b8e6.json",
+					"name" : "rbt1_interfaces__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rbt1_interfaces__rosidl_generator_type_description::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rbt1_interfaces__rosidl_generator_type_description-6a2821dd524251a16acb.json",
+					"name" : "rbt1_interfaces__rosidl_generator_type_description",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rbt1_interfaces__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rbt1_interfaces__rosidl_typesupport_c-392871d5d98c5bebeed5.json",
+					"name" : "rbt1_interfaces__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rbt1_interfaces__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rbt1_interfaces__rosidl_typesupport_cpp-8ede26172462e68fd994.json",
+					"name" : "rbt1_interfaces__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rbt1_interfaces__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rbt1_interfaces__rosidl_typesupport_fastrtps_c-e49d17ae0c5d5e7796cb.json",
+					"name" : "rbt1_interfaces__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rbt1_interfaces__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rbt1_interfaces__rosidl_typesupport_fastrtps_cpp-cf1e5d0c36e4e79f1582.json",
+					"name" : "rbt1_interfaces__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rbt1_interfaces__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rbt1_interfaces__rosidl_typesupport_introspection_c-c6af827cc6df0cb2ad6e.json",
+					"name" : "rbt1_interfaces__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rbt1_interfaces__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rbt1_interfaces__rosidl_typesupport_introspection_cpp-943ef1a4a94f99443b87.json",
+					"name" : "rbt1_interfaces__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rbt1_interfaces_s__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rbt1_interfaces_s__rosidl_typesupport_c-400adc8829ea16eb2819.json",
+					"name" : "rbt1_interfaces_s__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rbt1_interfaces_s__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rbt1_interfaces_s__rosidl_typesupport_fastrtps_c-da2ee633dbe0c01ba829.json",
+					"name" : "rbt1_interfaces_s__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rbt1_interfaces_s__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rbt1_interfaces_s__rosidl_typesupport_introspection_c-6d5e2d9ab85c0f7eb7a2.json",
+					"name" : "rbt1_interfaces_s__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rbt1_interfaces_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rbt1_interfaces_uninstall-74dc8081cd5d876bdca2.json",
+					"name" : "rbt1_interfaces_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-4fe7be459e741c0ab05d.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/mureaul/RBT1/build/rbt1_interfaces",
+		"source" : "/home/mureaul/RBT1/src/rbt1_interfaces"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

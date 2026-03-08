@@ -1,0 +1,17 @@
+/home/mureaul/RBT1/install/rbt1_description/share/rbt1_description/launch/robot_state_publisher.launch.py
+/home/mureaul/RBT1/install/rbt1_description/share/rbt1_description/urdf/rbt1.urdf
+/home/mureaul/RBT1/install/rbt1_description/share/ament_index/resource_index/package_run_dependencies/rbt1_description
+/home/mureaul/RBT1/install/rbt1_description/share/ament_index/resource_index/parent_prefix_path/rbt1_description
+/home/mureaul/RBT1/install/rbt1_description/share/rbt1_description/environment/ament_prefix_path.sh
+/home/mureaul/RBT1/install/rbt1_description/share/rbt1_description/environment/ament_prefix_path.dsv
+/home/mureaul/RBT1/install/rbt1_description/share/rbt1_description/environment/path.sh
+/home/mureaul/RBT1/install/rbt1_description/share/rbt1_description/environment/path.dsv
+/home/mureaul/RBT1/install/rbt1_description/share/rbt1_description/local_setup.bash
+/home/mureaul/RBT1/install/rbt1_description/share/rbt1_description/local_setup.sh
+/home/mureaul/RBT1/install/rbt1_description/share/rbt1_description/local_setup.zsh
+/home/mureaul/RBT1/install/rbt1_description/share/rbt1_description/local_setup.dsv
+/home/mureaul/RBT1/install/rbt1_description/share/rbt1_description/package.dsv
+/home/mureaul/RBT1/install/rbt1_description/share/ament_index/resource_index/packages/rbt1_description
+/home/mureaul/RBT1/install/rbt1_description/share/rbt1_description/cmake/rbt1_descriptionConfig.cmake
+/home/mureaul/RBT1/install/rbt1_description/share/rbt1_description/cmake/rbt1_descriptionConfig-version.cmake
+/home/mureaul/RBT1/install/rbt1_description/share/rbt1_description/package.xml

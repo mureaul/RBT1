@@ -1,0 +1,20 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from rbt1_interfaces/msg/MissionCommand.msg
+// generated code does not contain a copyright notice
+
+
+module rbt1_interfaces {
+  module msg {
+    struct MissionCommand {
+      string mission_id;
+
+      string zone;
+
+      @verbatim (language="comment", text=
+        "transit | perimeter | coverage | dock | inspection")
+      string mission_type;
+
+      float min_battery_percent;
+    };
+  };
+};

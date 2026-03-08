@@ -1,7 +1,0 @@
-  python3 kml_to_nav2_params_both_with_origin_kml.py \
-  --origin-kml "/home/ludovic/RBT1 project/V2/src/RBT1_bringup/maps/base_point.kml" \
-  --kml "/home/ludovic/RBT1 project/V2/src/RBT1_bringup/maps/Zone1_offline.kml" "/home/ludovic/RBT1 project/V2/src/RBT1_bringup/maps/Zone2_offline.kml" "/home/ludovic/RBT1 project/V2/src/RBT1_bringup/maps/Keepout1-fosse_offline.kml"\
-  --out-dir "/home/ludovic/RBT1 project/V2/src/RBT1_bringup/maps/nav2_maps" \
-  --dock-heading 69 \
-  --yaml nav2_params.yaml
-

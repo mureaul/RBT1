@@ -1,0 +1,10 @@
+msg/MissionCommand.idl
+msg/MissionCommand.msg
+msg/MissionState.idl
+msg/MissionState.msg
+srv/GenerateCoverage.idl
+srv/GenerateCoverage.srv
+srv/LoadZone.idl
+srv/LoadZone.srv
+srv/NavigationStatus.idl
+srv/NavigationStatus.srv

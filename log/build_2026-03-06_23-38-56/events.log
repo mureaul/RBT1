@@ -1,0 +1,175 @@
+[0.000000] (-) TimerEvent: {}
+[0.001301] (-) JobUnselected: {'identifier': 'rbt1_description'}
+[0.001481] (-) JobUnselected: {'identifier': 'rbt1_docking'}
+[0.001521] (-) JobUnselected: {'identifier': 'rbt1_interfaces'}
+[0.001554] (-) JobUnselected: {'identifier': 'rbt1_utils'}
+[0.001588] (-) JobUnselected: {'identifier': 'rplidar_ros'}
+[0.001617] (-) JobUnselected: {'identifier': 'ublox'}
+[0.001648] (-) JobUnselected: {'identifier': 'ublox_gps'}
+[0.001676] (-) JobUnselected: {'identifier': 'ublox_msgs'}
+[0.001703] (-) JobUnselected: {'identifier': 'ublox_serialization'}
+[0.001736] (rbt1_navigation) JobQueued: {'identifier': 'rbt1_navigation', 'dependencies': OrderedDict({'rbt1_interfaces': '/home/mureaul/RBT1/install/rbt1_interfaces'})}
+[0.002127] (rbt1_navigation) JobStarted: {'identifier': 'rbt1_navigation'}
+[0.069960] (-) TimerEvent: {}
+[0.170341] (-) TimerEvent: {}
+[0.270729] (-) TimerEvent: {}
+[0.371109] (-) TimerEvent: {}
+[0.471472] (-) TimerEvent: {}
+[0.571836] (-) TimerEvent: {}
+[0.672217] (-) TimerEvent: {}
+[0.772611] (-) TimerEvent: {}
+[0.872980] (-) TimerEvent: {}
+[0.973396] (-) TimerEvent: {}
+[1.073726] (-) TimerEvent: {}
+[1.174072] (-) TimerEvent: {}
+[1.274472] (-) TimerEvent: {}
+[1.374814] (-) TimerEvent: {}
+[1.475211] (-) TimerEvent: {}
+[1.575631] (-) TimerEvent: {}
+[1.676004] (-) TimerEvent: {}
+[1.776351] (-) TimerEvent: {}
+[1.876771] (-) TimerEvent: {}
+[1.977353] (-) TimerEvent: {}
+[2.077774] (-) TimerEvent: {}
+[2.178755] (-) TimerEvent: {}
+[2.279174] (-) TimerEvent: {}
+[2.379688] (-) TimerEvent: {}
+[2.480060] (-) TimerEvent: {}
+[2.580417] (-) TimerEvent: {}
+[2.680950] (-) TimerEvent: {}
+[2.782065] (-) TimerEvent: {}
+[2.882799] (-) TimerEvent: {}
+[2.983538] (-) TimerEvent: {}
+[3.083943] (-) TimerEvent: {}
+[3.184285] (-) TimerEvent: {}
+[3.284621] (-) TimerEvent: {}
+[3.384983] (-) TimerEvent: {}
+[3.485353] (-) TimerEvent: {}
+[3.585712] (-) TimerEvent: {}
+[3.686088] (-) TimerEvent: {}
+[3.786470] (-) TimerEvent: {}
+[3.887135] (-) TimerEvent: {}
+[3.987535] (-) TimerEvent: {}
+[4.087905] (-) TimerEvent: {}
+[4.188301] (-) TimerEvent: {}
+[4.289031] (-) TimerEvent: {}
+[4.389469] (-) TimerEvent: {}
+[4.489888] (-) TimerEvent: {}
+[4.590555] (-) TimerEvent: {}
+[4.691672] (-) TimerEvent: {}
+[4.792041] (-) TimerEvent: {}
+[4.892444] (-) TimerEvent: {}
+[4.993025] (-) TimerEvent: {}
+[5.093438] (-) TimerEvent: {}
+[5.193826] (-) TimerEvent: {}
+[5.294186] (-) TimerEvent: {}
+[5.394588] (-) TimerEvent: {}
+[5.495055] (-) TimerEvent: {}
+[5.595607] (-) TimerEvent: {}
+[5.696115] (-) TimerEvent: {}
+[5.796489] (-) TimerEvent: {}
+[5.896848] (-) TimerEvent: {}
+[5.997206] (-) TimerEvent: {}
+[6.097592] (-) TimerEvent: {}
+[6.197961] (-) TimerEvent: {}
+[6.298346] (-) TimerEvent: {}
+[6.398728] (-) TimerEvent: {}
+[6.499092] (-) TimerEvent: {}
+[6.599603] (-) TimerEvent: {}
+[6.700582] (-) TimerEvent: {}
+[6.801520] (-) TimerEvent: {}
+[6.901924] (-) TimerEvent: {}
+[7.002335] (-) TimerEvent: {}
+[7.102729] (-) TimerEvent: {}
+[7.203103] (-) TimerEvent: {}
+[7.303484] (-) TimerEvent: {}
+[7.403856] (-) TimerEvent: {}
+[7.504208] (-) TimerEvent: {}
+[7.604571] (-) TimerEvent: {}
+[7.704960] (-) TimerEvent: {}
+[7.805318] (-) TimerEvent: {}
+[7.905660] (-) TimerEvent: {}
+[8.006024] (-) TimerEvent: {}
+[8.106371] (-) TimerEvent: {}
+[8.206758] (-) TimerEvent: {}
+[8.307114] (-) TimerEvent: {}
+[8.407486] (-) TimerEvent: {}
+[8.507853] (-) TimerEvent: {}
+[8.608227] (-) TimerEvent: {}
+[8.708598] (-) TimerEvent: {}
+[8.808971] (-) TimerEvent: {}
+[8.909345] (-) TimerEvent: {}
+[9.009704] (-) TimerEvent: {}
+[9.110079] (-) TimerEvent: {}
+[9.210459] (-) TimerEvent: {}
+[9.310817] (-) TimerEvent: {}
+[9.411187] (-) TimerEvent: {}
+[9.511590] (-) TimerEvent: {}
+[9.611964] (-) TimerEvent: {}
+[9.712324] (-) TimerEvent: {}
+[9.812698] (-) TimerEvent: {}
+[9.913060] (-) TimerEvent: {}
+[10.013436] (-) TimerEvent: {}
+[10.113819] (-) TimerEvent: {}
+[10.214169] (-) TimerEvent: {}
+[10.314494] (-) TimerEvent: {}
+[10.414837] (-) TimerEvent: {}
+[10.515145] (-) TimerEvent: {}
+[10.615485] (-) TimerEvent: {}
+[10.715841] (-) TimerEvent: {}
+[10.816194] (-) TimerEvent: {}
+[10.916587] (-) TimerEvent: {}
+[11.017969] (-) TimerEvent: {}
+[11.051532] (rbt1_navigation) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/rbt1_navigation', 'build', '--build-base', '/home/mureaul/RBT1/build/rbt1_navigation/build', 'install', '--record', '/home/mureaul/RBT1/build/rbt1_navigation/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/mureaul/RBT1/src/rbt1_navigation', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'mureaul', 'SSH_CLIENT': '192.168.1.140 49732 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'ROS_PACKAGE_PATH': '/home/mureaul/RBT1/install/rbt1_interfaces/share', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/mureaul/RBT1/install/rbt1_interfaces/lib:/home/mureaul/RBT1/install/ublox_gps/lib:/home/mureaul/RBT1/install/ublox_msgs/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/ortools_vendor/lib:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/mureaul', 'OLDPWD': '/home/mureaul', 'SSH_TTY': '/dev/pts/1', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'LC_TERMINAL_VERSION': '3.6.6', 'COLCON_PREFIX_PATH': '/home/mureaul/RBT1/install:/home/mureaul/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'mureaul', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PKG_CONFIG_PATH': '/home/mureaul/RBT1/install/rbt1_interfaces/lib/aarch64-linux-gnu/pkgconfig:/home/mureaul/RBT1/install/rbt1_interfaces/lib/pkgconfig', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '63', 'PATH': '/opt/ros/jazzy/opt/ortools_vendor/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/mureaul/RBT1/install/ublox_gps:/home/mureaul/RBT1/install/ublox_msgs:/home/mureaul/RBT1/install/ublox_serialization:/home/mureaul/RBT1/install/rplidar_ros:/home/mureaul/RBT1/install/rbt1_utils:/home/mureaul/RBT1/install/rbt1_navigation:/home/mureaul/RBT1/install/rbt1_docking:/home/mureaul/RBT1/install/rbt1_description:/home/mureaul/install/rbt1_utils:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_TERMINAL': 'iTerm2', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/mureaul/RBT1/build/rbt1_navigation', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.1.140 49732 192.168.1.199 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/mureaul/RBT1/build/rbt1_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mureaul/RBT1/install/rbt1_navigation/lib/python3.12/site-packages:/home/mureaul/RBT1/install/rbt1_interfaces/lib/python3.12/site-packages:/home/mureaul/RBT1/install/ublox_msgs/lib/python3.12/site-packages:/home/mureaul/RBT1/install/rbt1_utils/lib/python3.12/site-packages:/home/mureaul/RBT1/install/rbt1_navigation/lib/python3.12/site-packages:/home/mureaul/install/rbt1_utils/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/mureaul/RBT1/install/rbt1_interfaces:/home/mureaul/RBT1/install/ublox_gps:/home/mureaul/RBT1/install/ublox_msgs:/home/mureaul/RBT1/install/ublox_serialization:/home/mureaul/RBT1/install/rplidar_ros:/home/mureaul/RBT1/install/rbt1_docking:/home/mureaul/RBT1/install/rbt1_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[11.118095] (-) TimerEvent: {}
+[11.218865] (-) TimerEvent: {}
+[11.319913] (-) TimerEvent: {}
+[11.420253] (-) TimerEvent: {}
+[11.520830] (-) TimerEvent: {}
+[11.524599] (rbt1_navigation) StdoutLine: {'line': b'running egg_info\n'}
+[11.551998] (rbt1_navigation) StdoutLine: {'line': b'writing ../../build/rbt1_navigation/rbt1_navigation.egg-info/PKG-INFO\n'}
+[11.553882] (rbt1_navigation) StdoutLine: {'line': b'writing dependency_links to ../../build/rbt1_navigation/rbt1_navigation.egg-info/dependency_links.txt\n'}
+[11.561831] (rbt1_navigation) StdoutLine: {'line': b'writing entry points to ../../build/rbt1_navigation/rbt1_navigation.egg-info/entry_points.txt\n'}
+[11.571574] (rbt1_navigation) StdoutLine: {'line': b'writing requirements to ../../build/rbt1_navigation/rbt1_navigation.egg-info/requires.txt\n'}
+[11.571929] (rbt1_navigation) StdoutLine: {'line': b'writing top-level names to ../../build/rbt1_navigation/rbt1_navigation.egg-info/top_level.txt\n'}
+[11.620937] (-) TimerEvent: {}
+[11.666195] (rbt1_navigation) StdoutLine: {'line': b"reading manifest file '../../build/rbt1_navigation/rbt1_navigation.egg-info/SOURCES.txt'\n"}
+[11.669381] (rbt1_navigation) StdoutLine: {'line': b"writing manifest file '../../build/rbt1_navigation/rbt1_navigation.egg-info/SOURCES.txt'\n"}
+[11.669648] (rbt1_navigation) StdoutLine: {'line': b'running build\n'}
+[11.669770] (rbt1_navigation) StdoutLine: {'line': b'running build_py\n'}
+[11.670016] (rbt1_navigation) StdoutLine: {'line': b'copying rbt1_navigation/kml_to_map_generator.py -> /home/mureaul/RBT1/build/rbt1_navigation/build/lib/rbt1_navigation\n'}
+[11.670553] (rbt1_navigation) StdoutLine: {'line': b'running install\n'}
+[11.680638] (rbt1_navigation) StdoutLine: {'line': b'running install_lib\n'}
+[11.721200] (-) TimerEvent: {}
+[11.731566] (rbt1_navigation) StdoutLine: {'line': b'copying /home/mureaul/RBT1/build/rbt1_navigation/build/lib/rbt1_navigation/kml_to_map_generator.py -> /home/mureaul/RBT1/install/rbt1_navigation/lib/python3.12/site-packages/rbt1_navigation\n'}
+[11.742284] (rbt1_navigation) StdoutLine: {'line': b'byte-compiling /home/mureaul/RBT1/install/rbt1_navigation/lib/python3.12/site-packages/rbt1_navigation/kml_to_map_generator.py to kml_to_map_generator.cpython-312.pyc\n'}
+[11.753603] (rbt1_navigation) StdoutLine: {'line': b'running install_data\n'}
+[11.754123] (rbt1_navigation) StdoutLine: {'line': b'copying maps/RBT1 - Map.yaml -> /home/mureaul/RBT1/install/rbt1_navigation/share/rbt1_navigation/maps\n'}
+[11.814397] (rbt1_navigation) StdoutLine: {'line': b'running install_egg_info\n'}
+[11.821350] (-) TimerEvent: {}
+[11.854454] (rbt1_navigation) StdoutLine: {'line': b"removing '/home/mureaul/RBT1/install/rbt1_navigation/lib/python3.12/site-packages/rbt1_navigation-0.0.1-py3.12.egg-info' (and everything under it)\n"}
+[11.855335] (rbt1_navigation) StdoutLine: {'line': b'Copying ../../build/rbt1_navigation/rbt1_navigation.egg-info to /home/mureaul/RBT1/install/rbt1_navigation/lib/python3.12/site-packages/rbt1_navigation-0.0.1-py3.12.egg-info\n'}
+[11.876705] (rbt1_navigation) StdoutLine: {'line': b'running install_scripts\n'}
+[11.921567] (-) TimerEvent: {}
+[12.021974] (-) TimerEvent: {}
+[12.106443] (rbt1_navigation) StdoutLine: {'line': b'Installing map_generator script to /home/mureaul/RBT1/install/rbt1_navigation/lib/rbt1_navigation\n'}
+[12.106742] (rbt1_navigation) StdoutLine: {'line': b'Installing mission_manager script to /home/mureaul/RBT1/install/rbt1_navigation/lib/rbt1_navigation\n'}
+[12.106904] (rbt1_navigation) StdoutLine: {'line': b'Installing mission_orchestrator script to /home/mureaul/RBT1/install/rbt1_navigation/lib/rbt1_navigation\n'}
+[12.107068] (rbt1_navigation) StdoutLine: {'line': b'Installing navigation_orchestrator script to /home/mureaul/RBT1/install/rbt1_navigation/lib/rbt1_navigation\n'}
+[12.107225] (rbt1_navigation) StdoutLine: {'line': b'Installing path_follower script to /home/mureaul/RBT1/install/rbt1_navigation/lib/rbt1_navigation\n'}
+[12.107723] (rbt1_navigation) StdoutLine: {'line': b"writing list of installed files to '/home/mureaul/RBT1/build/rbt1_navigation/install.log'\n"}
+[12.122097] (-) TimerEvent: {}
+[12.198851] (rbt1_navigation) CommandEnded: {'returncode': 0}
+[12.222610] (-) TimerEvent: {}
+[12.323129] (-) TimerEvent: {}
+[12.423574] (-) TimerEvent: {}
+[12.523989] (-) TimerEvent: {}
+[12.624386] (-) TimerEvent: {}
+[12.724777] (-) TimerEvent: {}
+[12.825148] (-) TimerEvent: {}
+[12.925529] (-) TimerEvent: {}
+[13.078563] (-) TimerEvent: {}
+[13.178923] (-) TimerEvent: {}
+[13.279287] (-) TimerEvent: {}
+[13.327537] (rbt1_navigation) JobEnded: {'identifier': 'rbt1_navigation', 'rc': 0}
+[13.328996] (-) EventReactorShutdown: {}

@@ -1,0 +1,15 @@
+/home/mureaul/RBT1/install/rbt1_docking/share/ament_index/resource_index/package_run_dependencies/rbt1_docking
+/home/mureaul/RBT1/install/rbt1_docking/share/ament_index/resource_index/parent_prefix_path/rbt1_docking
+/home/mureaul/RBT1/install/rbt1_docking/share/rbt1_docking/environment/ament_prefix_path.sh
+/home/mureaul/RBT1/install/rbt1_docking/share/rbt1_docking/environment/ament_prefix_path.dsv
+/home/mureaul/RBT1/install/rbt1_docking/share/rbt1_docking/environment/path.sh
+/home/mureaul/RBT1/install/rbt1_docking/share/rbt1_docking/environment/path.dsv
+/home/mureaul/RBT1/install/rbt1_docking/share/rbt1_docking/local_setup.bash
+/home/mureaul/RBT1/install/rbt1_docking/share/rbt1_docking/local_setup.sh
+/home/mureaul/RBT1/install/rbt1_docking/share/rbt1_docking/local_setup.zsh
+/home/mureaul/RBT1/install/rbt1_docking/share/rbt1_docking/local_setup.dsv
+/home/mureaul/RBT1/install/rbt1_docking/share/rbt1_docking/package.dsv
+/home/mureaul/RBT1/install/rbt1_docking/share/ament_index/resource_index/packages/rbt1_docking
+/home/mureaul/RBT1/install/rbt1_docking/share/rbt1_docking/cmake/rbt1_dockingConfig.cmake
+/home/mureaul/RBT1/install/rbt1_docking/share/rbt1_docking/cmake/rbt1_dockingConfig-version.cmake
+/home/mureaul/RBT1/install/rbt1_docking/share/rbt1_docking/package.xml

@@ -1,0 +1,4 @@
+robot_width: 0.4        # largeur physique du robot
+work_width: 0.25         # largeur utile de travail
+min_turn_radius: 0.3    # rayon minimal de braquage
+frame_id: "map"

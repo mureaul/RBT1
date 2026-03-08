@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document id="1HATMQ5Rvvk_k3ciyRAfRJarKkaEdk6_o">
+	<name>RBT1 - Map</name>
+	<gx:CascadingStyle kml:id="__managed_style_26F46E2AAE3DDFB91DC3">
+		<Style>
+			<IconStyle>
+				<scale>1.2</scale>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>3</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<gx:CascadingStyle kml:id="__managed_style_1A4C3870B03DDFB91DC3">
+		<Style>
+			<IconStyle>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LabelStyle>
+			</LabelStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>2</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<StyleMap id="__managed_style_0AF3AA59923DDFB91DC3">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#__managed_style_1A4C3870B03DDFB91DC3</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#__managed_style_26F46E2AAE3DDFB91DC3</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Placemark id="0178454EE13DDEF2E2EC">
+		<name>Contour terrain</name>
+		<LookAt>
+			<longitude>2.20194284336737</longitude>
+			<latitude>43.59559128035834</latitude>
+			<altitude>185.7823287689688</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<gx:fovy>30.00000052671203</gx:fovy>
+			<range>260.0133324304988</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0AF3AA59923DDFB91DC3</styleUrl>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						2.201658959062607,43.59516870396366,0 2.202526741792421,43.59563937199192,0 2.20197413020645,43.59606406494203,0 2.20117698787073,43.59565036128325,0 2.201658959062607,43.59516870396366,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+	<Placemark id="04240693C53DDEF56BF8">
+		<name>Keepout1 - Maison</name>
+		<LookAt>
+			<longitude>2.20194284336737</longitude>
+			<latitude>43.59559128034777</latitude>
+			<altitude>185.7823476333052</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<gx:fovy>30.00000052671203</gx:fovy>
+			<range>260.0133092528995</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0AF3AA59923DDFB91DC3</styleUrl>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						2.201178517027731,43.5956506359401,0 2.201298091547297,43.59553129152162,0 2.201453149500094,43.5955672874594,0 2.201490352640103,43.59555535898212,0 2.201530128226028,43.59556743420426,0 2.201523350702446,43.59560840862395,0 2.201554596864344,43.59561564827788,0 2.20158335577002,43.59555957977202,0 2.201795562420332,43.59561317535313,0 2.201769311065722,43.59568087165779,0 2.201829710862906,43.59570589926993,0 2.201823990581218,43.59571680112418,0 2.201720700847052,43.59569457052095,0 2.201687563576504,43.59575573377759,0 2.201792116856478,43.59577802442249,0 2.201876870440169,43.59576879680291,0 2.201878724780051,43.59578676934096,0 2.201863762185168,43.59580274685744,0 2.201835792404936,43.59581907350751,0 2.201804954573447,43.59583097972329,0 2.201772606222649,43.59583261983777,0 2.201685876938815,43.59581216725083,0 2.201673002693645,43.59582773847303,0 2.201497135550157,43.59578228944918,0 2.20148339766099,43.59580704547821,0 2.201178517027731,43.5956506359401,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+	<Placemark id="0D2C63ED8B3DDEF6676B">
+		<name>Keepout2 - Pampa</name>
+		<LookAt>
+			<longitude>2.202081001848386</longitude>
+			<latitude>43.59578387585435</latitude>
+			<altitude>184.7619827043677</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<gx:fovy>30.00000052671203</gx:fovy>
+			<range>68.53744186920267</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0AF3AA59923DDFB91DC3</styleUrl>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						2.202088867275835,43.59584996587017,0 2.202099117387935,43.59584408517938,0 2.20211466896576,43.5958454738933,0 2.202124169080195,43.59585230053379,0 2.202123029336656,43.59586378123061,0 2.202112018014961,43.59587084579096,0 2.202096651428997,43.59587050952408,0 2.20208674468805,43.59586398047196,0 2.202088867275835,43.59584996587017,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+	<Placemark id="0A3CBE01933DDEF73AC8">
+		<name>Keepout3 - Fosse</name>
+		<LookAt>
+			<longitude>2.202083779783128</longitude>
+			<latitude>43.59560855119192</latitude>
+			<altitude>184.8677071809678</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<gx:fovy>30.00000052671203</gx:fovy>
+			<range>53.54038779226357</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0AF3AA59923DDFB91DC3</styleUrl>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						2.202132967327086,43.59560981735859,0 2.202130369926791,43.59560095309271,0 2.202170387124487,43.59559451767996,0 2.202172487504916,43.59560561043179,0 2.202132967327086,43.59560981735859,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+	<Placemark id="05B504FC373DDEF8D541">
+		<name>dock1</name>
+		<LookAt>
+			<longitude>2.201217684351555</longitude>
+			<latitude>43.59562127356725</latitude>
+			<altitude>188.5731735818889</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<gx:fovy>30.00000052671203</gx:fovy>
+			<range>240.5921265989673</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0AF3AA59923DDFB91DC3</styleUrl>
+		<Point>
+			<coordinates>2.201701987942286,43.59573801809839,187.7686092400416</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="07ACDACF933DDFBB5D0C">
+		<name>Workcell1 - Jardin nord</name>
+		<LookAt>
+			<longitude>2.201870886917332</longitude>
+			<latitude>43.59585389775084</latitude>
+			<altitude>185.8659492073176</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<gx:fovy>30.00000000082664</gx:fovy>
+			<range>202.4594593834991</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0AF3AA59923DDFB91DC3</styleUrl>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						2.201660293958061,43.5958587245331,0 2.201675746249467,43.59583167189989,0 2.201741163693449,43.59584819651724,0 2.201749881820929,43.59583131013569,0 2.201777162532259,43.59583666763493,0 2.201801321502344,43.59583468342346,0 2.201823262156197,43.59582730183591,0 2.201849743444759,43.59581499710299,0 2.201870246897595,43.59580327318064,0 2.201884230600111,43.59578625705276,0 2.20188253911352,43.59576786713083,0 2.201918077064102,43.5957613649348,0 2.201953849385228,43.59575766998607,0 2.20199778654252,43.59575215726002,0 2.202045339050991,43.59574405360905,0 2.202080474788071,43.59573842339162,0 2.202109537290835,43.59573450169573,0 2.202144653928033,43.59572787759916,0 2.20217725260589,43.59572180130314,0 2.202207188612604,43.5957173060527,0 2.202244634247776,43.59571198775545,0 2.202290975350412,43.59570321576762,0 2.202322877910465,43.59569685469359,0 2.202351859828111,43.59569109102465,0 2.202382335894921,43.59568353162928,0 2.202409293716676,43.59567617307266,0 2.202433916834541,43.59566787155816,0 2.20245436118943,43.59566043785205,0 2.202481954610438,43.59564805923019,0 2.202507135830827,43.59563307699225,0 2.202520493301756,43.59564070646214,0 2.201973900356851,43.59605967933739,0 2.201491380238969,43.59580834083003,0 2.201660293958061,43.5958587245331,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+	<Placemark id="00A3E9A82C3DDFBD818C">
+		<name>Workcell2 - jardin sud 1</name>
+		<LookAt>
+			<longitude>2.201385113726679</longitude>
+			<latitude>43.59569971325124</latitude>
+			<altitude>187.7094504080861</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<gx:fovy>30.00000000082664</gx:fovy>
+			<range>233.9517443823934</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0AF3AA59923DDFB91DC3</styleUrl>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						2.201775413740328,43.59567848796291,0 2.201800076187832,43.59561246153967,0 2.202050787075502,43.59538720373092,0 2.202466611025455,43.59561030107999,0 2.202426733209646,43.59562830212638,0 2.202384562930597,43.59564616525208,0 2.202332123812409,43.59566007784206,0 2.202279971158934,43.59566853315866,0 2.202231218172686,43.59567690901567,0 2.201869623838051,43.59572638230259,0 2.201831943172143,43.59571815076588,0 2.201838508610436,43.59570479295775,0 2.201775413740328,43.59567848796291,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+	<Placemark id="06108D7BF73DDFBF397C">
+		<name>Workcell3 - jardin sud 2</name>
+		<LookAt>
+			<longitude>2.201385113697543</longitude>
+			<latitude>43.59569971325123</latitude>
+			<altitude>187.7094504080861</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<gx:fovy>30.00000000082664</gx:fovy>
+			<range>233.9517443823934</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0AF3AA59923DDFB91DC3</styleUrl>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						2.201497200511693,43.59533496645098,0 2.201881820921734,43.59553720304338,0 2.20180032135302,43.59561079596615,0 2.201581544031781,43.59555540043786,0 2.201560137085425,43.59559733984008,0 2.201532236018249,43.59559151885183,0 2.20153484472402,43.59556502224932,0 2.201492068255273,43.59555106611515,0 2.201453047790514,43.5955628004809,0 2.201307036364724,43.59552910869072,0 2.201497200511693,43.59533496645098,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+	<Placemark id="0A0CE4583F3DDFC0AB09">
+		<name>Workcell4 - jardin sud3</name>
+		<LookAt>
+			<longitude>2.2016622757645</longitude>
+			<latitude>43.59544779277922</latitude>
+			<altitude>186.065245784721</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<gx:fovy>30.00000000082664</gx:fovy>
+			<range>125.557389942951</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_0AF3AA59923DDFB91DC3</styleUrl>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						2.201494723170361,43.5953349384916,0 2.201659633255288,43.59517103191941,0 2.202053160541486,43.59538416657152,0 2.201882576151653,43.59553724932844,0 2.201494723170361,43.5953349384916,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+</Document>
+</kml>

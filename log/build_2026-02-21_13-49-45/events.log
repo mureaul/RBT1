@@ -1,0 +1,355 @@
+[0.000000] (-) TimerEvent: {}
+[0.000425] (-) JobUnselected: {'identifier': 'rbt1_description'}
+[0.000711] (-) JobUnselected: {'identifier': 'rbt1_docking'}
+[0.000878] (-) JobUnselected: {'identifier': 'rbt1_navigation'}
+[0.001082] (-) JobUnselected: {'identifier': 'rbt1_utils'}
+[0.001147] (-) JobUnselected: {'identifier': 'rplidar_ros'}
+[0.001170] (-) JobUnselected: {'identifier': 'ublox'}
+[0.001189] (-) JobUnselected: {'identifier': 'ublox_gps'}
+[0.001283] (-) JobUnselected: {'identifier': 'ublox_msgs'}
+[0.001302] (-) JobUnselected: {'identifier': 'ublox_serialization'}
+[0.001324] (rbt1_interfaces) JobQueued: {'identifier': 'rbt1_interfaces', 'dependencies': OrderedDict()}
+[0.001358] (rbt1_interfaces) JobStarted: {'identifier': 'rbt1_interfaces'}
+[0.045617] (rbt1_interfaces) JobProgress: {'identifier': 'rbt1_interfaces', 'progress': 'cmake'}
+[0.078203] (rbt1_interfaces) Command: {'cmd': ['/usr/bin/cmake', '/home/mureaul/RBT1/src/rbt1_interfaces', '-DCATKIN_INSTALL_INTO_PREFIX_ROOT=0', '-DCMAKE_INSTALL_PREFIX=/home/mureaul/RBT1/install/rbt1_interfaces'], 'cwd': '/home/mureaul/RBT1/build/rbt1_interfaces', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'mureaul', 'SSH_CLIENT': '192.168.1.140 49629 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'ROS_PACKAGE_PATH': '/home/mureaul/RBT1/install/rbt1_interfaces/share', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/mureaul/RBT1/install/ublox_gps/lib:/home/mureaul/RBT1/install/ublox_msgs/lib:/home/mureaul/RBT1/install/rbt1_interfaces/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/ortools_vendor/lib:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/mureaul', 'OLDPWD': '/home/mureaul', 'SSH_TTY': '/dev/pts/13', 'ROS_PYTHON_VERSION': '3', 'PS1': '\\[\\e]0;\\u@\\h: \\w\\a\\]${debian_chroot:+($debian_chroot)}\\[\\033[01;32m\\]\\u@\\h\\[\\033[00m\\]:\\[\\033[01;34m\\]\\w\\[\\033[00m\\]\\$', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'LC_TERMINAL_VERSION': '3.6.6', 'COLCON_PREFIX_PATH': '/home/mureaul/RBT1/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'mureaul', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PKG_CONFIG_PATH': '/home/mureaul/RBT1/install/rbt1_interfaces/lib/aarch64-linux-gnu/pkgconfig:/home/mureaul/RBT1/install/rbt1_interfaces/lib/pkgconfig', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '16', 'PATH': '/opt/ros/jazzy/opt/ortools_vendor/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/mureaul/RBT1/install/ublox_gps:/home/mureaul/RBT1/install/ublox_msgs:/home/mureaul/RBT1/install/ublox_serialization:/home/mureaul/RBT1/install/rplidar_ros:/home/mureaul/RBT1/install/rbt1_utils:/home/mureaul/RBT1/install/rbt1_navigation:/home/mureaul/RBT1/install/rbt1_docking:/home/mureaul/RBT1/install/rbt1_description:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_TERMINAL': 'iTerm2', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/mureaul/RBT1/build/rbt1_interfaces', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.1.140 49629 192.168.1.199 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/mureaul/RBT1/install/ublox_msgs/lib/python3.12/site-packages:/home/mureaul/RBT1/install/rbt1_utils/lib/python3.12/site-packages:/home/mureaul/RBT1/install/rbt1_navigation/lib/python3.12/site-packages:/home/mureaul/RBT1/install/rbt1_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/mureaul/RBT1/install/ublox_gps:/home/mureaul/RBT1/install/ublox_msgs:/home/mureaul/RBT1/install/ublox_serialization:/home/mureaul/RBT1/install/rplidar_ros:/home/mureaul/RBT1/install/rbt1_interfaces:/home/mureaul/RBT1/install/rbt1_docking:/home/mureaul/RBT1/install/rbt1_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}), 'shell': False}
+[0.099693] (-) TimerEvent: {}
+[0.158613] (rbt1_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.199813] (-) TimerEvent: {}
+[0.200318] (rbt1_interfaces) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[0.299947] (-) TimerEvent: {}
+[0.400400] (-) TimerEvent: {}
+[0.410814] (rbt1_interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)\n'}
+[0.454160] (rbt1_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.500487] (-) TimerEvent: {}
+[0.600799] (-) TimerEvent: {}
+[0.701193] (-) TimerEvent: {}
+[0.801547] (-) TimerEvent: {}
+[0.954168] (-) TimerEvent: {}
+[1.021062] (rbt1_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.054268] (-) TimerEvent: {}
+[1.154619] (-) TimerEvent: {}
+[1.254970] (-) TimerEvent: {}
+[1.271733] (rbt1_interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.6.6 (/opt/ros/jazzy/share/rosidl_adapter/cmake)\n'}
+[1.308298] (rbt1_interfaces) StdoutLine: {'line': b'-- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)\n'}
+[1.355091] (-) TimerEvent: {}
+[1.455446] (-) TimerEvent: {}
+[1.555811] (-) TimerEvent: {}
+[1.656208] (-) TimerEvent: {}
+[1.756555] (-) TimerEvent: {}
+[1.856992] (-) TimerEvent: {}
+[1.957334] (-) TimerEvent: {}
+[2.057705] (-) TimerEvent: {}
+[2.158145] (-) TimerEvent: {}
+[2.258504] (-) TimerEvent: {}
+[2.358854] (-) TimerEvent: {}
+[2.410672] (rbt1_interfaces) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)\n'}
+[2.458955] (-) TimerEvent: {}
+[2.559324] (-) TimerEvent: {}
+[2.659661] (-) TimerEvent: {}
+[2.760004] (-) TimerEvent: {}
+[2.832672] (rbt1_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.860099] (-) TimerEvent: {}
+[2.960414] (-) TimerEvent: {}
+[3.060814] (-) TimerEvent: {}
+[3.161176] (-) TimerEvent: {}
+[3.261558] (-) TimerEvent: {}
+[3.357706] (rbt1_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.361657] (-) TimerEvent: {}
+[3.397901] (rbt1_interfaces) StdoutLine: {'line': b'-- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)\n'}
+[3.461788] (-) TimerEvent: {}
+[3.562175] (-) TimerEvent: {}
+[3.662526] (-) TimerEvent: {}
+[3.762912] (-) TimerEvent: {}
+[3.863304] (-) TimerEvent: {}
+[3.963688] (-) TimerEvent: {}
+[4.064056] (-) TimerEvent: {}
+[4.164386] (-) TimerEvent: {}
+[4.264734] (-) TimerEvent: {}
+[4.365093] (-) TimerEvent: {}
+[4.465465] (-) TimerEvent: {}
+[4.565829] (-) TimerEvent: {}
+[4.666165] (-) TimerEvent: {}
+[4.766538] (-) TimerEvent: {}
+[4.866891] (-) TimerEvent: {}
+[4.967268] (-) TimerEvent: {}
+[5.067641] (-) TimerEvent: {}
+[5.168000] (-) TimerEvent: {}
+[5.268386] (-) TimerEvent: {}
+[5.368732] (-) TimerEvent: {}
+[5.469084] (-) TimerEvent: {}
+[5.569430] (-) TimerEvent: {}
+[5.592904] (rbt1_interfaces) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed \n'}
+[5.669554] (-) TimerEvent: {}
+[5.769946] (-) TimerEvent: {}
+[5.870356] (-) TimerEvent: {}
+[5.970701] (-) TimerEvent: {}
+[6.071085] (-) TimerEvent: {}
+[6.159189] (rbt1_interfaces) StdoutLine: {'line': b'-- Configuring done (6.1s)\n'}
+[6.171170] (-) TimerEvent: {}
+[6.271503] (-) TimerEvent: {}
+[6.371850] (-) TimerEvent: {}
+[6.472247] (-) TimerEvent: {}
+[6.572609] (-) TimerEvent: {}
+[6.672995] (-) TimerEvent: {}
+[6.773359] (-) TimerEvent: {}
+[6.873714] (-) TimerEvent: {}
+[6.874933] (rbt1_interfaces) StdoutLine: {'line': b'-- Generating done (0.7s)\n'}
+[6.950401] (rbt1_interfaces) StdoutLine: {'line': b'-- Build files have been written to: /home/mureaul/RBT1/build/rbt1_interfaces\n'}
+[6.965459] (rbt1_interfaces) CommandEnded: {'returncode': 0}
+[6.966203] (rbt1_interfaces) JobProgress: {'identifier': 'rbt1_interfaces', 'progress': 'build'}
+[6.967776] (rbt1_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/mureaul/RBT1/build/rbt1_interfaces', '--', '-j4', '-l4'], 'cwd': '/home/mureaul/RBT1/build/rbt1_interfaces', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'mureaul', 'SSH_CLIENT': '192.168.1.140 49629 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'ROS_PACKAGE_PATH': '/home/mureaul/RBT1/install/rbt1_interfaces/share', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/mureaul/RBT1/install/ublox_gps/lib:/home/mureaul/RBT1/install/ublox_msgs/lib:/home/mureaul/RBT1/install/rbt1_interfaces/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/ortools_vendor/lib:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/mureaul', 'OLDPWD': '/home/mureaul', 'SSH_TTY': '/dev/pts/13', 'ROS_PYTHON_VERSION': '3', 'PS1': '\\[\\e]0;\\u@\\h: \\w\\a\\]${debian_chroot:+($debian_chroot)}\\[\\033[01;32m\\]\\u@\\h\\[\\033[00m\\]:\\[\\033[01;34m\\]\\w\\[\\033[00m\\]\\$', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'LC_TERMINAL_VERSION': '3.6.6', 'COLCON_PREFIX_PATH': '/home/mureaul/RBT1/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'mureaul', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PKG_CONFIG_PATH': '/home/mureaul/RBT1/install/rbt1_interfaces/lib/aarch64-linux-gnu/pkgconfig:/home/mureaul/RBT1/install/rbt1_interfaces/lib/pkgconfig', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '16', 'PATH': '/opt/ros/jazzy/opt/ortools_vendor/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/mureaul/RBT1/install/ublox_gps:/home/mureaul/RBT1/install/ublox_msgs:/home/mureaul/RBT1/install/ublox_serialization:/home/mureaul/RBT1/install/rplidar_ros:/home/mureaul/RBT1/install/rbt1_utils:/home/mureaul/RBT1/install/rbt1_navigation:/home/mureaul/RBT1/install/rbt1_docking:/home/mureaul/RBT1/install/rbt1_description:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_TERMINAL': 'iTerm2', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/mureaul/RBT1/build/rbt1_interfaces', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.1.140 49629 192.168.1.199 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/mureaul/RBT1/install/ublox_msgs/lib/python3.12/site-packages:/home/mureaul/RBT1/install/rbt1_utils/lib/python3.12/site-packages:/home/mureaul/RBT1/install/rbt1_navigation/lib/python3.12/site-packages:/home/mureaul/RBT1/install/rbt1_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/mureaul/RBT1/install/ublox_gps:/home/mureaul/RBT1/install/ublox_msgs:/home/mureaul/RBT1/install/ublox_serialization:/home/mureaul/RBT1/install/rplidar_ros:/home/mureaul/RBT1/install/rbt1_interfaces:/home/mureaul/RBT1/install/rbt1_docking:/home/mureaul/RBT1/install/rbt1_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}), 'shell': False}
+[6.973796] (-) TimerEvent: {}
+[7.074185] (-) TimerEvent: {}
+[7.082096] (rbt1_interfaces) StdoutLine: {'line': b'[  1%] Built target rbt1_interfaces__rosidl_generator_type_description\n'}
+[7.160924] (rbt1_interfaces) StdoutLine: {'line': b'[  3%] Built target rbt1_interfaces__cpp\n'}
+[7.174271] (-) TimerEvent: {}
+[7.268569] (rbt1_interfaces) StdoutLine: {'line': b'[ 25%] Built target rbt1_interfaces__rosidl_generator_c\n'}
+[7.274433] (-) TimerEvent: {}
+[7.374845] (-) TimerEvent: {}
+[7.400303] (rbt1_interfaces) StdoutLine: {'line': b'[ 25%] Built target ament_cmake_python_copy_rbt1_interfaces\n'}
+[7.474959] (-) TimerEvent: {}
+[7.486509] (rbt1_interfaces) StdoutLine: {'line': b'[ 34%] Built target rbt1_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[7.570066] (rbt1_interfaces) StdoutLine: {'line': b'[ 43%] Built target rbt1_interfaces__rosidl_typesupport_cpp\n'}
+[7.575065] (-) TimerEvent: {}
+[7.643654] (rbt1_interfaces) StdoutLine: {'line': b'[ 53%] Built target rbt1_interfaces__rosidl_typesupport_introspection_c\n'}
+[7.675187] (-) TimerEvent: {}
+[7.776027] (rbt1_interfaces) StdoutLine: {'line': b'[ 62%] Built target rbt1_interfaces__rosidl_typesupport_c\n'}
+[7.776536] (-) TimerEvent: {}
+[7.788084] (rbt1_interfaces) StdoutLine: {'line': b'[ 71%] Built target rbt1_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[7.795225] (rbt1_interfaces) StdoutLine: {'line': b'[ 81%] Built target rbt1_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[7.848224] (rbt1_interfaces) StdoutLine: {'line': b'[ 81%] Built target rbt1_interfaces\n'}
+[7.876652] (-) TimerEvent: {}
+[7.889622] (rbt1_interfaces) StdoutLine: {'line': b'[ 82%] Built target rbt1_interfaces__py\n'}
+[7.976748] (-) TimerEvent: {}
+[7.996631] (rbt1_interfaces) StdoutLine: {'line': b'[ 90%] Built target rbt1_interfaces__rosidl_generator_py\n'}
+[8.068965] (rbt1_interfaces) StdoutLine: {'line': b'[ 93%] Built target rbt1_interfaces_s__rosidl_typesupport_c\n'}
+[8.072559] (rbt1_interfaces) StdoutLine: {'line': b'[ 96%] Built target rbt1_interfaces_s__rosidl_typesupport_introspection_c\n'}
+[8.076828] (-) TimerEvent: {}
+[8.109128] (rbt1_interfaces) StdoutLine: {'line': b'[100%] Built target rbt1_interfaces_s__rosidl_typesupport_fastrtps_c\n'}
+[8.149675] (rbt1_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[8.175521] (rbt1_interfaces) StdoutLine: {'line': b'writing rbt1_interfaces.egg-info/PKG-INFO\n'}
+[8.175867] (rbt1_interfaces) StdoutLine: {'line': b'writing dependency_links to rbt1_interfaces.egg-info/dependency_links.txt\n'}
+[8.176893] (-) TimerEvent: {}
+[8.195344] (rbt1_interfaces) StdoutLine: {'line': b'writing top-level names to rbt1_interfaces.egg-info/top_level.txt\n'}
+[8.276995] (-) TimerEvent: {}
+[8.305587] (rbt1_interfaces) StdoutLine: {'line': b"reading manifest file 'rbt1_interfaces.egg-info/SOURCES.txt'\n"}
+[8.324903] (rbt1_interfaces) StdoutLine: {'line': b"writing manifest file 'rbt1_interfaces.egg-info/SOURCES.txt'\n"}
+[8.377134] (-) TimerEvent: {}
+[8.395708] (rbt1_interfaces) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_rbt1_interfaces_egg\n'}
+[8.420785] (rbt1_interfaces) CommandEnded: {'returncode': 0}
+[8.421920] (rbt1_interfaces) JobProgress: {'identifier': 'rbt1_interfaces', 'progress': 'install'}
+[8.441393] (rbt1_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/mureaul/RBT1/build/rbt1_interfaces'], 'cwd': '/home/mureaul/RBT1/build/rbt1_interfaces', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'mureaul', 'SSH_CLIENT': '192.168.1.140 49629 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'ROS_PACKAGE_PATH': '/home/mureaul/RBT1/install/rbt1_interfaces/share', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/mureaul/RBT1/install/ublox_gps/lib:/home/mureaul/RBT1/install/ublox_msgs/lib:/home/mureaul/RBT1/install/rbt1_interfaces/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/ortools_vendor/lib:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/mureaul', 'OLDPWD': '/home/mureaul', 'SSH_TTY': '/dev/pts/13', 'ROS_PYTHON_VERSION': '3', 'PS1': '\\[\\e]0;\\u@\\h: \\w\\a\\]${debian_chroot:+($debian_chroot)}\\[\\033[01;32m\\]\\u@\\h\\[\\033[00m\\]:\\[\\033[01;34m\\]\\w\\[\\033[00m\\]\\$', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'LC_TERMINAL_VERSION': '3.6.6', 'COLCON_PREFIX_PATH': '/home/mureaul/RBT1/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'mureaul', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PKG_CONFIG_PATH': '/home/mureaul/RBT1/install/rbt1_interfaces/lib/aarch64-linux-gnu/pkgconfig:/home/mureaul/RBT1/install/rbt1_interfaces/lib/pkgconfig', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '16', 'PATH': '/opt/ros/jazzy/opt/ortools_vendor/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/mureaul/RBT1/install/ublox_gps:/home/mureaul/RBT1/install/ublox_msgs:/home/mureaul/RBT1/install/ublox_serialization:/home/mureaul/RBT1/install/rplidar_ros:/home/mureaul/RBT1/install/rbt1_utils:/home/mureaul/RBT1/install/rbt1_navigation:/home/mureaul/RBT1/install/rbt1_docking:/home/mureaul/RBT1/install/rbt1_description:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_TERMINAL': 'iTerm2', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/mureaul/RBT1/build/rbt1_interfaces', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.1.140 49629 192.168.1.199 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/mureaul/RBT1/install/ublox_msgs/lib/python3.12/site-packages:/home/mureaul/RBT1/install/rbt1_utils/lib/python3.12/site-packages:/home/mureaul/RBT1/install/rbt1_navigation/lib/python3.12/site-packages:/home/mureaul/RBT1/install/rbt1_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/mureaul/RBT1/install/ublox_gps:/home/mureaul/RBT1/install/ublox_msgs:/home/mureaul/RBT1/install/ublox_serialization:/home/mureaul/RBT1/install/rplidar_ros:/home/mureaul/RBT1/install/rbt1_interfaces:/home/mureaul/RBT1/install/rbt1_docking:/home/mureaul/RBT1/install/rbt1_description:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}), 'shell': False}
+[8.460010] (rbt1_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[8.460316] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/ament_index/resource_index/rosidl_interfaces/rbt1_interfaces\n'}
+[8.461263] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/msg/MissionCommand.json\n'}
+[8.461497] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/msg/MissionState.json\n'}
+[8.461596] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/srv/LoadZone.json\n'}
+[8.461685] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/srv/NavigationStatus.json\n'}
+[8.461772] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces\n'}
+[8.461856] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv\n'}
+[8.461938] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv/navigation_status.h\n'}
+[8.462020] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv/detail\n'}
+[8.462119] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv/detail/navigation_status__description.c\n'}
+[8.462209] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv/detail/navigation_status__functions.c\n'}
+[8.462290] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv/detail/navigation_status__struct.h\n'}
+[8.462368] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv/detail/load_zone__struct.h\n'}
+[8.462480] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv/detail/navigation_status__type_support.h\n'}
+[8.462562] (rbt1_interfaces) StdoutLine: {'line': b'-- Installing: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv/detail/navigation_status__type_support.c\n'}
+[8.471023] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv/detail/load_zone__functions.h\n'}
+[8.471288] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv/detail/navigation_status__functions.h\n'}
+[8.471401] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv/detail/load_zone__description.c\n'}
+[8.471490] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv/detail/load_zone__functions.c\n'}
+[8.471577] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv/detail/load_zone__type_support.h\n'}
+[8.471660] (rbt1_interfaces) StdoutLine: {'line': b'-- Installing: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv/detail/load_zone__type_support.c\n'}
+[8.472314] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv/load_zone.h\n'}
+[8.472521] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg\n'}
+[8.472643] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/detail\n'}
+[8.472764] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/detail/mission_command__type_support.h\n'}
+[8.472856] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/detail/mission_state__functions.h\n'}
+[8.472939] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/detail/mission_state__description.c\n'}
+[8.473022] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/detail/mission_state__type_support.h\n'}
+[8.473136] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/detail/mission_state__functions.c\n'}
+[8.473227] (rbt1_interfaces) StdoutLine: {'line': b'-- Installing: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/detail/mission_command__type_support.c\n'}
+[8.473846] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/detail/mission_command__description.c\n'}
+[8.474033] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/detail/mission_state__struct.h\n'}
+[8.474158] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/detail/mission_command__functions.c\n'}
+[8.474251] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/detail/mission_command__functions.h\n'}
+[8.474337] (rbt1_interfaces) StdoutLine: {'line': b'-- Installing: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/detail/mission_state__type_support.c\n'}
+[8.475077] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/detail/mission_command__struct.h\n'}
+[8.475236] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/mission_command.h\n'}
+[8.475331] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[8.475425] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/mission_state.h\n'}
+[8.475544] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/environment/library_path.sh\n'}
+[8.475629] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/environment/library_path.dsv\n'}
+[8.477188] (-) TimerEvent: {}
+[8.497186] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/lib/librbt1_interfaces__rosidl_generator_c.so\n'}
+[8.497540] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces\n'}
+[8.497718] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv\n'}
+[8.497899] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv/detail\n'}
+[8.498094] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv/detail/load_zone__rosidl_typesupport_fastrtps_c.h\n'}
+[8.498239] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv/detail/navigation_status__rosidl_typesupport_fastrtps_c.h\n'}
+[8.498343] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg\n'}
+[8.498443] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[8.498542] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/detail\n'}
+[8.498640] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/detail/mission_command__rosidl_typesupport_fastrtps_c.h\n'}
+[8.498738] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/detail/mission_state__rosidl_typesupport_fastrtps_c.h\n'}
+[8.503299] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/lib/librbt1_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[8.503679] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces\n'}
+[8.503876] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv\n'}
+[8.504019] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv/detail\n'}
+[8.504206] (rbt1_interfaces) StdoutLine: {'line': b'-- Installing: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv/detail/navigation_status__type_support.c\n'}
+[8.524833] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv/detail/navigation_status__rosidl_typesupport_introspection_c.h\n'}
+[8.525129] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv/detail/load_zone__rosidl_typesupport_introspection_c.h\n'}
+[8.525368] (rbt1_interfaces) StdoutLine: {'line': b'-- Installing: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv/detail/load_zone__type_support.c\n'}
+[8.528536] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg\n'}
+[8.528806] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/detail\n'}
+[8.528958] (rbt1_interfaces) StdoutLine: {'line': b'-- Installing: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/detail/mission_command__type_support.c\n'}
+[8.530608] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/detail/mission_command__rosidl_typesupport_introspection_c.h\n'}
+[8.530897] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/detail/mission_state__rosidl_typesupport_introspection_c.h\n'}
+[8.531051] (rbt1_interfaces) StdoutLine: {'line': b'-- Installing: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/detail/mission_state__type_support.c\n'}
+[8.532182] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[8.553765] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/lib/librbt1_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[8.559511] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/lib/librbt1_interfaces__rosidl_typesupport_c.so\n'}
+[8.559867] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces\n'}
+[8.560056] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv\n'}
+[8.560290] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv/load_zone.hpp\n'}
+[8.560450] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv/detail\n'}
+[8.560574] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv/detail/navigation_status__builder.hpp\n'}
+[8.560695] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv/detail/load_zone__builder.hpp\n'}
+[8.560814] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv/detail/load_zone__traits.hpp\n'}
+[8.560971] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv/detail/load_zone__struct.hpp\n'}
+[8.562180] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv/detail/navigation_status__traits.hpp\n'}
+[8.562334] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv/detail/load_zone__type_support.hpp\n'}
+[8.562455] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv/detail/navigation_status__struct.hpp\n'}
+[8.562574] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv/detail/navigation_status__type_support.hpp\n'}
+[8.562692] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv/navigation_status.hpp\n'}
+[8.562810] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg\n'}
+[8.562930] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/mission_command.hpp\n'}
+[8.563047] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/detail\n'}
+[8.563191] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/detail/mission_command__traits.hpp\n'}
+[8.563313] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/detail/mission_state__traits.hpp\n'}
+[8.563448] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/detail/mission_state__struct.hpp\n'}
+[8.563568] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/detail/mission_command__struct.hpp\n'}
+[8.563687] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/detail/mission_command__type_support.hpp\n'}
+[8.563820] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/detail/mission_command__builder.hpp\n'}
+[8.563938] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/detail/mission_state__type_support.hpp\n'}
+[8.564054] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/detail/mission_state__builder.hpp\n'}
+[8.564200] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/mission_state.hpp\n'}
+[8.564322] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[8.564441] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces\n'}
+[8.564557] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv\n'}
+[8.564672] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv/detail\n'}
+[8.564787] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv/detail/load_zone__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[8.564905] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv/detail/dds_fastrtps\n'}
+[8.565021] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv/detail/navigation_status__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[8.565156] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg\n'}
+[8.565280] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/detail\n'}
+[8.565398] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/detail/mission_state__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[8.565516] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/detail/mission_command__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[8.565633] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/detail/dds_fastrtps\n'}
+[8.565750] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[8.566596] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/lib/librbt1_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[8.567052] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces\n'}
+[8.567295] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv\n'}
+[8.567430] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv/detail\n'}
+[8.567552] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv/detail/navigation_status__rosidl_typesupport_introspection_cpp.hpp\n'}
+[8.567827] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv/detail/load_zone__rosidl_typesupport_introspection_cpp.hpp\n'}
+[8.567984] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv/detail/navigation_status__type_support.cpp\n'}
+[8.568153] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/srv/detail/load_zone__type_support.cpp\n'}
+[8.568282] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg\n'}
+[8.568402] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/detail\n'}
+[8.568537] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/detail/mission_state__rosidl_typesupport_introspection_cpp.hpp\n'}
+[8.568658] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/detail/mission_state__type_support.cpp\n'}
+[8.568779] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/detail/mission_command__type_support.cpp\n'}
+[8.568896] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/include/rbt1_interfaces/rbt1_interfaces/msg/detail/mission_command__rosidl_typesupport_introspection_cpp.hpp\n'}
+[8.572324] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/lib/librbt1_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[8.576558] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/lib/librbt1_interfaces__rosidl_typesupport_cpp.so\n'}
+[8.576824] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/environment/pythonpath.sh\n'}
+[8.576974] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/environment/pythonpath.dsv\n'}
+[8.577132] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/lib/python3.12/site-packages/rbt1_interfaces-0.0.1-py3.12.egg-info\n'}
+[8.577232] (-) TimerEvent: {}
+[8.577362] (rbt1_interfaces) StdoutLine: {'line': b'-- Installing: /home/mureaul/RBT1/install/rbt1_interfaces/lib/python3.12/site-packages/rbt1_interfaces-0.0.1-py3.12.egg-info/dependency_links.txt\n'}
+[8.577478] (rbt1_interfaces) StdoutLine: {'line': b'-- Installing: /home/mureaul/RBT1/install/rbt1_interfaces/lib/python3.12/site-packages/rbt1_interfaces-0.0.1-py3.12.egg-info/PKG-INFO\n'}
+[8.577611] (rbt1_interfaces) StdoutLine: {'line': b'-- Installing: /home/mureaul/RBT1/install/rbt1_interfaces/lib/python3.12/site-packages/rbt1_interfaces-0.0.1-py3.12.egg-info/top_level.txt\n'}
+[8.577729] (rbt1_interfaces) StdoutLine: {'line': b'-- Installing: /home/mureaul/RBT1/install/rbt1_interfaces/lib/python3.12/site-packages/rbt1_interfaces-0.0.1-py3.12.egg-info/SOURCES.txt\n'}
+[8.577899] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/lib/python3.12/site-packages/rbt1_interfaces\n'}
+[8.578162] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/lib/python3.12/site-packages/rbt1_interfaces/rbt1_interfaces_s__rosidl_typesupport_fastrtps_c.so\n'}
+[8.578266] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/lib/python3.12/site-packages/rbt1_interfaces/srv\n'}
+[8.578366] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/lib/python3.12/site-packages/rbt1_interfaces/srv/_navigation_status_s.c\n'}
+[8.578448] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/lib/python3.12/site-packages/rbt1_interfaces/srv/_navigation_status.py\n'}
+[8.579179] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/lib/python3.12/site-packages/rbt1_interfaces/srv/_load_zone_s.c\n'}
+[8.579305] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/lib/python3.12/site-packages/rbt1_interfaces/srv/_load_zone.py\n'}
+[8.579391] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/lib/python3.12/site-packages/rbt1_interfaces/srv/__init__.py\n'}
+[8.579473] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/lib/python3.12/site-packages/rbt1_interfaces/_rbt1_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[8.579580] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/lib/python3.12/site-packages/rbt1_interfaces/_rbt1_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[8.579668] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/lib/python3.12/site-packages/rbt1_interfaces/rbt1_interfaces_s__rosidl_typesupport_introspection_c.so\n'}
+[8.579750] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/lib/python3.12/site-packages/rbt1_interfaces/msg\n'}
+[8.579830] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/lib/python3.12/site-packages/rbt1_interfaces/msg/_mission_command_s.c\n'}
+[8.579910] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/lib/python3.12/site-packages/rbt1_interfaces/msg/_mission_state.py\n'}
+[8.580043] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/lib/python3.12/site-packages/rbt1_interfaces/msg/_mission_command.py\n'}
+[8.580175] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/lib/python3.12/site-packages/rbt1_interfaces/msg/__init__.py\n'}
+[8.580274] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/lib/python3.12/site-packages/rbt1_interfaces/msg/_mission_state_s.c\n'}
+[8.580358] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/lib/python3.12/site-packages/rbt1_interfaces/rbt1_interfaces_s__rosidl_typesupport_c.so\n'}
+[8.580441] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/lib/python3.12/site-packages/rbt1_interfaces/_rbt1_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[8.580520] (rbt1_interfaces) StdoutLine: {'line': b'-- Installing: /home/mureaul/RBT1/install/rbt1_interfaces/lib/python3.12/site-packages/rbt1_interfaces/__init__.py\n'}
+[8.677376] (-) TimerEvent: {}
+[8.694945] (rbt1_interfaces) StdoutLine: {'line': b"Listing '/home/mureaul/RBT1/install/rbt1_interfaces/lib/python3.12/site-packages/rbt1_interfaces'...\n"}
+[8.695327] (rbt1_interfaces) StdoutLine: {'line': b"Compiling '/home/mureaul/RBT1/install/rbt1_interfaces/lib/python3.12/site-packages/rbt1_interfaces/__init__.py'...\n"}
+[8.695514] (rbt1_interfaces) StdoutLine: {'line': b"Listing '/home/mureaul/RBT1/install/rbt1_interfaces/lib/python3.12/site-packages/rbt1_interfaces/msg'...\n"}
+[8.695659] (rbt1_interfaces) StdoutLine: {'line': b"Listing '/home/mureaul/RBT1/install/rbt1_interfaces/lib/python3.12/site-packages/rbt1_interfaces/srv'...\n"}
+[8.730290] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/lib/python3.12/site-packages/rbt1_interfaces/rbt1_interfaces_s__rosidl_typesupport_fastrtps_c.so\n'}
+[8.734836] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/lib/python3.12/site-packages/rbt1_interfaces/rbt1_interfaces_s__rosidl_typesupport_introspection_c.so\n'}
+[8.739382] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/lib/python3.12/site-packages/rbt1_interfaces/rbt1_interfaces_s__rosidl_typesupport_c.so\n'}
+[8.743628] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/lib/librbt1_interfaces__rosidl_generator_py.so\n'}
+[8.743995] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/msg/MissionCommand.idl\n'}
+[8.744207] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/msg/MissionState.idl\n'}
+[8.744354] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/srv/LoadZone.idl\n'}
+[8.744536] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/srv/NavigationStatus.idl\n'}
+[8.744666] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/msg/MissionCommand.msg\n'}
+[8.744791] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/msg/MissionState.msg\n'}
+[8.744954] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/srv/LoadZone.srv\n'}
+[8.745081] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/srv/NavigationStatus.srv\n'}
+[8.745615] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/ament_index/resource_index/package_run_dependencies/rbt1_interfaces\n'}
+[8.745807] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/ament_index/resource_index/parent_prefix_path/rbt1_interfaces\n'}
+[8.745932] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/environment/ament_prefix_path.sh\n'}
+[8.746050] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/environment/ament_prefix_path.dsv\n'}
+[8.746194] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/environment/path.sh\n'}
+[8.746313] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/environment/path.dsv\n'}
+[8.746425] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/local_setup.bash\n'}
+[8.746538] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/local_setup.sh\n'}
+[8.746685] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/local_setup.zsh\n'}
+[8.746797] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/local_setup.dsv\n'}
+[8.746910] (rbt1_interfaces) StdoutLine: {'line': b'-- Installing: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/package.dsv\n'}
+[8.763900] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/ament_index/resource_index/packages/rbt1_interfaces\n'}
+[8.777419] (-) TimerEvent: {}
+[8.782420] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/cmake/export_rbt1_interfaces__rosidl_generator_cExport.cmake\n'}
+[8.782701] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/cmake/export_rbt1_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[8.783688] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/cmake/export_rbt1_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[8.783907] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/cmake/export_rbt1_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[8.785193] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/cmake/rbt1_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[8.785442] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/cmake/rbt1_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[8.786657] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/cmake/rbt1_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[8.786878] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/cmake/rbt1_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[8.787976] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/cmake/export_rbt1_interfaces__rosidl_generator_cppExport.cmake\n'}
+[8.789334] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/cmake/export_rbt1_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[8.789563] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/cmake/export_rbt1_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[8.790866] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/cmake/rbt1_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[8.791211] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/cmake/rbt1_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[8.792504] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/cmake/rbt1_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[8.792720] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/cmake/rbt1_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[8.796315] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/cmake/export_rbt1_interfaces__rosidl_generator_pyExport.cmake\n'}
+[8.796713] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/cmake/export_rbt1_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[8.796854] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[8.796971] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[8.797113] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[8.797251] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[8.797365] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[8.797500] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[8.797602] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[8.797701] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/cmake/rbt1_interfacesConfig.cmake\n'}
+[8.797804] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/cmake/rbt1_interfacesConfig-version.cmake\n'}
+[8.797938] (rbt1_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mureaul/RBT1/install/rbt1_interfaces/share/rbt1_interfaces/package.xml\n'}
+[8.802168] (rbt1_interfaces) CommandEnded: {'returncode': 0}
+[8.877543] (-) TimerEvent: {}
+[8.941596] (rbt1_interfaces) JobEnded: {'identifier': 'rbt1_interfaces', 'rc': 0}
+[8.943724] (-) EventReactorShutdown: {}

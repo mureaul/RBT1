@@ -1,0 +1,5 @@
+/home/mureaul/RBT1/build/rbt1_interfaces/rosidl_adapter/rbt1_interfaces:msg/MissionCommand.idl
+/home/mureaul/RBT1/build/rbt1_interfaces/rosidl_adapter/rbt1_interfaces:msg/MissionState.idl
+/home/mureaul/RBT1/build/rbt1_interfaces/rosidl_adapter/rbt1_interfaces:srv/LoadZone.idl
+/home/mureaul/RBT1/build/rbt1_interfaces/rosidl_adapter/rbt1_interfaces:srv/NavigationStatus.idl
+/home/mureaul/RBT1/build/rbt1_interfaces/rosidl_adapter/rbt1_interfaces:srv/GenerateCoverage.idl
