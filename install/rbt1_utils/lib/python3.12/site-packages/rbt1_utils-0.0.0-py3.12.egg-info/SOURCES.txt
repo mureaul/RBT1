@@ -9,7 +9,6 @@ setup.py
 ../../build/rbt1_utils/rbt1_utils.egg-info/top_level.txt
 ../../build/rbt1_utils/rbt1_utils.egg-info/zip-safe
 rbt1_utils/__init__.py
-rbt1_utils/battery_monitor.py
 rbt1_utils/bringup_orchestrator.py
 rbt1_utils/heartbeat_node.py
 rbt1_utils/weather_monitor.py

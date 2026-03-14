@@ -23,7 +23,6 @@ setup(
         'console_scripts': [
             'heartbeat_node = rbt1_utils.heartbeat_node:main',
             'weather_monitor_node = rbt1_utils.weather_monitor:main',
-            'battery_monitor_node = rbt1_utils.battery_monitor:main',
             'bringup_orchestrator = rbt1_utils.bringup_orchestrator:main',
         ],
     },

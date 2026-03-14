@@ -318,13 +318,6 @@ class Orchestrator(Node):
         self.get_logger().info("✅ Weather_monitor_node sucessfully launched")
 
         # -------------------------------
-        # battery_monitor
-        # -------------------------------
-        self.launch_ros_process(['ros2', 'run','rbt1_utils', 'battery_monitor_node'])
-        self.wait_for_topic_freq('/state/battery_ok', BoolMsg, 1.0)
-        self.get_logger().info("✅ Baterry_monitor_node sucessfully launched")
-
-        # -------------------------------
         # Robot description
         # -------------------------------
         self.launch_ros_process(['ros2', 'launch','rbt1_description', 'robot_state_publisher.launch.py'])
@@ -379,17 +372,17 @@ class Orchestrator(Node):
         # -------------------------------
         # mission manager
         # -------------------------------
-        #self.launch_ros_process(['ros2', 'run','rbt1_navigation', 'mission_manager'])
-        #self.wait_for_topic_presence('/mission/state')
-        #self.wait_for_wait_mission(timeout_sec=120.0)
-        #self.get_logger().info("✅ Mission Manager sucessfully launched")
+        self.launch_ros_process(['ros2', 'run','rbt1_navigation', 'mission_manager'])
+        self.wait_for_topic_presence('/mission/state')
+        self.wait_for_wait_mission(timeout_sec=120.0)
+        self.get_logger().info("✅ Mission Manager sucessfully launched")
 
         # -------------------------------
         # mission orchestrator
         # -------------------------------
-        #self.launch_ros_process(['ros2', 'run','rbt1_navigation', 'mission_orchestrator'])
-        #self.wait_for_topic_presence('/mission/command')
-        #self.get_logger().info("✅ Mission Orchestrator sucessfully launched")
+        self.launch_ros_process(['ros2', 'run','rbt1_navigation', 'mission_orchestrator'])
+        self.wait_for_topic_presence('/mission/command')
+        self.get_logger().info("✅ Mission Orchestrator sucessfully launched")
 
         self.get_logger().info("🚜 Bringup fully started ✔ ---------------")
 

@@ -4,11 +4,12 @@ import os
 import math
 
 from rclpy.node import Node
+from rclpy.action import ActionClient
 from enum import Enum, auto
 from ament_index_python.packages import get_package_share_directory
 
 from std_msgs.msg import Float32, Bool, Int32
-from sensor_msgs.msg import NavSatFix
+from sensor_msgs.msg import NavSatFix, BatteryState
 from geometry_msgs.msg import PoseStamped
 from nav_msgs.msg import Odometry
 from geometry_msgs.msg import Quaternion, PoseWithCovarianceStamped
@@ -17,12 +18,14 @@ from geographiclib.geodesic import Geodesic
 from std_srvs.srv import Empty
 
 from nav2_simple_commander.robot_navigator import BasicNavigator
+from nav2_msgs.action import DockRobot
 from action_msgs.msg import GoalStatus
 
 from rbt1_interfaces.msg import MissionCommand, MissionState
 from rbt1_interfaces.srv import GenerateCoverage
 
-PRESSURE_LIMIT = 1013.0
+BATTERY_START_LEVEL = 0
+BATTERY_STOP_LEVEL = -1
 
 # ================= ENUMS =================
 class MissionStatus(Enum):
@@ -40,6 +43,8 @@ class MissionStep(Enum):
     TRANSIT = auto()
     COVERAGE = auto()
     RETURN_TO_BASE = auto()
+    STAGING = auto()
+    DOCKING = auto()
 
 class ReturnCause(Enum):
     NONE = auto()
@@ -73,37 +78,41 @@ class MissionManager(Node):
         # ---- CAPTEURS & ÉTAT ----
         self.max_segment_length = 15.0
         self.carrot_distance = 8.0
-        self.battery = 100.0
+        self.battery_percentage = 0
         self.weather_pause = False
         self.gps_pos = None
         self.amcl_pos = None
         self.map_pos = None
         self.dock_gps = None
         self.load_dock_gps()
-        self.battery_threshold = 20.0
         self.motor_started = False
         self.go_to_base_in_progress = False
         self.transit_in_progress = False
         self.coverage_in_progress = False
         self.coverage_index = 0
+        self.rtcm_activate = False
+        self.docking_in_progress = False
 
         # ---- NAV2 ----
         self.navigator = BasicNavigator()
+        self.dock_client = ActionClient(self, DockRobot, '/dock_robot')
 
         # ---- SUBSCRIBERS ----
         self.create_subscription(MissionCommand, '/mission/command', self.mission_cb, 10)
         self.create_subscription(NavSatFix, '/ublox_gps_node/fix', self.gps_cb, 10)
         self.create_subscription(Odometry, '/odometry/global', self.odom_cb, 10)
         self.create_subscription(Bool, '/state/weather_ok', self.weather_ok_cb, 10)
-        self.create_subscription(Bool, '/state/battery_ok', self.battery_ok_cb, 10)
+        self.create_subscription(BatteryState, '/battery_state', self.battery_cb, 10)
 
         # ---- PUBLISHERS ----
         self.state_pub = self.create_publisher(MissionState, '/mission/state', 10)
         self.lame_speed_pub = self.create_publisher(Float32, '/cmd/lame_speed', 10)
-
+        self.rtcm_pub = self.create_publisher(Bool, '/cmd/rtcm/start', 10)
+        
         # ---- TIMERS ----
         self.create_timer(1.0, self.mission_loop)
         self.create_timer(2.0, self.monitor_position)
+        self.create_timer(1.0, self.rtcm_flow_control)
 
         # ------ GPS -> map via TF -------------
         self.tf_buffer = Buffer()
@@ -127,8 +136,8 @@ class MissionManager(Node):
         self.status = MissionStatus.NONE
         self.publish_state("Mission received")
 
-    def battery_ok_cb(self, msg):
-        self.battery = msg.data
+    def battery_cb(self, msg):
+        self.battery_percentage = msg.percentage
 
     def weather_ok_cb(self, msg):
         self.weather_pause = not msg.data
@@ -150,7 +159,7 @@ class MissionManager(Node):
                 self.get_logger().info(f"[Monitor Position]: |GPS: Lat:{self.gps_pos.latitude}, lon:{self.gps_pos.longitude} |map: x:{self.map_pos.x}, y:{self.map_pos.y} |Distance restante:, {feedback.distance_remaining}")   
             else:
                 self.get_logger().info(f"[Monitor Position]: |GPS: Lat:{self.gps_pos.latitude}, lon:{self.gps_pos.longitude} |map: x:{self.map_pos.x}, y:{self.map_pos.y}")  
-
+            
     #================ RESUME MISSION ===============
     def save_resume_context(self):
         self.resume_context["step"] = self.step
@@ -303,6 +312,24 @@ class MissionManager(Node):
         self.map_origin_lon = data["origin"][0]
         self.get_logger().info(f"Map origin GPS loaded: lat={self.map_origin_lat} lon={self.map_origin_lon}")
 
+    def compute_staging_pose(self, dock_pose, distance=0.8):
+        staging = PoseStamped()
+        staging.header.frame_id = "map"
+        staging.header.stamp = self.get_clock().now().to_msg()
+        # orientation du dock
+        q = dock_pose.pose.orientation
+        yaw = math.atan2(
+            2.0 * (q.w * q.z + q.x * q.y),
+            1.0 - 2.0 * (q.y * q.y + q.z * q.z)
+        )
+        # reculer de "distance" devant le dock
+        staging.pose.position.x = dock_pose.pose.position.x - distance * math.cos(yaw)
+        staging.pose.position.y = dock_pose.pose.position.y - distance * math.sin(yaw)
+        staging.pose.position.z = 0.0
+        # même orientation que le dock
+        staging.pose.orientation = dock_pose.pose.orientation
+        return staging
+
     # ================= ACTIONS =================
     def start_transit(self):
         self.publish_lame_speed(0.0)
@@ -326,6 +353,51 @@ class MissionManager(Node):
 
         self.get_logger().info(f"Go to base → {len(self.base_transit_poses)} split poses")
 
+    def start_docking(self):
+        if not self.dock_client.wait_for_server(timeout_sec=5.0):
+            self.get_logger().error("Docking server not available")
+            return False
+        goal_msg = DockRobot.Goal()
+        goal_msg.use_dock_id = False
+        goal_msg.dock_pose = self.base_target
+        goal_msg.navigate_to_staging_pose = False
+        self.get_logger().info("Sending docking goal")
+        send_goal_future = self.dock_client.send_goal_async(goal_msg)
+        send_goal_future.add_done_callback(self.docking_goal_response)
+        return True
+
+    def docking_goal_response(self, future):
+        goal_handle = future.result()
+        if not goal_handle.accepted:
+            self.get_logger().error("Docking goal rejected")
+            self.docking_in_progress = False
+            return
+        self.get_logger().info("Docking goal accepted")
+        self.docking_result_future = goal_handle.get_result_async()
+        self.docking_result_future.add_done_callback(self.docking_result_cb)
+
+    def docking_result_cb(self, future):
+        result = future.result().result
+        if result.success:
+            self.get_logger().info("Docking successful")
+            self.robot_docked = True
+        else:
+            self.get_logger().error("Docking failed")
+            self.robot_docked = False
+        self.docking_in_progress = False
+
+    def go_to_staging_pose(self):
+        if not hasattr(self, "staging_pose"):
+            self.staging_pose = self.compute_staging_pose(self.base_target)
+        if not self.staging_in_progress:
+            self.navigator.goToPose(self.staging_pose)
+            self.staging_in_progress = True
+            self.get_logger().info(
+                f"Going to staging pose: "
+                f"{self.staging_pose.pose.position.x:.2f}, "
+                f"{self.staging_pose.pose.position.y:.2f}"
+            )
+
     # ================= UTILS =================
     def abort(self, reason):
         self.status = MissionStatus.ERROR
@@ -342,11 +414,16 @@ class MissionManager(Node):
         self.state_pub.publish(msg)
         self.get_logger().info(f"MissionState published: {msg.state} | step: {msg.current_step} | info: {info}")
 
-    def publish_lame_speed(self, speed=1.0):
+    def publish_lame_speed(self, speed=0.0):
         msg = Float32()
         msg.data = speed
         self.lame_speed_pub.publish(msg)
         self.get_logger().info(f"Lame speed: {speed}")
+
+    def rtcm_flow_control(self):
+        msg = Bool()
+        msg.data = self.rtcm_activate
+        self.rtcm_pub.publish(msg)
 
     def try_set_initial_pose_from_gps(self):
         if getattr(self, "initial_pose_set", False):
@@ -405,13 +482,14 @@ class MissionManager(Node):
 
         if self.status == MissionStatus.PRECHECK:
             #Check conditions démarrage mission ok
-            if self.weather_pause or not self.battery:
+            if self.weather_pause or not self.battery_percentage >= BATTERY_START_LEVEL:
                 self.get_logger().info("Condition Precheck KO")
                 self.save_resume_context()
                 self.status = MissionStatus.PAUSED
                 self.publish_state("PRECHECK -> PAUSED")         
             else:
                 self.get_logger().info("Condition Precheck OK")
+                self.rtcm_activate=True
                 self.start_motor() #Lidar
                 self.status = MissionStatus.RUNNING
                 self.publish_state("PRECHECK -> RUNNING")
@@ -438,7 +516,8 @@ class MissionManager(Node):
                         self.publish_state("TRANSIT -> COVERAGE")
                     else:
                         carrot_goal = self.compute_carrot_goal(self.transit_target)
-                        self.navigator.goToPose(carrot_goal)             
+                        self.navigator.goToPose(carrot_goal)
+                        self.publish_state()             
 
             if self.step==MissionStep.COVERAGE:
                 if self.coverage_poses:
@@ -472,46 +551,65 @@ class MissionManager(Node):
                 self.return_cause=ReturnCause.WEATHER
                 self.get_logger().info(f"[{self.status.name}].[{self.step.name}] : Weather condition KO")
 
-            if not self.battery:
+            if self.battery_percentage < BATTERY_STOP_LEVEL:
                 self.step=MissionStep.RETURN_TO_BASE
                 self.return_cause=ReturnCause.BATTERY
                 self.get_logger().info(f"[{self.status.name}].[{self.step.name}] : Battery condition KO")              
 
-        if self.step == MissionStep.RETURN_TO_BASE:
-            self.publish_lame_speed(0.0)
-            if not hasattr(self, "base_target"):
-                self.base_target = self.gps_to_map_pose(
-                    self.dock_gps['latitude'],
-                    self.dock_gps['longitude'],
-                    self.dock_gps.get('altitude', 0.0)
-                )
-            if not self.go_to_base_in_progress:
-                self.save_resume_context()
-                carrot_goal = self.compute_carrot_goal(self.base_target)
-                self.navigator.goToPose(carrot_goal)
-                self.go_to_base_in_progress = True
-                self.get_logger().info("Return to base started (Pure Pursuit)")
-            if self.navigator.isTaskComplete():
-                if self.distance_to_pose(self.base_target) < 1.0:
-                    if self.return_cause == ReturnCause.MISSION_COMPLETE:
+            if self.step == MissionStep.RETURN_TO_BASE:
+                self.publish_lame_speed(0.0)
+                if not hasattr(self, "base_target"):
+                        self.base_target = self.gps_to_map_pose(
+                        self.dock_gps['latitude'],
+                        self.dock_gps['longitude'],
+                        self.dock_gps.get('altitude', 0.0)
+                    )
+                if not self.go_to_base_in_progress:
+                    self.save_resume_context()
+                    carrot_goal = self.compute_carrot_goal(self.base_target)
+                    self.navigator.goToPose(carrot_goal)
+                    self.go_to_base_in_progress = True
+                    self.get_logger().info("Return to base started (Pure Pursuit)")
+                if self.navigator.isTaskComplete():
+                    if self.distance_to_pose(self.base_target) < 2.0:
                         self.go_to_base_in_progress = False
+                        self.step = MissionStep.STAGING
+                        self.staging_in_progress = False
+                        self.publish_state("RETURN_TO_BASE -> STAGING")
+                    else:
+                        carrot_goal = self.compute_carrot_goal(self.base_target)
+                        self.navigator.goToPose(carrot_goal)
+
+            if self.step == MissionStep.STAGING:
+                if not self.staging_in_progress:
+                    self.go_to_staging_pose()
+                if self.navigator.isTaskComplete():
+                    self.get_logger().info("Staging pose reached")
+                    self.staging_in_progress = False
+                    self.step = MissionStep.DOCKING
+                    self.publish_state("STAGING -> DOCKING")
+                
+            if self.step == MissionStep.DOCKING:
+                if not self.docking_in_progress:
+                    self.robot_docked = False
+                    self.docking_in_progress = True
+                    self.start_docking()
+                if self.robot_docked:
+                    self.stop_motor()
+                    if self.return_cause == ReturnCause.MISSION_COMPLETE:
                         self.status = MissionStatus.COMPLETE
-                        self.stop_motor()
                         self.get_logger().info("Robot docked")
                         self.publish_state("RETURN_TO_BASE -> COMPLETE")
                     else:
-                        self.go_to_base_in_progress = False
                         self.status = MissionStatus.PAUSED
-                        self.stop_motor()
                         self.get_logger().info("Robot returned to dock (pause)")
                         self.publish_state("RETURN_TO_BASE -> PAUSED")
-                else:
-                    carrot_goal = self.compute_carrot_goal(self.base_target)
-                    self.navigator.goToPose(carrot_goal)
-
+                    
         if self.status == MissionStatus.PAUSED:
-            if not self.weather_pause and self.battery: #optimisation démarrage si battery >95% 
-                self.get_logger().info(f"[{self.status.name}]: Battery or weather OK")
+            self.rtcm_activate=False
+            if not self.weather_pause and self.battery_percentage >= BATTERY_START_LEVEL: 
+                self.get_logger().info(f"[{self.status.name}]: Battery and weather OK")
+                # Redémarrage nav2
                 self.start_motor()
                 if self.navigator.isTaskComplete(): 
                     self.restore_resume_context()
@@ -523,6 +621,7 @@ class MissionManager(Node):
                         self.publish_state("PAUSED -> RESUME")
         
         if self.status==MissionStatus.RESUME:
+            self.rtcm_activate=True
             result = self.navigator.getResult()
             if result == GoalStatus.STATUS_SUCCEEDED:                                 
                 self.status = MissionStatus.RUNNING
@@ -533,11 +632,13 @@ class MissionManager(Node):
             self.coverage_poses=None #purge des données de poses
             self.current_mission=None #purge de la mission
             self.coverage_index = 0 #recalage de l'index coverage au début de carte
+            self.rtcm_activate=False
             self.get_logger().info(f"[{self.status.name}]: ✅ Mission complete !")
             self.status = MissionStatus.WAIT_MISSION
             self.publish_state("COMPLETE -> WAIT_MISSION")
 
         if self.status == MissionStatus.ERROR:
+            self.rtcm_activate=False
             #Erreur détectée et init demandé
             self.status = MissionStatus.NONE
 
