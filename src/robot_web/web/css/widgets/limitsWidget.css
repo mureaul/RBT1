@@ -1,0 +1,36 @@
+/* Les styles globaux (.limits-card, .limits-header, .limits-body) sont gérés dans common.css */
+
+.limits-form-container {
+    display: flex !important; flex-direction: column !important; gap: 14px !important; width: 100% !important;
+}
+.limits-row-group {
+    display: grid !important; grid-template-columns: max-content 1fr auto !important; align-items: center !important; gap: 16px !important; width: 100% !important;
+}
+.limits-row-group label {
+    font-size: 0.88rem !important; color: #a0a5b5 !important; font-weight: 500 !important; text-align: left !important; white-space: nowrap;
+}
+.limits-input-wrapper {
+    display: flex !important; align-items: center !important; background: #111317 !important; border: 1px solid #2e3445 !important; border-radius: 8px !important; height: 38px !important; width: 130px !important; padding: 0 10px !important; box-sizing: border-box !important; justify-self: end; transition: border-color 0.25s ease, box-shadow 0.25s ease !important;
+}
+.limits-input-wrapper:focus-within {
+    border-color: #29b6f6 !important; box-shadow: 0 0 10px rgba(41, 182, 246, 0.15) !important;
+}
+.limits-input-wrapper input {
+    width: 100% !important; height: 100% !important; background: transparent !important; border: none !important; color: #ffffff !important; font-family: inherit !important; font-size: 0.95rem !important; font-weight: 600 !important; outline: none !important; text-align: right !important; padding-right: 6px !important;
+}
+.limits-input-wrapper input::-webkit-inner-spin-button,
+.limits-input-wrapper input::-webkit-outer-spin-button {
+    -webkit-appearance: none !important; margin: 0 !important;
+}
+.limits-unit {
+    font-size: 0.75rem !important; color: #5c6270 !important; font-weight: 600; text-transform: lowercase; letter-spacing: 0.5px; white-space: nowrap !important;
+}
+.limits-details-grid {
+    display: grid !important; grid-template-columns: 1fr !important; align-items: center !important; width: 100% !important; max-width: 200px !important; margin: 0 auto !important; border-top: 1px solid rgba(255, 255, 255, 0.05) !important; padding-top: 18px !important;
+}
+.safety-sub-grid {
+    display: grid !important; grid-template-columns: 1fr auto !important; align-items: center !important; gap: 12px !important; justify-content: center !important; width: 100% !important;
+}
+.limits-values-block { display: flex !important; flex-direction: column !important; white-space: nowrap !important; }
+.limits-label { font-size: 0.72rem !important; color: #5c6270 !important; text-transform: uppercase !important; letter-spacing: 0.8px !important; line-height: 1.1 !important; margin-bottom: 3px !important; }
+.limits-value { font-size: 1.15rem !important; font-weight: 700; color: #52f28b !important; letter-spacing: 0.5px; line-height: 1.1 !important; }

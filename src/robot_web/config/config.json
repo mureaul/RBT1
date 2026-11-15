@@ -1,0 +1,39 @@
+{
+  "rosbridge": {
+    "host": "192.168.1.199",
+    "port": 9090
+  },
+
+  "publishRate": 2,
+
+  "limits": {
+    "maxLinearSpeed": 1,
+    "maxAngularSpeed": 5,
+    "maxBladeSpeed": 10000
+  },
+
+  "joystick": {
+    "deadband": 0.05,
+    "exponential": 2.2
+  },
+
+  "topics": {
+    "cmd_vel": "/cmd_vel_manu",
+    "blade_speed": "/cmd/lame_speed",
+    "blade_speed_web": "/cmd/lame_speed_web",
+    "gps": "/ublox_gps_node/fix",
+    "imu": "/imu/data",
+    "lidar": "/scan",
+    "costmap": "/local_costmap/local_costmap",
+    "battery": "/battery",
+    "robot_mode": "/state",
+    "fsm": "/fsm",
+    "system_status": "/state/system_status",
+    "temperature_bmp180": "/state/internal_bmp180_temp",
+    "pression_bmp180": "/state/internal_bmp180_pressure",
+    "temperature_DHT12": "/state/internal_temperature",
+    "humidite_DHT12": "/state/internal_humidity",
+    "blade_telemetry": "/state/lame_telemetry",
+    "wifi":"/state/wifi/status"
+  }
+}

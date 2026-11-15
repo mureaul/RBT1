@@ -1,0 +1,18 @@
+:root {
+
+    --accent: #4CAF50;
+    --danger: #F44336;
+    --warn: #FFC107;
+
+}
+
+button {
+
+    background: #3a3a3a;
+    color: white;
+
+    border: none;
+
+    padding: 10px;
+
+}

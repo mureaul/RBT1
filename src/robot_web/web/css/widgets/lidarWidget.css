@@ -1,0 +1,37 @@
+/* Note: .lidar-card, .lidar-header, .lidar-body sont gérés par common.css */
+
+.lidar-controls {
+    display: flex !important; gap: 20px !important; align-items: center !important;
+}
+.slider-control {
+    display: flex !important; align-items: center !important; gap: 8px !important;
+}
+.slider-label {
+    font-size: 0.65rem !important; font-weight: 600 !important; color: #a3aab8 !important; text-transform: uppercase !important; letter-spacing: 0.5px !important;
+}
+/* Styles du switch importés et adaptés */
+.switch { position: relative !important; display: inline-block !important; width: 34px !important; height: 20px !important; }
+.switch input { opacity: 0 !important; width: 0 !important; height: 0 !important; }
+.slider { position: absolute !important; cursor: pointer !important; top: 0; left: 0; right: 0; bottom: 0; background-color: #2d3446 !important; transition: .2s !important; border: 1px solid #3f475a !important; }
+.slider:before { position: absolute !important; content: "" !important; height: 12px !important; width: 12px !important; left: 3px !important; bottom: 3px !important; background-color: #a3aab8 !important; transition: .2s !important; }
+input:checked + .slider { background-color: rgba(0, 229, 255, 0.15) !important; border-color: #00e5ff !important; }
+input:checked + .slider:before { transform: translateX(14px) !important; background-color: #00e5ff !important; }
+.slider.round { border-radius: 20px !important; }
+.slider.round:before { border-radius: 50% !important; }
+
+.lidar-canvas-wrapper {
+    border-radius: 12px !important; overflow: hidden !important; border: 1px solid #222733 !important; background: #0b0d11 !important; height: 500px !important; width: 100% !important; position: relative !important;
+}
+#lidar-canvas {
+    display: block !important; position: absolute !important; top: 0 !important; left: 0 !important; width: 100% !important; height: 100% !important;
+}
+.lidar-canvas-wrapper {
+    margin-top: 8px; /* Espacement propre entre le header et le canvas */
+    border-radius: 12px !important; 
+    overflow: hidden !important; 
+    border: 1px solid #222733 !important; 
+    background: #0b0d11 !important; 
+    height: 500px !important; 
+    width: 100% !important; 
+    position: relative !important;
+}

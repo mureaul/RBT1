@@ -1,0 +1,30 @@
+/* Note: .ros-card, .ros-header, .ros-body sont gérés par common.css */
+
+.ros-form-grid {
+    display: grid !important; grid-template-columns: 1.7fr 1fr !important; gap: 16px !important; width: 100% !important;
+}
+.ros-input-group {
+    display: flex !important; flex-direction: column !important; align-items: flex-start !important; gap: 6px !important;
+}
+.ros-input-group label {
+    font-size: 0.72rem !important; color: #5c6270 !important; text-transform: uppercase !important; letter-spacing: 0.8px !important; font-weight: 600 !important;
+}
+.ros-input-group input {
+    width: 100% !important; height: 38px !important; box-sizing: border-box !important; background: #111317 !important; border: 1px solid #2e3445 !important; border-radius: 8px !important; color: #ffffff !important; padding: 0 12px !important; font-family: inherit !important; font-size: 0.95rem !important; font-weight: 500 !important; outline: none !important; transition: border-color 0.25s ease, box-shadow 0.25s ease !important;
+}
+.ros-input-group input:focus {
+    border-color: #29b6f6 !important; box-shadow: 0 0 10px rgba(41, 182, 246, 0.15) !important;
+}
+.ros-input-group input[type="number"]::-webkit-inner-spin-button,
+.ros-input-group input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none !important; margin: 0 !important;
+}
+.ros-details-grid {
+    display: grid !important; grid-template-columns: 1fr !important; align-items: center !important; width: 100% !important; max-width: 200px !important; margin: 0 auto !important; border-top: 1px solid rgba(255, 255, 255, 0.05) !important; padding-top: 18px !important;
+}
+.protocol-sub-grid {
+    display: grid !important; grid-template-columns: 1fr auto !important; align-items: center !important; gap: 12px !important; justify-content: center !important; width: 100% !important;
+}
+.ros-values-block { display: flex !important; flex-direction: column !important; white-space: nowrap !important; }
+.ros-label { font-size: 0.72rem !important; color: #5c6270 !important; text-transform: uppercase !important; letter-spacing: 0.8px !important; line-height: 1.1 !important; margin-bottom: 3px !important; }
+.ros-value { font-size: 1.15rem !important; font-weight: 700 !important; color: #ffffff !important; line-height: 1.1 !important; }

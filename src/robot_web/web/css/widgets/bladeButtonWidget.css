@@ -1,0 +1,112 @@
+/* ==========================================================================
+   WIDGET : Blade Button
+   ========================================================================== */
+
+
+/* Conteneur de colonnes (Status et Speed) */
+.blade-btn-columns-wrapper {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    width: 100% !important;
+    padding-top: 15px !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.05) !important;
+}
+
+.blade-btn-column-item {
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.blade-btn-label {
+    font-size: 0.7rem !important;
+    color: #888 !important;
+    text-transform: uppercase !important;
+    margin-bottom: 4px !important;
+}
+
+.blade-btn-status {
+    font-size: 0.9rem !important;
+    font-weight: 700 !important;
+}
+
+.blade-btn-value-wrapper {
+    display: flex !important;
+    align-items: baseline !important;
+    gap: 4px !important;
+}
+
+.blade-btn-value {
+    font-size: 1.2rem !important;
+    font-weight: 600 !important;
+    color: #fff !important;
+}
+
+.blade-btn-unit {
+    font-size: 0.7rem !important;
+    color: #666 !important;
+}
+
+/* Bouton de bascule (Toggle) */
+.blade-action-container {
+    width: 100% !important;
+}
+
+.blade-toggle-container {
+    width: 120px !important; /* Largeur fixe plus ergonomique */
+    height: 48px !important;
+    background: rgba(0, 0, 0, 0.3) !important;
+    border-radius: 24px !important;
+    position: relative !important;
+    cursor: pointer !important;
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+    display: flex !important;
+    align-items: center !important;
+    padding: 4px !important;
+    margin: 0 auto !important; /* Centre le bouton dans la carte */
+    transition: background 0.3s ease !important;
+}
+
+.blade-toggle-slider {
+    width: 40px !important;
+    height: 40px !important;
+    background: #555 !important;
+    border-radius: 50% !important;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), background 0.3s ease !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.5) !important;
+}
+
+/* État Actif */
+.bladebtn-card.is-active .blade-toggle-container {
+    background: rgba(76, 175, 80, 0.15) !important;
+    border-color: #4caf50 !important;
+}
+
+.bladebtn-card.is-active .blade-toggle-slider {
+    transform: translateX(72px) !important; /* (120px - 4px padding - 40px slider - 4px gap) */
+    background: #4caf50 !important;
+}
+
+.blade-toggle-button:hover {
+    background: rgba(41, 182, 246, 0.2) !important;
+}
+
+/* États dynamiques de la carte (via JS) */
+.blade-btn-card.is-active {
+    border-color: rgba(76, 175, 80, 0.3) !important;
+}
+
+.blade-btn-card.is-active .blade-toggle-button {
+    background: rgba(244, 67, 54, 0.1) !important;
+    color: #f44336 !important;
+    border-color: rgba(244, 67, 54, 0.2) !important;
+}
+
+.blade-btn-card.is-active .blade-toggle-button:hover {
+    background: rgba(244, 67, 54, 0.2) !important;
+}
+.locked-blade-toggle {
+    opacity: 0.4;
+    pointer-events: none; /* Rend le joystick totalement insensible aux clics/touches */
+    filter: grayscale(100%);
+}

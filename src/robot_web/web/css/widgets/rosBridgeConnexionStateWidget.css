@@ -1,0 +1,48 @@
+/* Note : Les classes .status-card, .status-header et .status-body sont gérées par common.css */
+
+.status-main-row {
+    display: flex !important; flex-direction: row !important; align-items: center !important; justify-content: center !important; width: 100% !important;
+}
+.status-info-block {
+    display: flex !important; flex-direction: column !important; align-items: center !important; justify-content: center !important; width: 100% !important;
+}
+.status-connection-badge {
+    /* Suppression de la largeur fixe pour laisser le contenu dicter la taille */
+    width: auto !important; 
+    /* Ajout d'une largeur minimale confortable pour le texte "CONNECTED" */
+    min-width: 180px !important; 
+    /* Max-width conservé pour éviter que le texte trop long ne casse la mise en page */
+    max-width: 280px !important; 
+    
+    font-size: 1.6rem !important; 
+    font-weight: 900 !important; 
+    letter-spacing: 2px !important; 
+    padding: 12px 24px !important; 
+    border-radius: 30px !important; 
+    text-align: center !important; 
+    text-transform: uppercase !important; 
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.1), 0 4px 12px rgba(0, 0, 0, 0.5) !important;
+}
+.is-connected .status-connection-badge {
+    background: linear-gradient(135deg, #1b4d3e, #1e8449) !important; color: #52f28b !important; border: 1px solid #2ecc71 !important; text-shadow: 0 0 8px rgba(82, 242, 139, 0.6) !important;
+    box-shadow: 0 0 20px rgba(46, 204, 113, 0.25), inset 0 1px 2px rgba(255, 255, 255, 0.1) !important;
+}
+.is-disconnected .status-connection-badge {
+    background: linear-gradient(135deg, #2d1f1f, #1a1515) !important; color: #ff6b6b !important; border: 1px solid #4a2222 !important; text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5) !important;
+}
+.status-details-grid {
+    display: grid !important; grid-template-columns: 1fr !important; align-items: center !important; width: 100% !important; max-width: 200px !important; margin: 0 auto !important; border-top: 1px solid rgba(255, 255, 255, 0.05) !important; padding-top: 18px !important;
+}
+.page-sub-grid {
+    display: grid !important; grid-template-columns: 1fr auto !important; align-items: center !important; gap: 12px !important; justify-content: center !important; width: 100% !important;
+}
+.status-values-block {
+    display: flex !important; flex-direction: column !important; white-space: nowrap !important;
+}
+.status-label {
+    font-size: 0.72rem !important; color: #5c6270 !important; text-transform: uppercase !important; letter-spacing: 0.8px !important; line-height: 1.1 !important; margin-bottom: 3px !important;
+}
+.status-value {
+    font-size: 1.15rem !important; font-weight: 700 !important; color: #ffffff !important; line-height: 1.1 !important;
+}

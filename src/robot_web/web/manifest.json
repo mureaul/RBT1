@@ -1,0 +1,37 @@
+{
+  "id": "/",
+  "name": "RBT1 Robot Control",
+  "short_name": "RBT1",
+  "description": "Interface de commande et de supervision du robot RBT1",
+  "lang": "fr-FR",
+
+  "start_url": "/",
+  "scope": "/",
+
+  "display": "standalone",
+  "orientation": "landscape",
+
+  "background_color": "#202124",
+  "theme_color": "#2E7D32",
+
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+
+  "categories": [
+    "productivity",
+    "utilities",
+    "navigation"
+  ]
+}

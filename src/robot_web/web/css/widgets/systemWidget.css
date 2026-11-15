@@ -1,0 +1,35 @@
+/* Note: .system-card, .system-header et .premium-badge-icon sont gérés par common.css */
+
+.system-columns-grid {
+    display: grid !important; grid-template-columns: repeat(3, 1fr) !important; align-items: center !important; width: 100% !important; border-top: 1px solid rgba(255, 255, 255, 0.05) !important; padding-top: 18px !important;
+}
+.system-column-item {
+    display: grid !important; grid-template-columns: auto 1fr !important; align-items: center !important; gap: 14px !important; padding: 0 12px !important; box-sizing: border-box !important;
+}
+.system-column-item:not(:last-child) {
+    border-right: 1px solid rgba(255, 255, 255, 0.06) !important;
+}
+.system-values-block {
+    display: flex !important; flex-direction: column !important; align-items: flex-start !important; text-align: left !important; width: 100% !important;
+}
+.system-label {
+    font-size: 0.72rem !important; color: #5c6270 !important; text-transform: uppercase !important; letter-spacing: 0.8px !important; line-height: 1.2 !important; min-height: 1.7rem !important; display: flex !important; align-items: flex-end !important; margin-bottom: 6px !important;
+}
+.system-value-wrapper {
+    display: flex !important; align-items: baseline !important; gap: 2px !important; margin-top: auto !important;
+}
+.system-value {
+    font-size: 1.65rem !important; font-weight: 700 !important; line-height: 1.1 !important; font-variant-numeric: tabular-nums !important; transition: color 0.3s ease !important;
+}
+.system-unit {
+    font-size: 0.85rem !important; color: #5c6270 !important; font-weight: 600 !important;
+}
+.badge-svg-status {
+    width: 18px !important; height: 18px !important; transition: fill 0.3s ease, filter 0.3s ease !important;
+}
+.state-green .system-value { color: #2ecc71 !important; }
+.state-green .badge-svg-status { fill: #2ecc71 !important; filter: drop-shadow(0 0 4px rgba(46, 204, 113, 0.4)) !important; }
+.state-orange .system-value { color: #f39c12 !important; }
+.state-orange .badge-svg-status { fill: #f39c12 !important; filter: drop-shadow(0 0 4px rgba(243, 156, 18, 0.4)) !important; }
+.state-red .system-value { color: #e74c3c !important; }
+.state-red .badge-svg-status { fill: #e74c3c !important; filter: drop-shadow(0 0 4px rgba(231, 76, 60, 0.5)) !important; }

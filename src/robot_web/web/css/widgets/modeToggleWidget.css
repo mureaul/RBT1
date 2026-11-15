@@ -1,0 +1,83 @@
+/* Style global du widget Topbar Mode (Minimaliste LED) */
+.mode-minimal-wrapper {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 0.8rem;
+    letter-spacing: 0.8px;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.25s ease;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    pointer-events: auto !important;
+}
+
+.mode-minimal-wrapper:hover {
+    background: rgba(255, 255, 255, 0.07);
+    border-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Témoin lumineux (LED) */
+.mode-led-indicator {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    pointer-events: none;
+}
+
+/* Animation de pulsation fluide */
+@keyframes led-pulse {
+    0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(79, 195, 247, 0.7);
+    }
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 6px rgba(79, 195, 247, 0);
+    }
+    100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(79, 195, 247, 0);
+    }
+}
+
+/* Mode AUTO : Bleu Cyan technique avec pulsation active */
+.mode-minimal-wrapper.mode-auto {
+    color: #4ff76e;
+}
+.mode-minimal-wrapper.mode-auto .mode-led-indicator {
+    background-color: #1bf425;
+    box-shadow: 0 0 8px rgba(79, 247, 143, 0.57);
+    animation: led-pulse 2s infinite ease-in-out;
+}
+
+/* Mode MANUAL : Ambre / Orange alerte (Fixe, sans pulse) */
+.mode-minimal-wrapper.mode-manual {
+    color: #ffb74d;
+}
+.mode-minimal-wrapper.mode-manual .mode-led-indicator {
+    background-color: #ffb74d;
+    box-shadow: 0 0 8px rgba(255, 183, 77, 0.8);
+    animation: none;
+}
+
+/* Mode MANUAL : Ambre / Orange alerte (Fixe, sans pulse) */
+.mode-minimal-wrapper.mode-idle {
+    color: #a0a0a075;
+}
+.mode-minimal-wrapper.mode-idle .mode-led-indicator {
+    background-color: #a0a0a0aa;
+    box-shadow: 0 0 8px rgba(220, 205, 205, 0.426);
+    animation: none;
+}
+
+
+.topbar-mode-value {
+    pointer-events: none;
+}

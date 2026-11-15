@@ -1,0 +1,54 @@
+/* Note : .workcell-card, .workcell-header, .workcell-body gérés par common.css */
+
+.workcell-list-container {
+    display: flex !important; flex-direction: column !important; background: #111317 !important; border: 1px solid #2e3445 !important; border-radius: 8px !important; max-height: 140px; overflow-y: auto;
+}
+.workcell-list-header {
+    background: #171920 !important; padding: 8px 12px !important; font-size: 0.72rem !important; color: #5c6270 !important; text-transform: uppercase !important; letter-spacing: 0.8px !important; font-weight: 600 !important; border-bottom: 1px solid #2e3445 !important;
+}
+.workcell-list { list-style: none !important; padding: 0 !important; margin: 0 !important; }
+.workcell-item {
+    display: flex !important; justify-content: space-between !important; align-items: center !important; padding: 10px 12px !important; border-bottom: 1px solid rgba(255, 255, 255, 0.02) !important; cursor: pointer !important; transition: background 0.2s ease !important;
+}
+.workcell-item:hover { background: rgba(255, 255, 255, 0.02) !important; }
+.workcell-item.is-selected { border-left: 3px solid transparent !important; }
+.workcell-item.is-selected .workcell-item-name { color: #ffffff !important; font-weight: 600 !important; }
+.workcell-item-info { display: flex !important; align-items: center !important; }
+.workcell-item-name { font-size: 0.88rem !important; font-weight: 500 !important; color: #ffffff !important; }
+.workcell-item-meta { font-size: 0.72rem !important; color: #646b7a !important; margin-left: 8px !important; }
+.workcell-color-indicator {
+    display: inline-block !important; width: 10px !important; height: 10px !important; border-radius: 50% !important; margin-right: 8px !important; box-shadow: 0 0 6px rgba(255, 255, 255, 0.1) !important; flex-shrink: 0;
+}
+.workcell-item-actions { display: flex !important; gap: 6px !important; align-items: center !important; }
+.workcell-item-actions .btn-action {
+    cursor: pointer !important; background: rgba(255, 255, 255, 0.03) !important; border: 1px solid rgba(255, 255, 255, 0.1) !important; color: #ffffff !important; padding: 4px 8px !important; border-radius: 4px !important; font-size: 0.8rem !important; transition: all 0.2s ease-in-out !important;
+}
+.workcell-item-actions .view-btn:hover {
+    background: rgba(41, 182, 246, 0.15) !important; border-color: #29b6f6 !important; box-shadow: 0 0 8px rgba(41, 182, 246, 0.3) !important;
+}
+.workcell-item-actions .delete-btn { border-color: rgba(239, 68, 68, 0.2) !important; color: rgba(239, 68, 68, 0.8) !important; }
+.workcell-item-actions .delete-btn:hover {
+    background: #ef4444 !important; color: #ffffff !important; border-color: #ef4444 !important; box-shadow: 0 0 8px rgba(239, 68, 68, 0.4) !important;
+}
+.workcell-embedded-map { height: 250px; width: 100%; border-radius: 8px; border: 1px solid #2e3445; }
+.workcell-btn-header {
+    background: transparent !important;
+    border: none !important;
+    color:#a0a5b5!important;
+    cursor: pointer !important;
+    width: 38px !important;
+    height: 38px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-radius: 6px !important;
+    transition: all 0.2s ease !important;
+}
+
+.workcell-btn-header:hover {
+    background: rgba(255, 255, 255, 0.1) !important;
+}
+
+.workcell-btn-header:active {
+    transform: scale(0.93) !important;
+}

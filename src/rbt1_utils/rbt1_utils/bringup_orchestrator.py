@@ -10,12 +10,14 @@ from datetime import datetime
 from std_msgs.msg import Float32
 from sensor_msgs.msg import Imu, LaserScan, NavSatFix
 from std_msgs.msg import Bool as BoolMsg
+from std_msgs.msg import String as StringMsg
 from nav_msgs.msg import Odometry
 from std_srvs.srv import Empty
 from tf2_msgs.msg import TFMessage
 from nav2_msgs.srv import ManageLifecycleNodes
 from geometry_msgs.msg import PoseWithCovarianceStamped
 from rbt1_interfaces.msg import MissionCommand, MissionState
+from rclpy.qos import qos_profile_sensor_data
 
 from lifecycle_msgs.srv import GetState, ChangeState
 from lifecycle_msgs.msg import Transition
@@ -55,7 +57,12 @@ class Orchestrator(Node):
             if len(last_times) > 10:
                 last_times.pop(0)
 
-        sub = self.create_subscription(msg_type, topic, cb, 10)
+        if topic in ['/imu/data', '/scan']:
+            qos = qos_profile_sensor_data
+        else:
+            qos = 10
+
+        sub = self.create_subscription(msg_type, topic, cb, qos)
 
         start = time.time()
         while rclpy.ok():
@@ -293,22 +300,71 @@ class Orchestrator(Node):
     # ==========================================================
     def run_sequence(self):
         config_dir = os.path.join(os.getenv('HOME'), 'RBT1', 'src', 'rbt1_navigation', 'config')
-
-        # -------------------------------
-        # micro-ROS
-        # -------------------------------
-        self.wait_for_topic_freq('/imu/data', Imu, 5.0)
-        self.get_logger().info("✅ MicroRos LORA sucessfully launched")
-
-        self.wait_for_topic_presence('/state/lame_speed')
-        self.get_logger().info("✅ MicroRos MOTORS sucessfully launched")
-
+        self.get_logger().info("Lnacement de la séquence bringup V2")
         # -------------------------------
         # Heartbeat
         # -------------------------------
         self.launch_ros_process(['ros2', 'run','rbt1_utils', 'heartbeat_node'])
         self.wait_for_topic_freq('/heartbeat/ros', BoolMsg, 1.0)
         self.get_logger().info("✅ Heartbeat_node sucessfully launched")
+
+        # -------------------------------
+        # wifi monitor
+        # -------------------------------
+        self.launch_ros_process(['ros2', 'run', 'rbt1_utils', 'wifi_monitor'])
+        self.wait_for_topic_presence('/state/wifi/status')
+        self.get_logger().info("✅ Wifi monitor sucessfully launched")
+
+        # -------------------------------
+        # System monitor
+        # -------------------------------
+        self.launch_ros_process(['ros2', 'run','rbt1_utils', 'system_monitor_node'])
+        self.wait_for_topic_freq('/state/system_status', StringMsg,0.4)
+        self.get_logger().info("✅ System monitor sucessfully launched")
+
+        # -------------------------------
+        # micro-ROS
+        # -------------------------------
+        self.wait_for_topic_freq('/imu/data', Imu, 5.0)
+        self.get_logger().info("✅ MicroRos LORA sucessfully launched")
+        self.wait_for_topic_presence('/state/lame_telemetry')
+        self.get_logger().info("✅ MicroRos MOTORS sucessfully launched")
+
+        # -------------------------------
+        # Historian : Ambiance
+        # -------------------------------
+        self.launch_ros_process(['ros2', 'run','rbt1_utils', 'ambiance_historian'])
+        self.wait_for_service_presence('/ambiance_historian/get_history')
+        self.get_logger().info("✅ Historian Ambiance sucessfully launched")
+
+        # -------------------------------
+        # Historian : Blade
+        # -------------------------------
+        self.launch_ros_process(['ros2', 'run','rbt1_utils', 'blade_historian'])
+        self.wait_for_service_presence('/blade_historian/get_history')
+        self.get_logger().info("✅ Historian Blade sucessfully launched")
+
+        # -------------------------------
+        # Historian : Battery
+        # -------------------------------
+        self.launch_ros_process(['ros2', 'run','rbt1_utils', 'battery_historian'])
+        self.wait_for_service_presence('/battery_historian/get_history')
+        self.get_logger().info("✅ Historian Blade sucessfully launched")
+
+        # -------------------------------
+        # Blade relay
+        # -------------------------------
+        self.launch_ros_process(['ros2', 'run','rbt1_utils', 'blade_relay'])
+        self.wait_for_topic_presence('/cmd/lame_speed_web')
+        self.get_logger().info("✅ blade relay (web) sucessfully launched")
+
+        # -------------------------------
+        # Worcell_provider
+        # -------------------------------
+        self.launch_ros_process(['ros2', 'run','rbt1_utils', 'workcell_provider'])
+        self.wait_for_service_presence('/get_workcells')
+        self.get_logger().info("✅ Worcells provider service sucessfully launched")
+
 
         # -------------------------------
         # weather_monitor
@@ -325,6 +381,13 @@ class Orchestrator(Node):
         self.get_logger().info("✅ robot_state_publisher sucessfully launched")
 
         # -------------------------------
+        # ekf2pose
+        # -------------------------------
+        self.launch_ros_process(['ros2', 'run','rbt1_utils', 'ekf2pose'])
+        self.wait_for_topic_presence('/ekf_pose')
+        self.get_logger().info("✅ ekf2pose sucessfully launched")
+
+        # -------------------------------
         # LIDAR
         # -------------------------------
         self.launch_ros_process(['ros2', 'launch','rplidar_ros', 'rplidar_c1_launch.py'])
@@ -339,43 +402,77 @@ class Orchestrator(Node):
         self.get_logger().info("✅ GPS sucessfully launched")
 
         # -------------------------------
+        # GPS zone recorder
+        # -------------------------------
+        self.launch_ros_process(['ros2', 'run','rbt1_utils', 'gps_zone_recorder_node'])
+        self.wait_for_service_presence('/gps_zone_recorder_node/start_recording')
+        self.wait_for_service_presence('/gps_zone_recorder_node/stop_recording')
+        self.get_logger().info("✅ gps zone recorder services sucessfully launched")
+
+        # -------------------------------
+        # GPS tracker
+        # -------------------------------
+        self.launch_ros_process(['ros2', 'run','rbt1_utils', 'gps_tracker_node'])
+        self.wait_for_service_presence('/get_missions_list')
+        self.wait_for_service_presence('/get_gps_history')
+        self.get_logger().info("✅ gps tracker services sucessfully launched")
+
+        # -------------------------------
+        # Mode Manager
+        # -------------------------------
+        self.launch_ros_process(['ros2', 'run', 'rbt1_utils', 'mode_manager'])
+        self.wait_for_service_presence('/mode_manager/toggle_mode')
+        self.wait_for_service_presence('/mode_manager/set_mode')
+        self.get_logger().info("✅ Mode Manager sucessfully launched")
+
+        # -------------------------------
+        # Mission Planner
+        # -------------------------------
+        self.launch_ros_process(['ros2', 'run', 'rbt1_utils', 'mission_planner'])
+        self.wait_for_service_presence('/mission_planner/action')
+        self.get_logger().info("✅ Mission planner sucessfully launched")
+
+        # -------------------------------
         # Generate maps & coverage
         # -------------------------------
-        self.get_logger().info("🚀 Generating maps & coverage files...")
-        result = subprocess.run(["ros2", "run", "rbt1_navigation", "map_generator"],capture_output=True,text=True)
-        if result.returncode == 0:
-            self.get_logger().info("✅ Map & coverage generation finished successfully")
-        else:
-            self.get_logger().error(f"❌ Map generation failed:\n{result.stderr}")
-            raise RuntimeError("Map generation failed, aborting bringup")
-        self.get_logger().info("Maps & coverage ready ✔")
+        #self.get_logger().info("🚀 Generating maps & coverage files...")
+        #self.launch_ros_process(['ros2', 'run','rbt1_navigation', 'map_generator'])
+        #result = subprocess.run(["ros2", "run", "rbt1_navigation", "map_generator"],capture_output=True,text=True)
+        #if result.returncode == 0:
+        #    self.get_logger().info("✅ Map & coverage generation finished successfully")
+        #else:
+        #    self.get_logger().error(f"❌ Map generation failed:\n{result.stderr}")
+        #    raise RuntimeError("Map generation failed, aborting bringup")
+        #self.get_logger().info("Maps & coverage ready ✔")
+        #self.wait_for_service_presence('/trigger_kml_processing')
+
 
         # -------------------------------
         # EKF + NAV2
         # -------------------------------
-        self.launch_ros_process(['ros2', 'launch','rbt1_navigation', 'nav2_gps.launch.py'])
-        self.wait_for_service_presence('/lifecycle_manager_navigation/manage_nodes')
-        self.wait_for_nav2_node_active('map_server')
-        self.wait_for_nav2_node_active('amcl')  # initialpose publié automatiquement ici
-        self.wait_for_nav2_node_active('controller_server')
-        self.wait_for_nav2_node_active('smoother_server')
-        self.wait_for_nav2_node_active('planner_server')
-        self.wait_for_nav2_node_active('route_server')
-        self.wait_for_nav2_node_active('behavior_server')
-        self.wait_for_nav2_node_active('velocity_smoother')
-        self.wait_for_nav2_node_active('collision_monitor')
-        self.wait_for_nav2_node_active('bt_navigator')
-        self.wait_for_nav2_node_active('waypoint_follower')
-        self.wait_for_nav2_node_active('docking_server')
-        self.get_logger().info("✅ EKF + NAV2 sucessfully launched")        
+        #self.launch_ros_process(['ros2', 'launch','rbt1_navigation', 'nav2_gps.launch.py'])
+        #self.wait_for_service_presence('/lifecycle_manager_navigation/manage_nodes')
+        #self.wait_for_nav2_node_active('map_server')
+        #self.wait_for_nav2_node_active('amcl')  # initialpose publié automatiquement ici
+        #self.wait_for_nav2_node_active('controller_server')
+        #self.wait_for_nav2_node_active('smoother_server')
+        #self.wait_for_nav2_node_active('planner_server')
+        #self.wait_for_nav2_node_active('route_server')
+        #self.wait_for_nav2_node_active('behavior_server')
+        #self.wait_for_nav2_node_active('velocity_smoother')
+        #self.wait_for_nav2_node_active('collision_monitor')
+        #self.wait_for_nav2_node_active('bt_navigator')
+        #self.wait_for_nav2_node_active('waypoint_follower')
+        #self.wait_for_nav2_node_active('docking_server')
+        #self.get_logger().info("✅ EKF + NAV2 sucessfully launched")        
 
         # -------------------------------
         # mission manager
         # -------------------------------
-        self.launch_ros_process(['ros2', 'run','rbt1_navigation', 'mission_manager'])
-        self.wait_for_topic_presence('/mission/state')
-        self.wait_for_wait_mission(timeout_sec=120.0)
-        self.get_logger().info("✅ Mission Manager sucessfully launched")
+        #self.launch_ros_process(['ros2', 'run','rbt1_navigation', 'mission_manager'])
+        #self.wait_for_topic_presence('/mission/state')
+        #self.wait_for_wait_mission(timeout_sec=120.0)
+        #self.get_logger().info("✅ Mission Manager sucessfully launched")
 
         # -------------------------------
         # mission orchestrator

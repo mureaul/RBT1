@@ -1,0 +1,66 @@
+/* ==========================================================================
+   WIDGETS : ROS Node & Topic State (Spécifique)
+   ========================================================================== */
+.ros-node-refresh-btn {
+    background: rgba(255, 255, 255, 0.04) !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    color: #94a3b8 !important;
+    padding: 6px 10px !important;
+    border-radius: 6px !important;
+    cursor: pointer !important;
+    transition: all 0.2s !important;
+}
+
+.ros-node-refresh-btn:hover { background: rgba(255, 255, 255, 0.12) !important; color: #fff !important; }
+
+.ros-widget-layout {
+    display: grid !important;
+    grid-template-columns: 240px 1fr !important;
+    gap: 20px !important;
+}
+/* Suppression de la grille, passage en flux vertical */
+.ros-widget-wrapper {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    gap: 0 !important;
+}
+
+.ros-list-container {
+    display: flex !important; 
+    flex-direction: column !important; 
+    background: #111317 !important; 
+    border: 1px solid #2e3445 !important; 
+    border-radius: 8px !important; 
+    max-height: 140px; 
+    overflow-y: auto;
+    width: 100% !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
+    padding-bottom: 16px !important;
+}
+
+.ros-terminal-box {
+    width: 100% !important;
+}
+
+
+.ros-terminal-bar {
+    background: rgba(0,0,0,0.2) !important;
+    padding: 8px 12px !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    border-bottom: 1px solid #1e293b !important;
+}
+
+.ros-terminal-title { font-size: 0.75rem !important; color: #94a3b8 !important; }
+.ros-terminal-tag { font-size: 0.65rem !important; color: #0ea5e9 !important; font-weight: 700 !important; }
+
+.ros-terminal-body {
+    padding: 12px !important;
+    font-family: 'Courier New', Courier, monospace !important;
+    font-size: 0.75rem !important;
+    height: 200px !important;
+    overflow-y: auto !important;
+    color: #cbd5e1 !important;
+}

@@ -1,0 +1,19 @@
+.nav-btn {
+
+    padding: 10px;
+
+    cursor: pointer;
+
+    background: transparent;
+
+    color: white;
+
+    border-bottom: 1px solid #444;
+
+}
+
+.nav-btn.active {
+
+    background: #4CAF50;
+
+}

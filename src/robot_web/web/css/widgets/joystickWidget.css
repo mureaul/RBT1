@@ -1,0 +1,45 @@
+/* Les styles de base (.joystick-card, .joystick-header, .joystick-body) sont désormais gérés dans common.css */
+
+.joystick-container-pad {
+    display: flex !important; justify-content: center !important; align-items: center !important; width: 100% !important; padding: 10px 0 !important;
+}
+.joystick-zone {
+    width: 170px !important; height: 170px !important; background: radial-gradient(circle, #12141a 0%, #0d0f13 100%) !important;
+    border: 1px solid #252a36 !important; border-radius: 50% !important; position: relative !important;
+    box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.7), 0 1px 1px rgba(255, 255, 255, 0.03) !important;
+}
+.joystick-zone::before {
+    content: "" !important; position: absolute !important; top: 50% !important; left: 50% !important; transform: translate(-50%, -50%) !important;
+    width: 6px !important; height: 6px !important; background: rgba(41, 182, 246, 0.2) !important; border-radius: 50% !important;
+}
+.joystick-zone .back {
+    background: rgba(41, 182, 246, 0.04) !important; border: 1px dashed rgba(41, 182, 246, 0.25) !important; box-shadow: 0 0 15px rgba(0, 0, 0, 0.5) !important;
+}
+.joystick-zone .front {
+    background: linear-gradient(135deg, #29b6f6, #0288d1) !important;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6), 0 0 12px rgba(41, 182, 246, 0.4) !important;
+}
+.joystick-details-grid {
+    display: grid !important; grid-template-columns: 1fr max-content 1fr !important; align-items: center !important; width: 100% !important;
+    max-width: 320px !important; margin: 0 auto !important; border-top: 1px solid rgba(255, 255, 255, 0.05) !important; padding-top: 18px !important; gap: 16px !important;
+}
+.linear-sub-grid, .angular-sub-grid {
+    display: grid !important; grid-template-columns: auto auto !important; align-items: center !important; gap: 12px !important; width: 100% !important;
+}
+.linear-sub-grid { justify-content: flex-end !important; }
+.angular-sub-grid { justify-content: flex-start !important; }
+.joystick-values-block { display: flex !important; flex-direction: column !important; white-space: nowrap !important; }
+.joystick-label {
+    font-size: 0.72rem !important; color: #5c6270 !important; text-transform: uppercase !important; letter-spacing: 0.8px !important; line-height: 1.1 !important; margin-bottom: 3px !important;
+}
+.joystick-value {
+    font-size: 1.15rem !important; font-weight: 700 !important; color: #ffffff !important; line-height: 1.1 !important; font-variant-numeric: tabular-nums !important;
+}
+.joystick-divider {
+    width: 1px !important; height: 34px !important; background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.08), transparent) !important; display: block !important;
+}
+.locked-joystick {
+    opacity: 0.4;
+    pointer-events: none; /* Rend le joystick totalement insensible aux clics/touches */
+    filter: grayscale(100%);
+}

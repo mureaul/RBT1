@@ -1,0 +1,6 @@
+# Request
+string id                  # Ex: "wokcell_verger_nord"
+---
+# Response
+string yaml_content        # Le contenu brut du fichier YAML sous forme de chaîne de caractères
+bool success

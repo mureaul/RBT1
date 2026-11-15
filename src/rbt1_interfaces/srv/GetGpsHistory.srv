@@ -1,0 +1,4 @@
+string mission_id       # ID de la mission demandée par le widget Web
+---
+string points_json      # Contient le tableau : [{"lat": 46.2, "lon": 2.2}, ...]
+bool success

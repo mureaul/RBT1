@@ -1,0 +1,46 @@
+/* ==========================================================================
+   WIDGET : Local Costmap (Spécifique)
+   ========================================================================== */
+
+.costmap-canvas-wrapper {
+    position: relative !important;
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    background: rgba(0, 0, 0, 0.2) !important;
+    border-radius: 8px !important;
+    overflow: hidden !important;
+    padding: 10px !important;
+}
+
+#costmap-canvas {
+    max-width: 100% !important;
+    height: auto !important;
+    image-rendering: pixelated !important; /* Maintient le rendu net des pixels */
+}
+
+.costmap-footer-legend {
+    display: flex !important;
+    justify-content: space-between !important;
+    padding: 0 10px !important;
+    font-size: 0.7rem !important;
+    color: #64748b !important;
+    text-transform: uppercase !important;
+}
+
+.legend-item {
+    display: flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+}
+
+.legend-item::before {
+    content: "" !important;
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 2px !important;
+}
+
+.legend-item.unknown::before { background: #222733 !important; }
+.legend-item.free::before { background: #14171e !important; border: 1px solid #334155 !important; }
+.legend-item.obstacle::before { background: #ef4444 !important; }

@@ -1,0 +1,79 @@
+/* .battery-body est maintenant géré par common.css */
+
+.battery-main-row {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    gap: 16px !important;
+}
+
+.battery-icon-container { width: 125px !important; flex-shrink: 0 !important; }
+.battery-svg { width: 100% !important; height: auto !important; display: block !important; }
+.battery-info-block { display: flex !important; flex-direction: column !important; align-items: flex-start !important; justify-content: center !important; flex-shrink: 0 !important; }
+
+.battery-percent {
+    font-size: 3.2rem !important;
+    font-weight: 900 !important;
+    line-height: 0.95 !important;
+    text-align: left !important;
+    font-variant-numeric: tabular-nums !important;
+    transition: color 0.4s ease !important;
+}
+
+.battery-state-text {
+    font-size: 0.85rem !important;
+    font-weight: 600 !important;
+    color: #646b7a !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1px !important;
+    margin-top: 4px !important;
+}
+
+.status-green .battery-percent { color: #52f28b !important; }
+.status-orange .battery-percent { color: #ffca28 !important; }
+.status-low .battery-percent { color: #ff6b6b !important; }
+.is-charging .battery-state-text { color: #52f28b !important; }
+
+.battery-details-grid {
+    display: grid !important;
+    grid-template-columns: 1fr 1px 1fr !important;
+    align-items: center !important;
+    width: 100% !important;
+    max-width: 320px;
+    margin: 0 auto;
+    border-top: 1px solid rgba(255, 255, 255, 0.05) !important;
+    padding-top: 18px !important;
+    gap: 16px !important;
+}
+
+.voltage-sub-grid { display: grid !important; grid-template-columns: auto 1fr !important; align-items: center; gap: 12px; width: 100%; justify-content: flex-end; }
+.current-sub-grid { display: grid !important; grid-template-columns: 1fr auto !important; align-items: center !important; gap: 12px !important; width: 100% !important; justify-content: flex-start; }
+.battery-values-block { display: flex !important; flex-direction: column !important; white-space: nowrap !important; }
+
+.battery-level { transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1), fill 0.4s ease !important; }
+.battery-bolt {
+    opacity: 0;
+    transform: scale(0.3);
+    transform-origin: 64px 30px;
+    transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
+    pointer-events: none;
+}
+.is-charging .battery-bolt { opacity: 1; transform: scale(1); }
+.is-charging .battery-level { animation: premium-fluid-pulse 2s infinite ease-in-out; }
+.status-low .battery-level { animation: critical-blink 1s infinite alternate ease-in-out; }
+
+@keyframes premium-fluid-pulse { 0%, 100% { opacity: 0.85; } 50% { opacity: 1; filter: brightness(1.1); } }
+@keyframes critical-blink { 0% { opacity: 0.5; } 100% { opacity: 1; } }
+
+.battery-details { display: flex; align-items: center; justify-content: space-between; width: 100%; border-top: 1px solid rgba(255, 255, 255, 0.05); padding-top: 18px; box-sizing: border-box; margin-top: 6px; }
+.battery-item { flex: 1; display: flex; flex-direction: row; align-items: center; gap: 10px; }
+.voltage-item { justify-content: flex-start; }
+.voltage-item .battery-values-block { align-items: flex-start; }
+.current-item { justify-content: flex-end; }
+.current-item .battery-values-block { align-items: flex-end; }
+.battery-label { font-size: 0.72rem !important; color: #5c6270 !important; text-transform: uppercase !important; letter-spacing: 0.8px !important; line-height: 1.1 !important; margin-bottom: 3px !important; }
+.battery-value { font-size: 1.15rem !important; font-weight: 700 !important; color: #ffffff !important; line-height: 1.1 !important; }
+.battery-divider { width: 1px !important; height: 40px !important; background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.08), transparent) !important; display: block !important; }
+.battery-item span:last-child { font-size: 18px; font-weight: 600; color: #f4f4f4; }

@@ -1,0 +1,63 @@
+/******************************************************************************
+ * widgets/settings/wifi.css
+ ******************************************************************************/
+
+.card.wifi-card {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+    width: auto;
+    min-width: unset;
+    position: relative;
+    gap: 4px
+}
+
+.wifi-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wifi-main-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wifi-icon-container {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.widget-pending-container.wifi-pending-box {
+    display: none;
+    position: absolute;
+    bottom: 4px;
+    font-size: 0.65rem;
+}
+
+.widget-pending-title {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+#wifi-missing-nodes-list {
+    font-family: monospace;
+    opacity: 0.85;
+}
+
+/* Par défaut : vert */
+.wifi-card .wifi-arc {
+    fill: url(#wifi-glow-green);
+    transition: fill 0.3s ease;
+}
+
+/* Nœud inactif / Déconnecté : gris */
+.wifi-card.is-node-inactive .wifi-arc,
+.wifi-card.is-disconnected .wifi-arc {
+    fill: url(#wifi-glow-gray);
+}

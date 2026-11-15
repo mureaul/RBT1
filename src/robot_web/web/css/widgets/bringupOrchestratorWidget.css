@@ -1,0 +1,61 @@
+/* ==========================================================================
+   WIDGET : Bringup Orchestrator (Spécifique)
+   ========================================================================== */
+
+.bringup-progress-wrapper {
+    background: rgba(255, 255, 255, 0.02) !important;
+    border: 1px solid rgba(255, 255, 255, 0.05) !important;
+    border-radius: 8px !important;
+    padding: 10px 14px !important;
+}
+
+.bringup-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 10px !important;
+    max-height: 500px !important;
+    overflow-y: auto !important;
+    padding-right: 4px !important;
+}
+
+.bringup-group {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.03) !important;
+    padding-bottom: 8px !important;
+}
+
+.bringup-group-title {
+    font-size: 0.68rem !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+    color: rgba(255, 255, 255, 0.4) !important;
+    font-weight: 700 !important;
+    margin-bottom: 6px !important;
+}
+
+.bringup-items-container {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 6px !important;
+}
+
+.bringup-global-badge {
+    font-size: 0.72rem !important;
+    font-weight: bold !important;
+    letter-spacing: 0.5px !important;
+    padding: 4px 10px !important;
+    border-radius: 4px !important; /* Rectangulaire avec coins légèrement arrondis */
+    background: rgba(255, 255, 255, 0.05) !important;
+    transition: all 0.3s ease !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    min-width: 100px !important; /* Largeur fixe pour stabiliser le rendu */
+}
+
+.status-dot {
+    width: 5px !important;
+    height: 5px !important;
+    border-radius: 50% !important;
+    background: #64748b !important;
+    transition: all 0.25s ease !important;
+}

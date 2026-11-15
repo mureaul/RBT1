@@ -4,14 +4,14 @@ navsat_transform:
     broadcast_cartesian_transform: true
     delay: 3.0
     frequency: 10.0
-    gps_topic: gps/fix
-    imu_topic: imu/data
+    gps_topic: /ublox_gps_node/fix
+    imu_topic: /imu/data
     magnetic_declination_radians: 0.0
     odom_frame: odom_frame
     publish_filtered_gps: true
     publish_tf: true
     use_odometry_yaw: true
-    wait_for_datum: false
+    wait_for_datum: true
     world_frame: map
     yaw_offset: 0.0
     zero_altitude: true

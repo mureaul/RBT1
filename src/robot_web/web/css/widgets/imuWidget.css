@@ -1,0 +1,49 @@
+/* Note: .imu-card, .imu-header, .imu-body sont gérés par common.css */
+
+.imu-columns-grid {
+    display: grid !important; 
+    grid-template-columns: repeat(3, 1fr) !important; 
+    row-gap: 20px !important; 
+    column-gap: 0 !important; 
+    align-items: center !important; 
+    width: 100% !important; 
+    border-top: 1px solid rgba(255, 255, 255, 0.05) !important; 
+    padding-top: 18px !important;
+}
+
+.imu-column-item {
+    display: grid !important; 
+    grid-template-columns: auto 1fr !important; 
+    align-items: center !important; 
+    gap: 14px !important; 
+    padding: 0 12px !important; 
+    box-sizing: border-box !important;
+}
+
+.imu-column-item:not(:nth-child(3n)) {
+    border-right: 1px solid rgba(255, 255, 255, 0.06) !important;
+}
+
+.imu-values-block {
+    display: flex !important; flex-direction: column !important; align-items: flex-start !important; text-align: left !important; width: 100% !important;
+}
+
+.imu-label {
+    font-size: 0.72rem !important; color: #5c6270 !important; text-transform: uppercase !important; letter-spacing: 0.8px !important; line-height: 1.2 !important; min-height: 1.7rem !important; display: flex !important; align-items: flex-end !important; margin-bottom: 6px !important;
+}
+
+.imu-value-wrapper {
+    display: flex !important; align-items: baseline !important; gap: 2px !important; margin-top: auto !important;
+}
+
+.imu-value {
+    font-size: 1.65rem !important; font-weight: 700 !important; color: #ffffff !important; line-height: 1.1 !important; font-variant-numeric: tabular-nums !important;
+}
+
+.imu-unit {
+    font-size: 0.95rem !important; color: #29b6f6 !important; font-weight: 600 !important; margin-left: 2px !important;
+}
+
+.imu-column-item:nth-child(n+4) .imu-unit {
+    color: #e67e22 !important;
+}

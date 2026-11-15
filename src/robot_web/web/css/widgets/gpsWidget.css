@@ -1,0 +1,33 @@
+/* Utilisation de la structure common.css */
+.gps-coords-badge {
+    background: #1c212c !important; 
+    border: 1px solid #2d3446 !important; 
+    color: #00e5ff !important; 
+    padding: 6px 12px !important; 
+    font-size: 0.7rem !important; 
+    font-family: monospace !important; 
+    font-weight: 600 !important; 
+    border-radius: 6px !important; 
+    align-self: flex-end;
+}
+
+.gps-map-wrapper {
+    border-radius: 12px !important; 
+    overflow: hidden !important; 
+    border: 1px solid #222733 !important; 
+    height: 350px !important; 
+    background: #0b0d11 !important;
+}
+
+/* Fix Leaflet pour thème sombre */
+#rbt1-map .leaflet-tile-container { filter: invert(100%) hue-rotate(180deg) brightness(95%) contrast(90%) !important; }
+
+.gps-footer { display: flex !important; align-items: center !important; gap: 12px !important; }
+.gps-footer-label { font-size: 0.65rem !important; font-weight: 600 !important; color: #5c6270 !important; text-transform: uppercase !important; }
+
+.gps-select {
+    background: #1c212c !important; border: 1px solid #2d3446 !important; color: #a3aab8 !important; padding: 6px 14px !important; 
+    font-size: 0.7rem !important; font-weight: 600 !important; border-radius: 6px !important; cursor: pointer !important; 
+    flex-grow: 1 !important; text-transform: uppercase !important;
+}
+.gps-select:focus { border-color: #00e5ff !important; color: #00e5ff !important; }

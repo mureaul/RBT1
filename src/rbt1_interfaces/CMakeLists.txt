@@ -14,9 +14,19 @@ find_package(std_msgs REQUIRED)
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/MissionCommand.msg"
   "msg/MissionState.msg"
+  "msg/BladeTelemetry.msg"
+  "msg/MissionOrchestratorState.msg"
   "srv/LoadZone.srv"
   "srv/NavigationStatus.srv"
   "srv/GenerateCoverage.srv"
+  "srv/ZoneRecord.srv"
+  "srv/GetGpsHistory.srv"
+  "srv/GetMissionsList.srv"
+  "srv/GetWorkcells.srv"
+  "srv/GetWorkcellGeometry.srv"
+  "srv/DeleteWorkcell.srv"
+  "srv/SetMode.srv"
+  "srv/MissionSchedulerAction.srv"
   DEPENDENCIES std_msgs
 )
 

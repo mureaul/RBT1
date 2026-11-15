@@ -1,0 +1,54 @@
+/* ==========================================================================
+   WIDGET : Mission Planner (Spécifique)
+   ========================================================================== */
+
+.mission-form {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 12px !important;
+    background: rgba(255, 255, 255, 0.02) !important;
+    padding: 16px !important;
+    border-radius: 8px !important;
+    border: 1px solid rgba(255, 255, 255, 0.05) !important;
+}
+
+.mission-input-group {
+    display: flex !important;
+    gap: 8px !important;
+}
+
+.mission-input, .mission-select {
+    padding: 8px 12px !important;
+    border-radius: 6px !important;
+    background: #0f172a !important;
+    border: 1px solid #334155 !important;
+    color: #f8fafc !important;
+    font-size: 0.85rem !important;
+}
+
+.btn-submit-mission {
+    background: #0ea5e9 !important;
+    color: white !important;
+    border: none !important;
+    padding: 10px !important;
+    border-radius: 6px !important;
+    font-weight: 600 !important;
+    cursor: pointer !important;
+    transition: background 0.2s !important;
+}
+
+.btn-submit-mission:hover {
+    background: #0284c7 !important;
+}
+
+.sched-list-container {
+    margin-top: 8px !important;
+}
+
+.sched-item {
+    display: flex !important;
+    justify-content: space-between !important;
+    padding: 12px !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
+    align-items: center !important;
+}

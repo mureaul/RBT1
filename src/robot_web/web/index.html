@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="description" content="RBT1 Robot Control Interface" />
+    <meta name="theme-color" content="#1e1e1e" />
+
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="icon" href="/favicon.png" />
+
+    <title>RBT1 Control</title>
+
+    <!-- Style Global Harmonie (À charger en premier) -->
+    <link rel="stylesheet" href="/css/layout.css" />
+    <link rel="stylesheet" href="/css/tabs.css" />
+    <link rel="stylesheet" href="/css/theme.css" />
+
+    <link rel="stylesheet" href="css/widgets/common.css">
+    <!-- Fichiers Spécifiques (À charger de manière modulaire ou sur les pages concernées) -->
+    <link rel="stylesheet" href="css/widgets/batteryWidget.css">
+    <link rel="stylesheet" href="css/widgets/bladeSliderWidget.css">
+    <link rel="stylesheet" href="css/widgets/systemWidget.css">
+    <link rel="stylesheet" href="css/widgets/gpsRecorderWidget.css">
+    <link rel="stylesheet" href="css/widgets/gpsWidget.css">
+    <link rel="stylesheet" href="css/widgets/imuWidget.css">
+    <link rel="stylesheet" href="css/widgets/joystickWidget.css">
+    <link rel="stylesheet" href="css/widgets/lidarWidget.css">
+    <link rel="stylesheet" href="css/widgets/limitsWidget.css">
+    <link rel="stylesheet" href="css/widgets/rosbridgeParamWidget.css">
+    <link rel="stylesheet" href="css/widgets/rosBridgeConnexionStateWidget.css">
+    <link rel="stylesheet" href="css/widgets/stopButtonWidget.css">
+    <link rel="stylesheet" href="css/widgets/systemWidget.css">
+    <link rel="stylesheet" href="css/widgets/workcellWidget.css">
+    <link rel="stylesheet" href="css/widgets/AmbianceWidget.css">
+    <link rel="stylesheet" href="css/widgets/bladeTelemetryWidget.css">
+    <link rel="stylesheet" href="css/widgets/bladeButtonWidget.css">
+    <link rel="stylesheet" href="css/widgets/missionPlannerWidget.css">
+    <link rel="stylesheet" href="css/widgets/localCostmapWidget.css">
+    <link rel="stylesheet" href="css/widgets/bringupOrchestratorWidget.css">
+    <link rel="stylesheet" href="css/widgets/rosNodeTopicStateWidgets.css">
+    <link rel="stylesheet" href="css/widgets/modeToggleWidget.css">
+    <link rel="stylesheet" href="css/widgets/topbar.css">
+    <link rel="stylesheet" href="css/widgets/wifiIconWidget.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+</head>
+
+<body>
+
+    <noscript>
+        Cette application nécessite JavaScript.
+    </noscript>
+
+    <div id="app"></div>
+    
+    <script src="/vendor/roslib.min.js"></script>
+    <script src="/vendor/nipplejs.min.js"></script>
+    <script type="module" src="/js/core/app.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+    if ('serviceWorker' in navigator) {
+        // Attention : vérifie bien si ton fichier s'appelle 'sw.js' ou 'service-worker.js'
+        navigator.serviceWorker.register('/service-worker.js')
+            .then(() => console.log("Service Worker enregistré avec succès !"))
+            .catch(err => console.error("Échec de l'enregistrement du SW :", err));
+    }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+.bladeTelemetry-grid-3, .bladeTelemetry-grid-2 {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    width: 100% !important;
+    margin-bottom: 10px !important;
+}
+
+.bladeTelemetry-item {
+    display: flex !important;
+    flex-direction: row !important; /* Aligne le badge et les valeurs côte à côte */
+    align-items: center !important;
+    gap: 12px !important; /* Espace entre le badge et le texte */
+    padding: 10px !important;
+}
+
+.bladeTelemetry-values {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+}
+
+.bladeTelemetry-value-wrapper {
+    display: flex !important;
+    align-items: baseline !important;
+}
+
+/* Optionnel : Ajustement de la taille de l'unité */
+.bladeTelemetry-unit {
+    font-size: 0.8em !important;
+    font-weight: 600 !important;
+    margin-left: 4px !important;
+    opacity: 0.7 !important;
+    color: #a0a5b5 !important;
+}
+
+.bladeTelemetry-label-row { 
+    display: flex !important; 
+    flex-direction: row !important; 
+    align-items: center !important; 
+    gap: 6px !important; 
+    margin-bottom: 4px !important; 
+}
+
+.bladeTelemetry-label { font-size: 0.65rem !important; color: #a0a5b5 !important; text-transform: uppercase !important; }
+.bladeTelemetry-val { font-size: 2rem !important; font-weight: 700 !important;}
+
+/* Graphiques */
+.bladeTelemetry-charts-section { display: flex; flex-direction: column; gap: 12px; margin-top: 15px; }
+.bladeTelemetry-chart-block { height: 140px; }
+.bladeTelemetry-chart-title { font-size: 0.7rem; color: #a0a5b5; margin-bottom: 4px; text-transform: uppercase; }

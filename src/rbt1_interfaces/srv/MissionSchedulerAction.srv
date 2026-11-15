@@ -1,0 +1,4 @@
+string data # JSON format : {"action": "add"|"update"|"delete"|"get"|"clear", "id": "...", "zone": "...", "freq": "...", "start_date": "...", "end_date": "..."}
+---
+bool success
+string message # JSON de la liste à jour des planifications ou message d'erreur

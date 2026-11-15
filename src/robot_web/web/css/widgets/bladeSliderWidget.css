@@ -1,0 +1,43 @@
+/* Note: .bladeSlider-card, .blade-header, et .blade-body sont gérés par common.css */
+
+.bladeslider-slider-container {
+    display: flex !important; align-items: center !important; justify-content: center !important; width: 100% !important; padding: 14px 0 !important;
+}
+
+.bladeslider-slider {
+    -webkit-appearance: none !important; appearance: none !important; width: 100% !important; max-width: 240px !important; height: 8px !important; background: #111317 !important; border-radius: 4px !important; border: 1px solid #252a36 !important; outline: none !important; box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.5) !important;
+}
+
+/* Thumb styles */
+.bladeslider-slider::-webkit-slider-thumb {
+    -webkit-appearance: none !important; appearance: none !important; width: 22px !important; height: 22px !important; border-radius: 50% !important; background: linear-gradient(135deg, #2a2e3d 0%, #15181f 100%) !important; border: 2px solid #29b6f6 !important; cursor: pointer !important; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6), 0 0 8px rgba(41, 182, 246, 0.3) !important; transition: transform 0.15s ease, border-color 0.15s ease !important;
+}
+.bladeslider-slider::-webkit-slider-thumb:active { transform: scale(1.1) !important; border-color: #ffffff !important; }
+
+.bladeslider-slider::-moz-range-thumb {
+    width: 18px !important; height: 18px !important; border-radius: 50% !important; background: linear-gradient(135deg, #2a2e3d 0%, #15181f 100%) !important; border: 2px solid #29b6f6 !important; cursor: pointer !important; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6), 0 0 8px rgba(41, 182, 246, 0.3) !important; transition: transform 0.15s ease, border-color 0.15s ease !important;
+}
+.bladeslider-slider::-moz-range-thumb:active { transform: scale(1.1) !important; border-color: #ffffff !important; }
+
+/* Grid et labels */
+.bladeslider-details-grid {
+    display: grid !important; grid-template-columns: 1fr !important; align-items: center !important; width: 100% !important; max-width: 200px !important; margin: 0 auto !important; border-top: 1px solid rgba(255, 255, 255, 0.05) !important; padding-top: 18px !important;
+}
+
+.bladeslider-sub-grid {
+    display: grid !important; grid-template-columns: 1fr auto !important; align-items: center !important; gap: 12px !important; justify-content: center !important; width: 100% !important;
+}
+
+.bladeslider-values-block { display: flex !important; flex-direction: column !important; white-space: nowrap !important; }
+
+.bladeslider-label {
+    font-size: 0.72rem !important; color: #5c6270 !important; text-transform: uppercase !important; letter-spacing: 0.8px !important; line-height: 1.1 !important; margin-bottom: 3px !important;
+}
+
+.bladeslider-value-wrapper { display: flex !important; align-items: baseline !important; gap: 4px !important; }
+
+.bladeslider-value {
+    font-size: 1.15rem !important; font-weight: 700 !important; color: #ffffff !important; line-height: 1.1 !important; font-variant-numeric: tabular-nums !important;
+}
+
+.bladeslider-unit { font-size: 0.75rem !important; color: #5c6270 !important; font-weight: 600 !important; }

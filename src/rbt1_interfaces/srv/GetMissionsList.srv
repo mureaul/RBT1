@@ -1,0 +1,4 @@
+# Requête vide
+---
+string missions_json    # Contient le tableau sérialisé : ["mission_1", "mission_2"]
+bool success

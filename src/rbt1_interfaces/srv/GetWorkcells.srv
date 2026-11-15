@@ -1,0 +1,7 @@
+# Request (Vide car on veut juste la liste)
+---
+# Response
+string[] ids               # Ex: ["wokcell_verger_nord", "workcell_serre_3"]
+string[] names             # Ex: ["Verger Nord", "Serre 3"]
+int32[] waypoints_counts   # Ex: [42, 18]
+bool success

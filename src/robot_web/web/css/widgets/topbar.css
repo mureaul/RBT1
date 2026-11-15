@@ -1,0 +1,98 @@
+.topbar-right {
+    display: flex;
+    flex-direction: row;      /* Force l'alignement horizontal */
+    align-items: center;      /* Aligne verticalement au centre */
+    justify-content: flex-end; /* Aligne tout vers la droite */
+    gap: 4px;                
+    margin-right: 4px;
+    flex-wrap: nowrap;        /* Empêche l'empilement même si l'espace est réduit */
+}
+
+/* On s'assure que les conteneurs ne forcent pas de retour à la ligne */
+#topbar-battery-icon-container, 
+#topbar-ros-badge {
+    flex-shrink: 0;           /* Empêche les éléments de rétrécir ou s'écraser */
+}
+
+
+/* --- BATTERY ICON --- */
+#topbar-battery-icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    gap: 0px;
+}
+
+/* Le wrapper qui porte la couleur d'état */
+.battery-widget-wrapper { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #52f28b; /* Défaut */
+    transition: color 0.3s ease;
+}
+.battery-widget-wrapper.bat-mid { color: #ffca28; }
+.battery-widget-wrapper.bat-low { color: #ff6b6b; }
+
+/* On cible strictement les éléments internes au wrapper */
+.battery-widget-wrapper .bat-outline { fill: none; stroke: currentColor; }
+.battery-widget-wrapper .bat-tip, 
+.battery-widget-wrapper .bat-fill { fill: currentColor; }
+
+.bat-fill { transition: width 0.3s ease-in-out; }
+
+.battery-icon-svg { width: 40px; height: 40px; overflow: visible; }
+
+.topbar-battery-value {
+    font-size: 0.75rem;
+    font-weight: 800;
+    color: #afb4c5;
+    line-height: 1;
+    margin-top: -8px;
+}
+
+.battery-bolt-icon {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    filter: drop-shadow(0 0 4px rgba(255, 238, 0, 0.8));
+}
+.is-charging .battery-bolt-icon { opacity: 1; }
+
+/* --- ROS BADGE --- */
+.topbar-ros-status {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    color: #5c6270; /* Défaut */
+    transition: color 0.3s ease;
+}
+.topbar-ros-status.is-connected { color: #52f28b; }
+.topbar-ros-status.is-disconnected { color: #ff6b6b; }
+
+.ros-status-svg { width: 24px; height: 24px; z-index: 1; }
+
+.status-ring {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    stroke: currentColor;
+    fill: none;
+    stroke-width: 2;
+    transform-origin: center;
+}
+
+/* L'animation ne s'active que si la classe is-connected est présente */
+.is-connected .status-ring {
+    animation: pulse-ring 2s infinite;
+}
+
+@keyframes pulse-ring {
+    0% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.3; transform: scale(1.4); }
+    100% { opacity: 1; transform: scale(1); }
+}
